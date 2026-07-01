@@ -27,6 +27,8 @@ export function PartyChart({ data }: { data: PartyCount[] }) {
             color: 'var(--popover-foreground)',
             fontSize: 12,
           }}
+          labelStyle={{ color: 'var(--popover-foreground)', fontWeight: 500, marginBottom: 2 }}
+          itemStyle={{ color: 'var(--popover-foreground)' }}
         />
         <Bar dataKey="count" radius={[4, 4, 4, 4]} barSize={20}>
           {data.map((entry) => (

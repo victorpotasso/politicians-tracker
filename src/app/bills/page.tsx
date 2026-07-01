@@ -5,7 +5,7 @@ import { Reveal } from '@/components/reveal';
 import { getBills, getVotes, rankBillsByDivisions } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Bills · NZ Politicians Tracker',
+  title: 'Bills',
   description: 'Bills with recorded personal (conscience) votes in the New Zealand Parliament.',
 };
 

@@ -27,6 +27,15 @@ const tooltipStyle = {
   fontSize: 12,
 } as const;
 
+// Recharts colours tooltip text by the series colour; pin it to the popover
+// foreground so labels stay legible (the colour dot still identifies the series).
+const tooltipLabelStyle = {
+  color: 'var(--popover-foreground)',
+  fontWeight: 500,
+  marginBottom: 2,
+} as const;
+const tooltipItemStyle = { color: 'var(--popover-foreground)' } as const;
+
 /** Format an ISO date as a short `Jun '26` axis/tooltip label (deterministic). */
 function shortDate(iso: string): string {
   return formatMonthYearShort(iso);
@@ -61,6 +70,8 @@ export function PollTrendChart({ data, parties }: PollTrendChartProps) {
         />
         <Tooltip
           contentStyle={tooltipStyle}
+          labelStyle={tooltipLabelStyle}
+          itemStyle={tooltipItemStyle}
           labelFormatter={(label) => shortDate(String(label))}
           formatter={(value, name) => [`${Number(value)}%`, String(name)]}
         />
@@ -99,6 +110,8 @@ export function SeatProjectionChart({ data }: { data: SeatProjection[] }) {
         <Tooltip
           cursor={{ fill: 'var(--accent)', opacity: 0.4 }}
           contentStyle={tooltipStyle}
+          labelStyle={tooltipLabelStyle}
+          itemStyle={tooltipItemStyle}
           formatter={(value) => [`${Number(value)} seats`, 'Projected']}
         />
         <Bar dataKey="seats" radius={[4, 4, 4, 4]} barSize={22}>
@@ -147,6 +160,8 @@ export function PartyPollTrend({ data, color }: PartyPollTrendProps) {
         />
         <Tooltip
           contentStyle={tooltipStyle}
+          labelStyle={tooltipLabelStyle}
+          itemStyle={tooltipItemStyle}
           labelFormatter={(label) => shortDate(String(label))}
           formatter={(value) => [`${Number(value)}%`, 'Support']}
         />

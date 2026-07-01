@@ -23,6 +23,19 @@ export function formatNZDCompact(amount: number): string {
   return `$${Math.round(amount)}`;
 }
 
+/**
+ * Format a value expressed in NZD millions as a readable currency string, e.g.
+ * `$141.7B`, `$44.7B`, `$980M`. Used for the Crown-spending series, whose raw
+ * figures are already in millions.
+ */
+export function formatMillionsNZD(millions: number): string {
+  const abs = Math.abs(millions);
+  const sign = millions < 0 ? '-' : '';
+  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(2)}T`;
+  if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(1)}B`;
+  return `${sign}$${groupThousands(abs)}M`;
+}
+
 const MONTHS_SHORT = [
   'Jan',
   'Feb',

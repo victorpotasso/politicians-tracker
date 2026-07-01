@@ -9,7 +9,7 @@ import { getMps } from '@/lib/data';
 import { PARLIAMENT_TERMS } from '@/lib/parliament-data';
 
 export const metadata: Metadata = {
-  title: 'Parliament · NZ Politicians Tracker',
+  title: 'Parliament',
   description:
     'Explore the composition of the New Zealand Parliament across the MMP era with an interactive, year-by-year seating chart.',
 };

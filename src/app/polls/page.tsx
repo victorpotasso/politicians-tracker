@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { getPollsExplorer } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Polls · NZ Politicians Tracker',
+  title: 'Polls',
   description:
     'Published opinion polling across recent New Zealand general elections — filter by election cycle to compare party-vote trends, a poll of polls, and projected seat allocations linked to parties and their leaders.',
 };

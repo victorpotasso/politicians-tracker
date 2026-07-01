@@ -4,7 +4,17 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { PARLIAMENT_TERMS, type ParliamentTerm } from '@/lib/parliament-data';
 import { canonicalParty, partyColor, partySlug } from '@/lib/party';
-import type { Bill, Dataset, Domain, Expense, MP, MpEnrichment, Poll, Vote } from '@/types/records';
+import type {
+  Bill,
+  Dataset,
+  Domain,
+  Expense,
+  MP,
+  MpEnrichment,
+  Poll,
+  SpendingYear,
+  Vote,
+} from '@/types/records';
 
 const DATA_DIR = join(process.cwd(), 'data');
 
@@ -26,6 +36,15 @@ export const getVotes = () => loadDataset<Vote>('votes');
 export const getExpenses = () => loadDataset<Expense>('expenses');
 export const getMinisterExpenses = () => loadDataset<Expense>('ministers');
 export const getPolls = () => loadDataset<Poll>('polls');
+
+/** Annual Crown spending & GDP from the Treasury Fiscal Time Series, oldest-first. */
+export async function getSpending(): Promise<Dataset<SpendingYear>> {
+  const dataset = await loadDataset<SpendingYear>('spending');
+  return {
+    ...dataset,
+    records: [...dataset.records].sort((a, b) => a.year - b.year),
+  };
+}
 
 /** Look up a single MP by id. */
 export async function getMp(mpId: string): Promise<MP | null> {

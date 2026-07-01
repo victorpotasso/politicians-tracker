@@ -5,7 +5,7 @@ import { Reveal } from '@/components/reveal';
 import { getMps } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Politicians · NZ Politicians Tracker',
+  title: 'Politicians',
   description: 'Browse current and former New Zealand Members of Parliament.',
 };
 

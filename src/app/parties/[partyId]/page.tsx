@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const detail = await getPartyDetail(partyId);
   if (!detail) return { title: 'Party not found' };
   return {
-    title: `${detail.summary.party} · NZ Politicians Tracker`,
+    title: detail.summary.party,
     description: `Seats, governments, and members of the ${detail.summary.party} in the New Zealand Parliament.`,
   };
 }

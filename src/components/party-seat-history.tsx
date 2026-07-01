@@ -55,6 +55,8 @@ export function PartySeatHistory({ data, color }: PartySeatHistoryProps) {
             color: 'var(--popover-foreground)',
             fontSize: 12,
           }}
+          labelStyle={{ color: 'var(--popover-foreground)', fontWeight: 500, marginBottom: 2 }}
+          itemStyle={{ color: 'var(--popover-foreground)' }}
           formatter={(value, _name, item) => {
             const total = (item?.payload as SeatHistoryPoint | undefined)?.totalSeats;
             return [`${Number(value)}${total ? ` / ${total}` : ''} seats`, 'Seats'];

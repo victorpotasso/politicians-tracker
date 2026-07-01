@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const mp = await getMp(mpId);
   if (!mp) return { title: 'Politician not found' };
   return {
-    title: `${mp.name} · NZ Politicians Tracker`,
+    title: mp.name,
     description: `Profile for ${mp.name}${mp.party ? `, ${mp.party}` : ''}.`,
   };
 }

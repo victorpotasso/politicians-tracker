@@ -29,6 +29,15 @@ const tooltipStyle = {
   fontSize: 12,
 } as const;
 
+// Recharts colours tooltip text by the series colour; pin it to the popover
+// foreground so labels stay legible (the colour dot still identifies the series).
+const tooltipLabelStyle = {
+  color: 'var(--popover-foreground)',
+  fontWeight: 500,
+  marginBottom: 2,
+} as const;
+const tooltipItemStyle = { color: 'var(--popover-foreground)' } as const;
+
 /** Donut of total spend split by expense category. */
 export function SpendByCategoryDonut({ data }: { data: CategoryTotal[] }) {
   return (
@@ -49,6 +58,8 @@ export function SpendByCategoryDonut({ data }: { data: CategoryTotal[] }) {
         </Pie>
         <Tooltip
           contentStyle={tooltipStyle}
+          labelStyle={tooltipLabelStyle}
+          itemStyle={tooltipItemStyle}
           formatter={(value, name) => [formatNZD(Number(value)), String(name)]}
         />
       </PieChart>
@@ -83,6 +94,8 @@ export function SpendTrendChart({ data }: { data: PeriodTotal[] }) {
         />
         <Tooltip
           contentStyle={tooltipStyle}
+          labelStyle={tooltipLabelStyle}
+          itemStyle={tooltipItemStyle}
           labelFormatter={(label) => formatQuarterLong(String(label))}
           formatter={(value) => [formatNZD(Number(value)), 'Spend']}
         />

@@ -94,7 +94,39 @@ export interface Poll extends Provenance {
   lead: number | null;
 }
 
-export type Domain = 'mps' | 'bills' | 'votes' | 'expenses' | 'ministers' | 'polls';
+/** One functional class of Core Crown expenses (e.g. Health), in NZD millions. */
+export interface SpendingCategory {
+  /** Human-readable classification, e.g. `Social security and welfare`. */
+  category: string;
+  /** Spend for the class in NZD millions (can be negative, e.g. forex losses). */
+  amount: number;
+}
+
+/**
+ * A single fiscal year of Crown spending from the Treasury Fiscal Time Series.
+ * All monetary values are in NZD millions. Fiscal years end 31 March up to 1989
+ * and 30 June from 1990 onward (see `yearType`).
+ */
+export interface SpendingYear extends Provenance {
+  /** Fiscal year end, e.g. `2025` = year ended 30 June 2025. */
+  year: number;
+  /** Accounting/reporting basis as published, e.g. `PBE Standards, June Years`. */
+  basis: string;
+  /** Whether the fiscal year ends in March (pre-1990) or June. */
+  yearType: 'March' | 'June';
+  /** Financial net expenditure (cash-era headline spend), NZD millions. */
+  financialNetExpenditure: number | null;
+  /** Core Crown expenses — the headline government-spending figure from 1994. */
+  coreCrownExpenses: number | null;
+  /** Total Crown expenses (includes Crown entities and SOEs), NZD millions. */
+  totalCrownExpenses: number | null;
+  /** Nominal GDP for the year, NZD millions, for spend-as-%-of-GDP. */
+  nominalGdp: number | null;
+  /** Functional breakdown of Core Crown expenses, where reported. */
+  categories: SpendingCategory[];
+}
+
+export type Domain = 'mps' | 'bills' | 'votes' | 'expenses' | 'ministers' | 'polls' | 'spending';
 
 export interface DatasetMeta {
   domain: Domain;

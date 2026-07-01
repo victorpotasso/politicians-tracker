@@ -24,6 +24,15 @@ const tooltipStyle = {
   fontSize: 12,
 } as const;
 
+// Recharts colours tooltip text by the series colour; pin it to the popover
+// foreground so labels stay legible (the colour dot still identifies the series).
+const tooltipLabelStyle = {
+  color: 'var(--popover-foreground)',
+  fontWeight: 500,
+  marginBottom: 2,
+} as const;
+const tooltipItemStyle = { color: 'var(--popover-foreground)' } as const;
+
 /** Stacked area of Parliament's party make-up across the MMP-era elections. */
 export function CompositionChart({
   data,
@@ -63,7 +72,11 @@ export function CompositionChart({
           width={40}
           tick={{ fill: 'var(--muted-foreground)', fontSize: 11 }}
         />
-        <Tooltip contentStyle={tooltipStyle} />
+        <Tooltip
+          contentStyle={tooltipStyle}
+          labelStyle={tooltipLabelStyle}
+          itemStyle={tooltipItemStyle}
+        />
         {parties.map((party) => (
           <Area
             key={party}

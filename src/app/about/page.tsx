@@ -21,10 +21,18 @@ import { Reveal } from '@/components/reveal';
 import { ShaderBackground } from '@/components/shaders/shader-background';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { getBills, getExpenses, getMinisterExpenses, getMps, getVotes } from '@/lib/data';
+import {
+  getBills,
+  getExpenses,
+  getMinisterExpenses,
+  getMps,
+  getPolls,
+  getSpending,
+  getVotes,
+} from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'About · NZ Politicians Tracker',
+  title: 'About',
   description:
     'Learn how NZ Politicians Tracker collects and explains public New Zealand political data.',
 };
@@ -103,12 +111,22 @@ function SourceCard({
 }
 
 export default async function AboutPage() {
-  const [mpsData, billsData, votesData, expensesData, ministerExpensesData] = await Promise.all([
+  const [
+    mpsData,
+    billsData,
+    votesData,
+    expensesData,
+    ministerExpensesData,
+    pollsData,
+    spendingData,
+  ] = await Promise.all([
     getMps(),
     getBills(),
     getVotes(),
     getExpenses(),
     getMinisterExpenses(),
+    getPolls(),
+    getSpending(),
   ]);
 
   const totalRecords =
@@ -116,8 +134,18 @@ export default async function AboutPage() {
     billsData.records.length +
     votesData.records.length +
     expensesData.records.length +
-    ministerExpensesData.records.length;
-  const latestUpdate = [mpsData, billsData, votesData, expensesData, ministerExpensesData]
+    ministerExpensesData.records.length +
+    pollsData.records.length +
+    spendingData.records.length;
+  const latestUpdate = [
+    mpsData,
+    billsData,
+    votesData,
+    expensesData,
+    ministerExpensesData,
+    pollsData,
+    spendingData,
+  ]
     .map((dataset) => dataset.meta.collectedAt)
     .filter(Boolean)
     .sort()
@@ -126,8 +154,8 @@ export default async function AboutPage() {
   const metrics = [
     { label: 'Public records', value: formatCount(totalRecords), icon: Database },
     { label: 'MP profiles', value: formatCount(mpsData.records.length), icon: Landmark },
-    { label: 'Recorded votes', value: formatCount(votesData.records.length), icon: Vote },
-    { label: 'Expense rows', value: formatCount(expensesData.records.length), icon: WalletCards },
+    { label: 'Poll records', value: formatCount(pollsData.records.length), icon: Search },
+    { label: 'Spending years', value: formatCount(spendingData.records.length), icon: WalletCards },
   ];
 
   const sources = [
@@ -162,6 +190,28 @@ export default async function AboutPage() {
       href: 'https://www.dia.govt.nz/Ministers-expense-releases',
       linkLabel: 'Open DIA releases',
       stat: `${formatCount(ministerExpensesData.records.length)} rows`,
+      external: true,
+    },
+    {
+      icon: Search,
+      title: 'Wikipedia polling tables',
+      eyebrow: 'Public opinion',
+      description:
+        'Opinion polling tables are collected through the Wikipedia action API across recent election cycles, then normalized into party-vote trend and seat-projection data.',
+      href: 'https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election',
+      linkLabel: 'Open current polling source',
+      stat: `${formatCount(pollsData.records.length)} polls`,
+      external: true,
+    },
+    {
+      icon: Database,
+      title: 'Treasury Fiscal Time Series',
+      eyebrow: 'Crown spending',
+      description:
+        'Annual Crown spending, GDP, and functional expense categories come from the Treasury Fiscal Time Series workbook so long-run fiscal trends can be compared with governments over time.',
+      href: 'https://www.treasury.govt.nz/publications/information-release/fiscal-time-series-historical-fiscal-indicators',
+      linkLabel: 'Open Treasury release',
+      stat: `${formatCount(spendingData.records.length)} years`,
       external: true,
     },
     {
@@ -215,9 +265,9 @@ export default async function AboutPage() {
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200/82">
                 NZ Politicians Tracker is an experimental, source-first dashboard for exploring New
-                Zealand MPs, bills, votes, and expenses. It is built to make civic information feel
-                less like a spreadsheet archive and more like a living map of public
-                decision-making.
+                Zealand MPs, bills, votes, expenses, polling, and Crown spending. It is built to
+                make civic information feel less like a spreadsheet archive and more like a living
+                map of public decision-making.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild size="lg">
@@ -289,9 +339,10 @@ export default async function AboutPage() {
               <p className="text-sm leading-7 text-slate-200/78 md:col-span-2">
                 The goal is to collect public political data, preserve where it came from, and
                 create interfaces that help people compare patterns: who sits in Parliament, what
-                gets voted on, which bills attract divisions, and how public expense disclosures map
-                back to elected representatives. It is a proof of concept, not an official
-                Parliament product.
+                gets voted on, which bills attract divisions, how public expense disclosures map
+                back to elected representatives, what polling says across cycles, and how Crown
+                spending changes over time. It is a proof of concept, not an official Parliament
+                product.
               </p>
             </div>
           </section>
@@ -370,8 +421,8 @@ export default async function AboutPage() {
                 <h2 className="text-2xl font-bold">What it helps answer</h2>
                 <p className="mt-4 text-sm leading-7 text-cyan-50/78">
                   Which parties are represented? Which bills generated repeated divisions? How do MP
-                  expense releases line up across quarters? Which politicians have the richest
-                  public trail in the collected data?
+                  expense releases line up across quarters? How have opinion polls moved between
+                  elections? Which spending categories changed most across governments?
                 </p>
               </div>
               <div className="rounded-lg border border-white/10 bg-amber-300/10 p-6 text-amber-50 backdrop-blur-md">
@@ -385,9 +436,9 @@ export default async function AboutPage() {
               <div className="rounded-lg border border-white/10 bg-lime-300/10 p-6 text-lime-50 backdrop-blur-md">
                 <h2 className="text-2xl font-bold">What comes next</h2>
                 <p className="mt-4 text-sm leading-7 text-lime-50/78">
-                  Better bill metadata, clearer attribution, richer vote comparison, and expense
-                  trends over time. The direction is simple: more transparency, less friction, and
-                  no mystery about the source trail.
+                  Better bill metadata, clearer attribution, richer vote comparison, stronger
+                  polling context, and more spending annotations. The direction is simple: more
+                  transparency, less friction, and no mystery about the source trail.
                 </p>
               </div>
             </div>

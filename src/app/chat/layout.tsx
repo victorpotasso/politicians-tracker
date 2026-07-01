@@ -14,7 +14,7 @@ import {
 } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Ask the tracker — NZ Politicians Tracker',
+  title: 'Ask the tracker',
   description:
     'Chat with New Zealand political data — answers grounded in real records, running entirely in your browser.',
 };

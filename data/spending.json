@@ -1,0 +1,2887 @@
+{
+  "meta": {
+    "domain": "spending",
+    "count": 54,
+    "collectedAt": "2026-07-01T19:41:10.876Z",
+    "sources": [
+      "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "https://www.treasury.govt.nz/sites/default/files/2026-01/fiscaltimeseries1972-2025-year-end25.xlsx"
+    ]
+  },
+  "records": [
+    {
+      "year": 1972,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 1682.8,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 6990,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 391.9
+        },
+        {
+          "category": "Health",
+          "amount": 291.8
+        },
+        {
+          "category": "Education",
+          "amount": 335
+        },
+        {
+          "category": "Core government services",
+          "amount": 113.80000000000001
+        },
+        {
+          "category": "Law and order",
+          "amount": 32.2
+        },
+        {
+          "category": "Defence",
+          "amount": 118.8
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 144.4
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 43.3
+        },
+        {
+          "category": "Other functions",
+          "amount": 131.6
+        },
+        {
+          "category": "Finance costs",
+          "amount": 168
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1973,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 2006.2,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 8080,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 527.3
+        },
+        {
+          "category": "Health",
+          "amount": 343.1
+        },
+        {
+          "category": "Education",
+          "amount": 376.8
+        },
+        {
+          "category": "Core government services",
+          "amount": 133.3
+        },
+        {
+          "category": "Law and order",
+          "amount": 39.8
+        },
+        {
+          "category": "Defence",
+          "amount": 128.1
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 183.1
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 68.7
+        },
+        {
+          "category": "Other functions",
+          "amount": 143.5
+        },
+        {
+          "category": "Finance costs",
+          "amount": 186.5
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1974,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 2303.9,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 9361,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 646.8
+        },
+        {
+          "category": "Health",
+          "amount": 401.1
+        },
+        {
+          "category": "Education",
+          "amount": 440.2
+        },
+        {
+          "category": "Core government services",
+          "amount": 168
+        },
+        {
+          "category": "Law and order",
+          "amount": 46.3
+        },
+        {
+          "category": "Defence",
+          "amount": 138.7
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 168.7
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 75.2
+        },
+        {
+          "category": "Other functions",
+          "amount": 194.8
+        },
+        {
+          "category": "Finance costs",
+          "amount": 201.9
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1975,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 2977.7,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 10203,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 789.5
+        },
+        {
+          "category": "Health",
+          "amount": 492.3
+        },
+        {
+          "category": "Education",
+          "amount": 526.6
+        },
+        {
+          "category": "Core government services",
+          "amount": 228.40000000000003
+        },
+        {
+          "category": "Law and order",
+          "amount": 61
+        },
+        {
+          "category": "Defence",
+          "amount": 163
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 211.2
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 145.3
+        },
+        {
+          "category": "Other functions",
+          "amount": 313.5
+        },
+        {
+          "category": "Finance costs",
+          "amount": 221.8
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1976,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 3562,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 11506,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 997
+        },
+        {
+          "category": "Health",
+          "amount": 605.7
+        },
+        {
+          "category": "Education",
+          "amount": 627
+        },
+        {
+          "category": "Core government services",
+          "amount": 272.69999999999993
+        },
+        {
+          "category": "Law and order",
+          "amount": 77.8
+        },
+        {
+          "category": "Defence",
+          "amount": 188.4
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 274.8
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 228.39999999999998
+        },
+        {
+          "category": "Other functions",
+          "amount": 494.1
+        },
+        {
+          "category": "Finance costs",
+          "amount": 272.8
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1977,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 3956.9,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 13972,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 1158.9
+        },
+        {
+          "category": "Health",
+          "amount": 689.1
+        },
+        {
+          "category": "Education",
+          "amount": 699.4
+        },
+        {
+          "category": "Core government services",
+          "amount": 315.20000000000005
+        },
+        {
+          "category": "Law and order",
+          "amount": 79.6
+        },
+        {
+          "category": "Defence",
+          "amount": 210.7
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 230.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 293.2
+        },
+        {
+          "category": "Other functions",
+          "amount": 283.2
+        },
+        {
+          "category": "Finance costs",
+          "amount": 371.3
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1978,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 4959.1,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 15667,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 1569.3
+        },
+        {
+          "category": "Health",
+          "amount": 808.5
+        },
+        {
+          "category": "Education",
+          "amount": 807.5
+        },
+        {
+          "category": "Core government services",
+          "amount": 337.7
+        },
+        {
+          "category": "Law and order",
+          "amount": 107.5
+        },
+        {
+          "category": "Defence",
+          "amount": 248.2
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 247.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 375.9
+        },
+        {
+          "category": "Other functions",
+          "amount": 368.7
+        },
+        {
+          "category": "Finance costs",
+          "amount": 471.3
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1979,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 6099.5,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 17810,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 1853.5
+        },
+        {
+          "category": "Health",
+          "amount": 980.1
+        },
+        {
+          "category": "Education",
+          "amount": 929.3
+        },
+        {
+          "category": "Core government services",
+          "amount": 420
+        },
+        {
+          "category": "Law and order",
+          "amount": 139.3
+        },
+        {
+          "category": "Defence",
+          "amount": 293.2
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 279.1
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 486.1
+        },
+        {
+          "category": "Other functions",
+          "amount": 507.5
+        },
+        {
+          "category": "Finance costs",
+          "amount": 595.8
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1980,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 6971.2,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 20546,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 2175
+        },
+        {
+          "category": "Health",
+          "amount": 1136.2
+        },
+        {
+          "category": "Education",
+          "amount": 1009.3
+        },
+        {
+          "category": "Core government services",
+          "amount": 467.7
+        },
+        {
+          "category": "Law and order",
+          "amount": 164.7
+        },
+        {
+          "category": "Defence",
+          "amount": 340.8
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 265
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 398.5
+        },
+        {
+          "category": "Other functions",
+          "amount": 486.6
+        },
+        {
+          "category": "Finance costs",
+          "amount": 766.4
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1981,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 8517.3,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 23988,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 2589.7
+        },
+        {
+          "category": "Health",
+          "amount": 1356.3
+        },
+        {
+          "category": "Education",
+          "amount": 1292
+        },
+        {
+          "category": "Core government services",
+          "amount": 568.4
+        },
+        {
+          "category": "Law and order",
+          "amount": 208.8
+        },
+        {
+          "category": "Defence",
+          "amount": 446.4
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 332.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 434.70000000000005
+        },
+        {
+          "category": "Other functions",
+          "amount": 502.5
+        },
+        {
+          "category": "Finance costs",
+          "amount": 896.9
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1982,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 10407.7,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 29028,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 3042.3
+        },
+        {
+          "category": "Health",
+          "amount": 1601.2
+        },
+        {
+          "category": "Education",
+          "amount": 1493.2
+        },
+        {
+          "category": "Core government services",
+          "amount": 673
+        },
+        {
+          "category": "Law and order",
+          "amount": 253.5
+        },
+        {
+          "category": "Defence",
+          "amount": 581.1
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 460.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 652.4
+        },
+        {
+          "category": "Other functions",
+          "amount": 657.7
+        },
+        {
+          "category": "Finance costs",
+          "amount": 1211
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1983,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 11956.4,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 33426,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 3744.2
+        },
+        {
+          "category": "Health",
+          "amount": 1766
+        },
+        {
+          "category": "Education",
+          "amount": 1638.8
+        },
+        {
+          "category": "Core government services",
+          "amount": 707.1000000000001
+        },
+        {
+          "category": "Law and order",
+          "amount": 266.3
+        },
+        {
+          "category": "Defence",
+          "amount": 644.1
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 495.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 742.1
+        },
+        {
+          "category": "Other functions",
+          "amount": 710.9000000000001
+        },
+        {
+          "category": "Finance costs",
+          "amount": 1492.6
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1984,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 13424.6,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 37253,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 4049.4
+        },
+        {
+          "category": "Health",
+          "amount": 1804.9
+        },
+        {
+          "category": "Education",
+          "amount": 1674.3
+        },
+        {
+          "category": "Core government services",
+          "amount": 729.2
+        },
+        {
+          "category": "Law and order",
+          "amount": 271.3
+        },
+        {
+          "category": "Defence",
+          "amount": 660.2
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 537.1
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 896.2
+        },
+        {
+          "category": "Other functions",
+          "amount": 996.1
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2041.9
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1985,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 14533.9,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 42244,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 4457.5
+        },
+        {
+          "category": "Health",
+          "amount": 1911.5
+        },
+        {
+          "category": "Education",
+          "amount": 1728.6
+        },
+        {
+          "category": "Core government services",
+          "amount": 807.5
+        },
+        {
+          "category": "Law and order",
+          "amount": 292.1
+        },
+        {
+          "category": "Defence",
+          "amount": 745.1
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 543.3
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 873.8000000000001
+        },
+        {
+          "category": "Other functions",
+          "amount": 838.7
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2562.6
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1986,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 16987.2,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 48779,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 5449.1
+        },
+        {
+          "category": "Health",
+          "amount": 2309
+        },
+        {
+          "category": "Education",
+          "amount": 2010.3
+        },
+        {
+          "category": "Core government services",
+          "amount": 1048.2
+        },
+        {
+          "category": "Law and order",
+          "amount": 391.1
+        },
+        {
+          "category": "Defence",
+          "amount": 852.1
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 865.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 755.2
+        },
+        {
+          "category": "Other functions",
+          "amount": 460.8
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3340
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1987,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 20823,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 57953,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 6479.3
+        },
+        {
+          "category": "Health",
+          "amount": 2957.3
+        },
+        {
+          "category": "Education",
+          "amount": 2595.2
+        },
+        {
+          "category": "Core government services",
+          "amount": 1205.6
+        },
+        {
+          "category": "Law and order",
+          "amount": 520.6
+        },
+        {
+          "category": "Defence",
+          "amount": 1072.1
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 1039.4
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1007.5
+        },
+        {
+          "category": "Other functions",
+          "amount": 476.4
+        },
+        {
+          "category": "Finance costs",
+          "amount": 4091.9
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1988,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 24905.7,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 65167,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 7791.9
+        },
+        {
+          "category": "Health",
+          "amount": 3387.5
+        },
+        {
+          "category": "Education",
+          "amount": 3118.2
+        },
+        {
+          "category": "Core government services",
+          "amount": 1798.2
+        },
+        {
+          "category": "Law and order",
+          "amount": 681.4
+        },
+        {
+          "category": "Defence",
+          "amount": 1257.6
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 654.8
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1006.6
+        },
+        {
+          "category": "Other functions",
+          "amount": 343
+        },
+        {
+          "category": "Finance costs",
+          "amount": 4970.9
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1989,
+      "basis": "Cash, March Years",
+      "yearType": "March",
+      "financialNetExpenditure": 26427.5,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 70629,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 9123.3
+        },
+        {
+          "category": "Health",
+          "amount": 3639.3
+        },
+        {
+          "category": "Education",
+          "amount": 3569.2
+        },
+        {
+          "category": "Core government services",
+          "amount": 1886.1
+        },
+        {
+          "category": "Law and order",
+          "amount": 863.7
+        },
+        {
+          "category": "Defence",
+          "amount": 1366.9
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 672
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 872.1
+        },
+        {
+          "category": "Other functions",
+          "amount": 355.7
+        },
+        {
+          "category": "Finance costs",
+          "amount": 4492.5
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1990,
+      "basis": "Cash, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": 29294.4,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 75140,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 10319.8
+        },
+        {
+          "category": "Health",
+          "amount": 3782.2
+        },
+        {
+          "category": "Education",
+          "amount": 4068.2
+        },
+        {
+          "category": "Core government services",
+          "amount": 2376.5
+        },
+        {
+          "category": "Law and order",
+          "amount": 958.7
+        },
+        {
+          "category": "Defence",
+          "amount": 1352.3
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 888.3
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 870.2
+        },
+        {
+          "category": "Other functions",
+          "amount": 289.3
+        },
+        {
+          "category": "Finance costs",
+          "amount": 4724.5
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1991,
+      "basis": "Cash, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": 30298,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 75959,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 10317
+        },
+        {
+          "category": "Health",
+          "amount": 3986
+        },
+        {
+          "category": "Education",
+          "amount": 4401
+        },
+        {
+          "category": "Core government services",
+          "amount": 2446.9
+        },
+        {
+          "category": "Law and order",
+          "amount": 1003.9
+        },
+        {
+          "category": "Defence",
+          "amount": 1319.2
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 826
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1038.8
+        },
+        {
+          "category": "Other functions",
+          "amount": 335.2
+        },
+        {
+          "category": "Finance costs",
+          "amount": 4624
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1992,
+      "basis": "Cash, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": 29174,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 76924,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 10620
+        },
+        {
+          "category": "Health",
+          "amount": 3855
+        },
+        {
+          "category": "Education",
+          "amount": 4467
+        },
+        {
+          "category": "Core government services",
+          "amount": 2084.7
+        },
+        {
+          "category": "Law and order",
+          "amount": 1036.3
+        },
+        {
+          "category": "Defence",
+          "amount": 1238
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 816
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 640.7
+        },
+        {
+          "category": "Other functions",
+          "amount": 269.3
+        },
+        {
+          "category": "Finance costs",
+          "amount": 4147
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1993,
+      "basis": "Cash, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": 29418,
+      "coreCrownExpenses": null,
+      "totalCrownExpenses": null,
+      "nominalGdp": 79349,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 10697.2
+        },
+        {
+          "category": "Health",
+          "amount": 3873.6
+        },
+        {
+          "category": "Education",
+          "amount": 4503.6
+        },
+        {
+          "category": "Core government services",
+          "amount": 2179.1
+        },
+        {
+          "category": "Law and order",
+          "amount": 1281.4
+        },
+        {
+          "category": "Defence",
+          "amount": 1171.4
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 717.6
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 944.1
+        },
+        {
+          "category": "Other functions",
+          "amount": 149.9
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3898.5
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1994,
+      "basis": "old-GAAP",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 28476,
+      "totalCrownExpenses": null,
+      "nominalGdp": 86031,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 11473
+        },
+        {
+          "category": "Health",
+          "amount": 4104
+        },
+        {
+          "category": "Education",
+          "amount": 4173
+        },
+        {
+          "category": "Core government services",
+          "amount": 1673
+        },
+        {
+          "category": "Law and order",
+          "amount": 1145
+        },
+        {
+          "category": "Defence",
+          "amount": 1049
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 733
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 653
+        },
+        {
+          "category": "Other functions",
+          "amount": 583
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3788
+        },
+        {
+          "category": "Net foreign exchange losses",
+          "amount": -898
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1995,
+      "basis": "old-GAAP",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 29214,
+      "totalCrownExpenses": null,
+      "nominalGdp": 91897,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 11723
+        },
+        {
+          "category": "Health",
+          "amount": 4367
+        },
+        {
+          "category": "Education",
+          "amount": 4338
+        },
+        {
+          "category": "Core government services",
+          "amount": 1300
+        },
+        {
+          "category": "Law and order",
+          "amount": 1176
+        },
+        {
+          "category": "Defence",
+          "amount": 1013
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 714
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 622
+        },
+        {
+          "category": "Other functions",
+          "amount": 755
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3757
+        },
+        {
+          "category": "Net foreign exchange losses",
+          "amount": -551
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1996,
+      "basis": "old-GAAP",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 30483,
+      "totalCrownExpenses": null,
+      "nominalGdp": 97568,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 12239
+        },
+        {
+          "category": "Health",
+          "amount": 4672
+        },
+        {
+          "category": "Education",
+          "amount": 4463
+        },
+        {
+          "category": "Core government services",
+          "amount": 1508
+        },
+        {
+          "category": "Law and order",
+          "amount": 1222
+        },
+        {
+          "category": "Defence",
+          "amount": 970
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 737
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 950
+        },
+        {
+          "category": "Other functions",
+          "amount": 622
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3703
+        },
+        {
+          "category": "Net foreign exchange losses",
+          "amount": -603
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1997,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 31367.962406015038,
+      "totalCrownExpenses": 37599.96240601504,
+      "nominalGdp": 102105,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 12180.962406015038
+        },
+        {
+          "category": "Health",
+          "amount": 5029
+        },
+        {
+          "category": "Education",
+          "amount": 4817
+        },
+        {
+          "category": "Core government services",
+          "amount": 1956
+        },
+        {
+          "category": "Law and order",
+          "amount": 1266
+        },
+        {
+          "category": "Defence",
+          "amount": 946
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 797
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 711
+        },
+        {
+          "category": "Other functions",
+          "amount": 720
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2945
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1998,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 32981.94736842105,
+      "totalCrownExpenses": 38766.94736842105,
+      "nominalGdp": 104918,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 13024.947368421053
+        },
+        {
+          "category": "Health",
+          "amount": 5361
+        },
+        {
+          "category": "Education",
+          "amount": 5162
+        },
+        {
+          "category": "Core government services",
+          "amount": 1858
+        },
+        {
+          "category": "Law and order",
+          "amount": 1329
+        },
+        {
+          "category": "Defence",
+          "amount": 1065
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 850
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 769
+        },
+        {
+          "category": "Other functions",
+          "amount": 890
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2673
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 1999,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 33938.57142857143,
+      "totalCrownExpenses": 39837.57142857143,
+      "nominalGdp": 108196,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 13435.57142857143
+        },
+        {
+          "category": "Health",
+          "amount": 5875
+        },
+        {
+          "category": "Education",
+          "amount": 5337
+        },
+        {
+          "category": "Core government services",
+          "amount": 1984
+        },
+        {
+          "category": "Law and order",
+          "amount": 1482
+        },
+        {
+          "category": "Defence",
+          "amount": 1022
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 923
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 813
+        },
+        {
+          "category": "Other functions",
+          "amount": 700
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2367
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2000,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 34828.52631578947,
+      "totalCrownExpenses": 41017.94631578947,
+      "nominalGdp": 114664,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 13499.526315789473
+        },
+        {
+          "category": "Health",
+          "amount": 6146
+        },
+        {
+          "category": "Education",
+          "amount": 5712
+        },
+        {
+          "category": "Core government services",
+          "amount": 1992
+        },
+        {
+          "category": "Law and order",
+          "amount": 1509
+        },
+        {
+          "category": "Defence",
+          "amount": 1163
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 929
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 881
+        },
+        {
+          "category": "Other functions",
+          "amount": 792
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2205
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2001,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 36558.54887218045,
+      "totalCrownExpenses": 43518.0188721805,
+      "nominalGdp": 122209,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 13781.54887218045
+        },
+        {
+          "category": "Health",
+          "amount": 6660
+        },
+        {
+          "category": "Education",
+          "amount": 6136
+        },
+        {
+          "category": "Core government services",
+          "amount": 2148
+        },
+        {
+          "category": "Law and order",
+          "amount": 1541
+        },
+        {
+          "category": "Defence",
+          "amount": 1242
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 905
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1037
+        },
+        {
+          "category": "Other functions",
+          "amount": 804
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2304
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2002,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 37512.70174436091,
+      "totalCrownExpenses": 47202.4455043609,
+      "nominalGdp": 129943,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 14161.405744360902
+        },
+        {
+          "category": "Health",
+          "amount": 7032
+        },
+        {
+          "category": "Education",
+          "amount": 6473
+        },
+        {
+          "category": "Core government services",
+          "amount": 1890
+        },
+        {
+          "category": "Law and order",
+          "amount": 1733
+        },
+        {
+          "category": "Defence",
+          "amount": 1162
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 989
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1013
+        },
+        {
+          "category": "Other functions",
+          "amount": 941.2960000000021
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2118
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2003,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 39897.48270676691,
+      "totalCrownExpenses": 51948.6117167669,
+      "nominalGdp": 137176,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 14448.869706766916
+        },
+        {
+          "category": "Health",
+          "amount": 7501
+        },
+        {
+          "category": "Education",
+          "amount": 7016
+        },
+        {
+          "category": "Core government services",
+          "amount": 2130
+        },
+        {
+          "category": "Law and order",
+          "amount": 1734
+        },
+        {
+          "category": "Defence",
+          "amount": 1199
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 1408
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1054
+        },
+        {
+          "category": "Other functions",
+          "amount": 1046.6129999999976
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2360
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2004,
+      "basis": "IFRS, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 41882.17370676692,
+      "totalCrownExpenses": 53210.7650567669,
+      "nominalGdp": 147565,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 14843.555706766918
+        },
+        {
+          "category": "Health",
+          "amount": 8111
+        },
+        {
+          "category": "Education",
+          "amount": 7585
+        },
+        {
+          "category": "Core government services",
+          "amount": 2091
+        },
+        {
+          "category": "Law and order",
+          "amount": 1843
+        },
+        {
+          "category": "Defence",
+          "amount": 1311
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 1461
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1192
+        },
+        {
+          "category": "Other functions",
+          "amount": 1192.6180000000022
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2252
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2005,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 44660,
+      "totalCrownExpenses": 57687,
+      "nominalGdp": 156803,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 15253
+        },
+        {
+          "category": "Health",
+          "amount": 8813
+        },
+        {
+          "category": "Education",
+          "amount": 7930
+        },
+        {
+          "category": "Core government services",
+          "amount": 2567
+        },
+        {
+          "category": "Law and order",
+          "amount": 1889
+        },
+        {
+          "category": "Defence",
+          "amount": 1275
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 1635
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1444
+        },
+        {
+          "category": "Other functions",
+          "amount": 1580
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2274
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2006,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 49084,
+      "totalCrownExpenses": 63703,
+      "nominalGdp": 164463,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 16212
+        },
+        {
+          "category": "Health",
+          "amount": 9547
+        },
+        {
+          "category": "Education",
+          "amount": 9914
+        },
+        {
+          "category": "Core government services",
+          "amount": 2507
+        },
+        {
+          "category": "Law and order",
+          "amount": 2146
+        },
+        {
+          "category": "Defence",
+          "amount": 1383
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 1818
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1592
+        },
+        {
+          "category": "Other functions",
+          "amount": 1609
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2356
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2007,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 53764,
+      "totalCrownExpenses": 68055,
+      "nominalGdp": 175417,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 17266
+        },
+        {
+          "category": "Health",
+          "amount": 10355
+        },
+        {
+          "category": "Education",
+          "amount": 9269
+        },
+        {
+          "category": "Core government services",
+          "amount": 4817
+        },
+        {
+          "category": "Law and order",
+          "amount": 2606
+        },
+        {
+          "category": "Defence",
+          "amount": 1517
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2405
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1595
+        },
+        {
+          "category": "Other functions",
+          "amount": 1605
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2329
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2008,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 56753,
+      "totalCrownExpenses": 75096,
+      "nominalGdp": 188928,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 18420
+        },
+        {
+          "category": "Health",
+          "amount": 11297
+        },
+        {
+          "category": "Education",
+          "amount": 9551
+        },
+        {
+          "category": "Core government services",
+          "amount": 3371
+        },
+        {
+          "category": "Law and order",
+          "amount": 2797
+        },
+        {
+          "category": "Defence",
+          "amount": 1562
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2244
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2889
+        },
+        {
+          "category": "Other functions",
+          "amount": 2162
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2460
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2009,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 63711,
+      "totalCrownExpenses": 82592,
+      "nominalGdp": 189877,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 19844
+        },
+        {
+          "category": "Health",
+          "amount": 12368
+        },
+        {
+          "category": "Education",
+          "amount": 11455
+        },
+        {
+          "category": "Core government services",
+          "amount": 5293
+        },
+        {
+          "category": "Law and order",
+          "amount": 2992
+        },
+        {
+          "category": "Defence",
+          "amount": 1757
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2663
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2960
+        },
+        {
+          "category": "Other functions",
+          "amount": 1950
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2429
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2010,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 63554,
+      "totalCrownExpenses": 80048,
+      "nominalGdp": 197354,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 21142
+        },
+        {
+          "category": "Health",
+          "amount": 13128
+        },
+        {
+          "category": "Education",
+          "amount": 11724
+        },
+        {
+          "category": "Core government services",
+          "amount": 2974
+        },
+        {
+          "category": "Law and order",
+          "amount": 3103
+        },
+        {
+          "category": "Defence",
+          "amount": 1814
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2345
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2806
+        },
+        {
+          "category": "Other functions",
+          "amount": 2207
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2311
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2011,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 70099,
+      "totalCrownExpenses": 99043,
+      "nominalGdp": 206117,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 22029
+        },
+        {
+          "category": "Health",
+          "amount": 13753
+        },
+        {
+          "category": "Education",
+          "amount": 11650
+        },
+        {
+          "category": "Core government services",
+          "amount": 5563
+        },
+        {
+          "category": "Law and order",
+          "amount": 3312
+        },
+        {
+          "category": "Defence",
+          "amount": 1809
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2281
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2542
+        },
+        {
+          "category": "Other functions",
+          "amount": 4094
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3066
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2012,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 68939,
+      "totalCrownExpenses": 91989,
+      "nominalGdp": 215193,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 22148
+        },
+        {
+          "category": "Health",
+          "amount": 14160
+        },
+        {
+          "category": "Education",
+          "amount": 11654
+        },
+        {
+          "category": "Core government services",
+          "amount": 5428
+        },
+        {
+          "category": "Law and order",
+          "amount": 3338
+        },
+        {
+          "category": "Defence",
+          "amount": 1736
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2232
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2073
+        },
+        {
+          "category": "Other functions",
+          "amount": 2659
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3511
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2013,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 69962,
+      "totalCrownExpenses": 90030,
+      "nominalGdp": 219183,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 22737
+        },
+        {
+          "category": "Health",
+          "amount": 14498
+        },
+        {
+          "category": "Education",
+          "amount": 12504
+        },
+        {
+          "category": "Core government services",
+          "amount": 4294
+        },
+        {
+          "category": "Law and order",
+          "amount": 3394
+        },
+        {
+          "category": "Defence",
+          "amount": 1804
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2255
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 1978
+        },
+        {
+          "category": "Other functions",
+          "amount": 2879
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3619
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2014,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 71174,
+      "totalCrownExpenses": 91179,
+      "nominalGdp": 237128,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 23308
+        },
+        {
+          "category": "Health",
+          "amount": 14898
+        },
+        {
+          "category": "Education",
+          "amount": 12300
+        },
+        {
+          "category": "Core government services",
+          "amount": 4502
+        },
+        {
+          "category": "Law and order",
+          "amount": 3463
+        },
+        {
+          "category": "Defence",
+          "amount": 1811
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2237
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2058
+        },
+        {
+          "category": "Other functions",
+          "amount": 2977
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3620
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2015,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 72363,
+      "totalCrownExpenses": 93064,
+      "nominalGdp": 245873,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 23881
+        },
+        {
+          "category": "Health",
+          "amount": 15058
+        },
+        {
+          "category": "Education",
+          "amount": 12879
+        },
+        {
+          "category": "Core government services",
+          "amount": 4134
+        },
+        {
+          "category": "Law and order",
+          "amount": 3515
+        },
+        {
+          "category": "Defence",
+          "amount": 1961
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2291
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2228
+        },
+        {
+          "category": "Other functions",
+          "amount": 2633
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3783
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2016,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 73929,
+      "totalCrownExpenses": 95137,
+      "nominalGdp": 258911,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 24352
+        },
+        {
+          "category": "Health",
+          "amount": 15626
+        },
+        {
+          "category": "Education",
+          "amount": 13158
+        },
+        {
+          "category": "Core government services",
+          "amount": 4102
+        },
+        {
+          "category": "Law and order",
+          "amount": 3648
+        },
+        {
+          "category": "Defence",
+          "amount": 2026
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2178
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2107
+        },
+        {
+          "category": "Other functions",
+          "amount": 3142
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3590
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2017,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 76339,
+      "totalCrownExpenses": 99007,
+      "nominalGdp": 275765,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 25511
+        },
+        {
+          "category": "Health",
+          "amount": 16223
+        },
+        {
+          "category": "Education",
+          "amount": 13281
+        },
+        {
+          "category": "Core government services",
+          "amount": 3957
+        },
+        {
+          "category": "Law and order",
+          "amount": 3882
+        },
+        {
+          "category": "Defence",
+          "amount": 2146
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2176
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2544
+        },
+        {
+          "category": "Other functions",
+          "amount": 3085
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3534
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2018,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 80576,
+      "totalCrownExpenses": 104014,
+      "nominalGdp": 295589,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 26149
+        },
+        {
+          "category": "Health",
+          "amount": 17159
+        },
+        {
+          "category": "Education",
+          "amount": 13629
+        },
+        {
+          "category": "Core government services",
+          "amount": 4670
+        },
+        {
+          "category": "Law and order",
+          "amount": 4184
+        },
+        {
+          "category": "Defence",
+          "amount": 2251
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2559
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 2732
+        },
+        {
+          "category": "Other functions",
+          "amount": 3746
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3497
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2019,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 86959,
+      "totalCrownExpenses": 111376,
+      "nominalGdp": 310323,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 28806
+        },
+        {
+          "category": "Health",
+          "amount": 18268
+        },
+        {
+          "category": "Education",
+          "amount": 14293
+        },
+        {
+          "category": "Core government services",
+          "amount": 5166
+        },
+        {
+          "category": "Law and order",
+          "amount": 4625
+        },
+        {
+          "category": "Defence",
+          "amount": 2395
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 2889
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 3006
+        },
+        {
+          "category": "Other functions",
+          "amount": 3820
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3691
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2020,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 108832,
+      "totalCrownExpenses": 138916,
+      "nominalGdp": 317636,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 44028
+        },
+        {
+          "category": "Health",
+          "amount": 19891
+        },
+        {
+          "category": "Education",
+          "amount": 16322
+        },
+        {
+          "category": "Core government services",
+          "amount": 6083
+        },
+        {
+          "category": "Law and order",
+          "amount": 4911
+        },
+        {
+          "category": "Defence",
+          "amount": 2499
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 3179
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 3988
+        },
+        {
+          "category": "Other functions",
+          "amount": 4703
+        },
+        {
+          "category": "Finance costs",
+          "amount": 3228
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2021,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 107764,
+      "totalCrownExpenses": 133722,
+      "nominalGdp": 343283,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 36759
+        },
+        {
+          "category": "Health",
+          "amount": 22784
+        },
+        {
+          "category": "Education",
+          "amount": 16039
+        },
+        {
+          "category": "Core government services",
+          "amount": 5754
+        },
+        {
+          "category": "Law and order",
+          "amount": 5202
+        },
+        {
+          "category": "Defence",
+          "amount": 2664
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 5656
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 4481
+        },
+        {
+          "category": "Other functions",
+          "amount": 6507
+        },
+        {
+          "category": "Finance costs",
+          "amount": 1918
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2022,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 125641,
+      "totalCrownExpenses": 150956,
+      "nominalGdp": 365742,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 42954
+        },
+        {
+          "category": "Health",
+          "amount": 27781
+        },
+        {
+          "category": "Education",
+          "amount": 18023
+        },
+        {
+          "category": "Core government services",
+          "amount": 5720
+        },
+        {
+          "category": "Law and order",
+          "amount": 5444
+        },
+        {
+          "category": "Defence",
+          "amount": 2832
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 4657
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 8078
+        },
+        {
+          "category": "Other functions",
+          "amount": 7268
+        },
+        {
+          "category": "Finance costs",
+          "amount": 2884
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2023,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 127574,
+      "totalCrownExpenses": 161822,
+      "nominalGdp": 401642,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 41575
+        },
+        {
+          "category": "Health",
+          "amount": 28489
+        },
+        {
+          "category": "Education",
+          "amount": 18403
+        },
+        {
+          "category": "Core government services",
+          "amount": 6806
+        },
+        {
+          "category": "Law and order",
+          "amount": 6165
+        },
+        {
+          "category": "Defence",
+          "amount": 2886
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 5472
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 3690
+        },
+        {
+          "category": "Other functions",
+          "amount": 7519
+        },
+        {
+          "category": "Finance costs",
+          "amount": 6569
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2024,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 138998,
+      "totalCrownExpenses": 180061,
+      "nominalGdp": 420135,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 44658
+        },
+        {
+          "category": "Health",
+          "amount": 29999
+        },
+        {
+          "category": "Education",
+          "amount": 20223
+        },
+        {
+          "category": "Core government services",
+          "amount": 8468
+        },
+        {
+          "category": "Law and order",
+          "amount": 6527
+        },
+        {
+          "category": "Defence",
+          "amount": 3163
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 5487
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 4010
+        },
+        {
+          "category": "Other functions",
+          "amount": 7520
+        },
+        {
+          "category": "Finance costs",
+          "amount": 8943
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    },
+    {
+      "year": 2025,
+      "basis": "PBE Standards, June Years",
+      "yearType": "June",
+      "financialNetExpenditure": null,
+      "coreCrownExpenses": 141675,
+      "totalCrownExpenses": 183502,
+      "nominalGdp": 436103,
+      "categories": [
+        {
+          "category": "Social security and welfare",
+          "amount": 47568
+        },
+        {
+          "category": "Health",
+          "amount": 30311
+        },
+        {
+          "category": "Education",
+          "amount": 20895
+        },
+        {
+          "category": "Core government services",
+          "amount": 7908
+        },
+        {
+          "category": "Law and order",
+          "amount": 6734
+        },
+        {
+          "category": "Defence",
+          "amount": 3271
+        },
+        {
+          "category": "Transport and communications",
+          "amount": 5472
+        },
+        {
+          "category": "Economic and industrial services",
+          "amount": 3514
+        },
+        {
+          "category": "Other functions",
+          "amount": 7140
+        },
+        {
+          "category": "Finance costs",
+          "amount": 8862
+        }
+      ],
+      "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
+      "fetchedAt": "2026-07-01T19:41:10.874Z"
+    }
+  ]
+}

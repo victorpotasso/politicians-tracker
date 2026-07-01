@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const bill = await getBill(billId);
   if (!bill) return { title: 'Bill not found' };
   return {
-    title: `${bill.title} · NZ Politicians Tracker`,
+    title: bill.title,
     description: bill.abstract ?? undefined,
   };
 }

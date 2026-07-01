@@ -1,9 +1,11 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
 import { ModelPrefetcher } from '@/components/chat/model-prefetcher';
+import { CommandMenu } from '@/components/command-menu';
 import { SiteNav } from '@/components/site-nav';
+import { siteConfig } from '@/lib/site';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -22,9 +24,50 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Politicians Tracker — NZ political data',
-  description:
-    'Explore and analyse public New Zealand political data: MPs, bills, and voting records.',
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: siteConfig.titleTemplate,
+  },
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    locale: siteConfig.locale,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: siteConfig.themeColor,
+  colorScheme: 'dark',
 };
 
 export default function RootLayout({
@@ -45,6 +88,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <ModelPrefetcher />
+        <CommandMenu />
         <SiteNav />
         {children}
       </body>

@@ -7,7 +7,7 @@ import { StatCard } from '@/components/stat-card';
 import { getPartySummaries } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Parties · NZ Politicians Tracker',
+  title: 'Parties',
   description:
     'Browse the political parties of the New Zealand Parliament — seats, government terms, and members.',
 };
