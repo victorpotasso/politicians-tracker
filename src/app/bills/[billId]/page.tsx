@@ -1,3 +1,4 @@
+import { ArrowLeft, CalendarDays, FileText, Users, Vote } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -47,8 +48,12 @@ export default async function BillDetailPage({ params }: Params) {
   return (
     <main id="main-content" className="mx-auto w-full max-w-4xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
-        <Link href="/bills" className="text-muted-foreground hover:text-foreground text-sm">
-          ← All bills
+        <Link
+          href="/bills"
+          className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1.5 text-sm"
+        >
+          <ArrowLeft className="size-3.5" aria-hidden />
+          All bills
         </Link>
       </Reveal>
 
@@ -56,15 +61,25 @@ export default async function BillDetailPage({ params }: Params) {
         <Card className="bg-card/60 backdrop-blur-sm">
           <CardHeader>
             <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="secondary">{divisions.length} divisions</Badge>
-              <Badge variant="outline">{totalVotes} MP votes recorded</Badge>
+              <Badge variant="secondary">
+                <Vote aria-hidden />
+                {divisions.length} divisions
+              </Badge>
+              <Badge variant="outline">
+                <Users aria-hidden />
+                {totalVotes} MP votes recorded
+              </Badge>
               {bill.introducedDate ? (
-                <span className="text-muted-foreground text-xs">
+                <span className="text-muted-foreground inline-flex items-center gap-1.5 text-xs">
+                  <CalendarDays className="size-3.5" aria-hidden />
                   First recorded {formatDate(bill.introducedDate)}
                 </span>
               ) : null}
             </div>
-            <CardTitle className="mt-2 text-2xl">{bill.title}</CardTitle>
+            <CardTitle className="mt-2 flex items-start gap-2 text-2xl">
+              <FileText className="text-muted-foreground mt-1 size-5 shrink-0" aria-hidden />
+              {bill.title}
+            </CardTitle>
           </CardHeader>
           {bill.abstract ? (
             <CardContent>
@@ -80,8 +95,14 @@ export default async function BillDetailPage({ params }: Params) {
             <Card className="bg-card/60 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <CardTitle className="text-base">{division.issue ?? 'Division'}</CardTitle>
-                  <span className="text-muted-foreground text-xs">{formatDate(division.date)}</span>
+                  <CardTitle className="flex items-center gap-2 text-base">
+                    <Vote className="text-muted-foreground size-4" aria-hidden />
+                    {division.issue ?? 'Division'}
+                  </CardTitle>
+                  <span className="text-muted-foreground inline-flex items-center gap-1.5 text-xs">
+                    <CalendarDays className="size-3.5" aria-hidden />
+                    {formatDate(division.date)}
+                  </span>
                 </div>
                 <div className="mt-2 flex items-center gap-3">
                   <span className="text-xs font-medium text-emerald-500">{division.ayes} aye</span>

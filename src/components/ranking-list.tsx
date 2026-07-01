@@ -1,3 +1,4 @@
+import { Medal } from 'lucide-react';
 import Link from 'next/link';
 import { partyColor } from '@/lib/party';
 
@@ -21,6 +22,7 @@ export function RankingList({ items, formatValue }: RankingListProps) {
   return (
     <ol className="flex flex-col gap-3">
       {items.map((item, index) => {
+        const accent = item.accent ?? partyColor(item.label);
         const label = item.href ? (
           <Link href={item.href} className="truncate text-sm font-medium hover:underline">
             {item.label}
@@ -33,8 +35,11 @@ export function RankingList({ items, formatValue }: RankingListProps) {
             key={item.label}
             className="hover:bg-muted/40 -mx-2 flex items-center gap-3 rounded-lg px-2 py-1 transition-colors"
           >
-            <span className="text-muted-foreground w-5 shrink-0 text-right text-sm tabular-nums">
-              {index + 1}
+            <span
+              className="border-border/50 bg-background/40 grid size-7 shrink-0 place-items-center rounded-lg border text-xs tabular-nums"
+              style={index < 3 ? { color: accent } : undefined}
+            >
+              {index < 3 ? <Medal className="size-3.5" aria-hidden /> : index + 1}
             </span>
             <div className="min-w-0 flex-1">
               <div className="mb-1 flex items-center justify-between gap-2">
@@ -53,7 +58,7 @@ export function RankingList({ items, formatValue }: RankingListProps) {
                   className="ease-out-expo h-full rounded-full transition-[width] duration-500"
                   style={{
                     width: `${(item.value / max) * 100}%`,
-                    backgroundColor: item.accent ?? partyColor(item.label),
+                    backgroundColor: accent,
                     boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25)',
                   }}
                 />

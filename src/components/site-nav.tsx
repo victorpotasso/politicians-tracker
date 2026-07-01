@@ -1,6 +1,18 @@
 'use client';
 
-import { Search } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import {
+  BarChart3,
+  FileText,
+  Flag,
+  Info,
+  Landmark,
+  LayoutDashboard,
+  MessageSquare,
+  Search,
+  Users,
+  Wallet,
+} from 'lucide-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -8,16 +20,16 @@ import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
-const LINKS = [
-  { href: '/about', label: 'About' },
-  { href: '/', label: 'Dashboard' },
-  { href: '/bills', label: 'Bills' },
-  { href: '/politicians', label: 'Politicians' },
-  { href: '/parliament', label: 'Parliament' },
-  { href: '/parties', label: 'Parties' },
-  { href: '/polls', label: 'Polls' },
-  { href: '/spending', label: 'Spending' },
-  { href: '/chat', label: 'Ask AI' },
+const LINKS: Array<{ href: string; label: string; icon: LucideIcon }> = [
+  { href: '/about', label: 'About', icon: Info },
+  { href: '/', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/bills', label: 'Bills', icon: FileText },
+  { href: '/politicians', label: 'Politicians', icon: Users },
+  { href: '/parliament', label: 'Parliament', icon: Landmark },
+  { href: '/parties', label: 'Parties', icon: Flag },
+  { href: '/polls', label: 'Polls', icon: BarChart3 },
+  { href: '/spending', label: 'Spending', icon: Wallet },
+  { href: '/chat', label: 'Ask AI', icon: MessageSquare },
 ];
 
 function isActive(pathname: string, href: string): boolean {
@@ -67,12 +79,13 @@ export function SiteNav() {
           <ul className="flex items-center gap-0.5 overflow-x-auto text-sm">
             {LINKS.map((link) => {
               const active = isActive(pathname, link.href);
+              const Icon = link.icon;
               return (
                 <li key={link.href} className="relative">
                   <Link
                     href={link.href}
                     className={cn(
-                      'relative block rounded-full px-3 py-1.5 whitespace-nowrap transition-colors',
+                      'relative flex items-center gap-1.5 rounded-full px-3 py-1.5 whitespace-nowrap transition-colors',
                       active ? 'text-foreground' : 'text-muted-foreground hover:text-foreground',
                     )}
                   >
@@ -83,6 +96,7 @@ export function SiteNav() {
                         transition={{ type: 'spring', stiffness: 400, damping: 32 }}
                       />
                     ) : null}
+                    <Icon className="size-3.5 shrink-0" aria-hidden />
                     {link.label}
                   </Link>
                 </li>

@@ -1,5 +1,6 @@
 'use client';
 
+import { BarChart3, CalendarDays, CalendarRange, Landmark, LineChart, Users } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -49,12 +50,13 @@ export function PollsExplorer({ summaries }: PollsExplorerProps) {
               aria-selected={active}
               onClick={() => setSelected(s.election)}
               className={cn(
-                'rounded-full border px-4 py-1.5 text-sm font-medium transition-colors',
+                'inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-colors',
                 active
                   ? 'border-transparent bg-foreground text-background'
                   : 'border-border text-muted-foreground hover:text-foreground',
               )}
             >
+              <CalendarRange className="size-3.5" aria-hidden />
               {s.election}
               {s.isCurrent ? <span className="ml-1.5 text-xs opacity-70">· upcoming</span> : null}
             </button>
@@ -67,24 +69,39 @@ export function PollsExplorer({ summaries }: PollsExplorerProps) {
           label="Polls"
           value={summary.totalPolls}
           hint={`${formatDayMonthYear(summary.dateRange.from)} – ${formatDayMonthYear(summary.dateRange.to)}`}
+          icon={BarChart3}
+          accent="var(--chart-2)"
         />
-        <StatCard label="Pollsters" value={summary.pollsters} hint="Distinct organisations" />
+        <StatCard
+          label="Pollsters"
+          value={summary.pollsters}
+          hint="Distinct organisations"
+          icon={Users}
+          accent="var(--chart-3)"
+        />
         <StatCard
           label="Final lead"
           value={summary.leadPct !== null ? `${summary.leadPct}%` : '—'}
           hint={summary.leadParty ?? undefined}
+          icon={LineChart}
+          accent="var(--chart-4)"
         />
         <StatCard
           label="Last poll"
           value={summary.latestPollster ?? '—'}
           hint={formatDayMonthYear(summary.latestDate)}
+          icon={CalendarDays}
+          accent="var(--chart-1)"
         />
       </section>
 
       <section className="mt-4 grid gap-4 lg:grid-cols-3">
         <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
           <CardHeader>
-            <CardTitle>{summary.election} party-vote trend</CardTitle>
+            <CardTitle className="flex items-center gap-2">
+              <LineChart className="text-muted-foreground size-4" aria-hidden />
+              {summary.election} party-vote trend
+            </CardTitle>
             <CardDescription>Support for each major party through the campaign</CardDescription>
           </CardHeader>
           <CardContent>
@@ -94,7 +111,10 @@ export function PollsExplorer({ summaries }: PollsExplorerProps) {
 
         <Card className="bg-card/60 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle>Projected seats</CardTitle>
+            <CardTitle className="flex items-center gap-2">
+              <Landmark className="text-muted-foreground size-4" aria-hidden />
+              Projected seats
+            </CardTitle>
             <CardDescription>
               Sainte-Laguë from the poll of polls · {summary.projectedTotalSeats} of 120 · majority
               at {MAJORITY}
@@ -113,7 +133,10 @@ export function PollsExplorer({ summaries }: PollsExplorerProps) {
       </section>
 
       <section className="mt-8">
-        <h3 className="mb-1 text-lg font-semibold tracking-tight">Poll of polls</h3>
+        <h3 className="mb-1 flex items-center gap-2 text-lg font-semibold tracking-tight">
+          <BarChart3 className="text-brand size-5" aria-hidden />
+          Poll of polls
+        </h3>
         <p className="text-muted-foreground mb-4 text-sm">
           {`Average of the ${summary.election} cycle's final polls${
             summary.isCurrent ? ', with each party linked to its profile and leader' : ''
@@ -196,7 +219,8 @@ export function PollsExplorer({ summaries }: PollsExplorerProps) {
       </section>
 
       <section className="mt-8">
-        <h3 className="mb-4 text-lg font-semibold tracking-tight">
+        <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold tracking-tight">
+          <CalendarDays className="text-brand size-5" aria-hidden />
           Recent {summary.election} polls
         </h3>
         <Card className="bg-card/60 overflow-hidden backdrop-blur-sm">

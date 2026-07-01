@@ -1,3 +1,4 @@
+import { BarChart3, CalendarRange, LineChart, TrendingUp, Users } from 'lucide-react';
 import type { Metadata } from 'next';
 
 import { PollTrendChart } from '@/components/poll-charts';
@@ -25,7 +26,8 @@ export default async function PollsPage() {
       <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
         <Reveal>
           <header className="flex flex-col gap-3">
-            <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+            <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+              <LineChart className="size-3.5" aria-hidden />
               New Zealand · {elections.length} election cycles
             </span>
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">Polls</h1>
@@ -39,13 +41,33 @@ export default async function PollsPage() {
 
         <Reveal delay={0.08}>
           <section className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
-            <StatCard label="Polls tracked" value={totalPolls} hint="Across all cycles" />
-            <StatCard label="Election cycles" value={elections.length} hint="2008–2026" />
-            <StatCard label="Pollsters" value={pollsters} hint="Distinct organisations" />
+            <StatCard
+              label="Polls tracked"
+              value={totalPolls}
+              hint="Across all cycles"
+              icon={BarChart3}
+              accent="var(--chart-2)"
+            />
+            <StatCard
+              label="Election cycles"
+              value={elections.length}
+              hint="2008–2026"
+              icon={CalendarRange}
+              accent="var(--chart-1)"
+            />
+            <StatCard
+              label="Pollsters"
+              value={pollsters}
+              hint="Distinct organisations"
+              icon={Users}
+              accent="var(--chart-3)"
+            />
             <StatCard
               label="Current lead"
               value={current?.leadPct !== null ? `${current?.leadPct}%` : '—'}
               hint={current?.leadParty ?? undefined}
+              icon={TrendingUp}
+              accent="var(--chart-4)"
             />
           </section>
         </Reveal>
@@ -54,7 +76,10 @@ export default async function PollsPage() {
           <section className="mt-4">
             <Card className="bg-card/60 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>Support across every cycle</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <LineChart className="text-muted-foreground size-4" aria-hidden />
+                  Support across every cycle
+                </CardTitle>
                 <CardDescription>
                   Party-vote share in every published poll, {elections[elections.length - 1]}–
                   {elections[0]} — the long-run comparison
@@ -69,7 +94,10 @@ export default async function PollsPage() {
 
         <Reveal delay={0.2}>
           <section className="mt-8">
-            <h2 className="mb-4 text-xl font-semibold tracking-tight">Filter by election</h2>
+            <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold tracking-tight">
+              <CalendarRange className="text-brand size-5" aria-hidden />
+              Filter by election
+            </h2>
             <PollsExplorer summaries={summaries} />
           </section>
         </Reveal>

@@ -2,7 +2,7 @@
   "meta": {
     "domain": "mps",
     "count": 122,
-    "collectedAt": "2026-07-01T10:02:01.857Z",
+    "collectedAt": "2026-07-01T20:04:36.823Z",
     "sources": [
       "https://catalogue.data.govt.nz/api/3/action/package_show?id=members-of-parliament",
       "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv"
@@ -19,7 +19,7 @@
       "profileUrl": "https://voted.nz/people/abel-steve/",
       "photoUrl": "https://voted.nz/images/people/128/abel-steve.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "andersen-ginny",
@@ -31,7 +31,7 @@
       "profileUrl": "https://voted.nz/people/andersen-ginny/",
       "photoUrl": "https://voted.nz/images/people/128/andersen-ginny.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "anderson-miles",
@@ -43,7 +43,7 @@
       "profileUrl": "https://voted.nz/people/anderson-miles/",
       "photoUrl": "https://voted.nz/images/people/128/anderson-miles.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "arbuckle-jamie",
@@ -55,7 +55,7 @@
       "profileUrl": "https://voted.nz/people/arbuckle-jamie/",
       "photoUrl": "https://voted.nz/images/people/128/arbuckle-jamie.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "bates-carl",
@@ -67,7 +67,7 @@
       "profileUrl": "https://voted.nz/people/bates-carl/",
       "photoUrl": "https://voted.nz/images/people/128/bates-carl.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "bayly-andrew",
@@ -79,7 +79,7 @@
       "profileUrl": "https://voted.nz/people/bayly-andrew/",
       "photoUrl": "https://voted.nz/images/people/128/bayly-andrew.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "belich-camilla",
@@ -91,7 +91,7 @@
       "profileUrl": "https://voted.nz/people/belich-camilla/",
       "photoUrl": "https://voted.nz/images/people/128/belich-camilla.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "bennett-glen",
@@ -103,7 +103,7 @@
       "profileUrl": "https://voted.nz/people/bennett-glen/",
       "photoUrl": "https://voted.nz/images/people/128/bennett-glen.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "bidois-daniel",
@@ -115,7 +115,7 @@
       "profileUrl": "https://voted.nz/people/bidois-daniel/",
       "photoUrl": "https://voted.nz/images/people/128/bidois-daniel.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "bishop-chris",
@@ -127,7 +127,7 @@
       "profileUrl": "https://voted.nz/people/bishop-chris/",
       "photoUrl": "https://voted.nz/images/people/128/bishop-chris.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "boyack-rachel",
@@ -139,7 +139,7 @@
       "profileUrl": "https://voted.nz/people/boyack-rachel/",
       "photoUrl": "https://voted.nz/images/people/128/boyack-rachel.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "brewer-cameron",
@@ -151,7 +151,7 @@
       "profileUrl": "https://voted.nz/people/brewer-cameron/",
       "photoUrl": "https://voted.nz/images/people/128/brewer-cameron.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "brooking-rachel",
@@ -163,7 +163,7 @@
       "profileUrl": "https://voted.nz/people/brooking-rachel/",
       "photoUrl": "https://voted.nz/images/people/128/brooking-rachel.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "brown-simeon",
@@ -175,7 +175,7 @@
       "profileUrl": "https://voted.nz/people/brown-simeon/",
       "photoUrl": "https://voted.nz/images/people/128/brown-simeon.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "brownlee-gerry",
@@ -187,7 +187,7 @@
       "profileUrl": "https://voted.nz/people/brownlee-gerry/",
       "photoUrl": "https://voted.nz/images/people/128/brownlee-gerry.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "butterick-mike",
@@ -199,7 +199,7 @@
       "profileUrl": "https://voted.nz/people/butterick-mike/",
       "photoUrl": "https://voted.nz/images/people/128/butterick-mike.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "cameron-mark",
@@ -211,7 +211,7 @@
       "profileUrl": "https://voted.nz/people/cameron-mark/",
       "photoUrl": "https://voted.nz/images/people/128/cameron-mark.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "campbell-hamish",
@@ -223,7 +223,7 @@
       "profileUrl": "https://voted.nz/people/campbell-hamish/",
       "photoUrl": "https://voted.nz/images/people/128/campbell-hamish.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "carter-kahurangi",
@@ -235,7 +235,7 @@
       "profileUrl": "https://voted.nz/people/carter-kahurangi/",
       "photoUrl": "https://voted.nz/images/people/128/carter-kahurangi.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "cheung-carlos",
@@ -247,7 +247,7 @@
       "profileUrl": "https://voted.nz/people/cheung-carlos/",
       "photoUrl": "https://voted.nz/images/people/128/cheung-carlos.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "chhour-karen",
@@ -259,7 +259,7 @@
       "profileUrl": "https://voted.nz/people/chhour-karen/",
       "photoUrl": "https://voted.nz/images/people/128/chhour-karen.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "collins-judith",
@@ -271,7 +271,7 @@
       "profileUrl": "https://voted.nz/people/collins-judith/",
       "photoUrl": "https://voted.nz/images/people/128/collins-judith.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "costello-casey",
@@ -283,7 +283,7 @@
       "profileUrl": "https://voted.nz/people/costello-casey/",
       "photoUrl": "https://voted.nz/images/people/128/costello-casey.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "costley-tim",
@@ -295,7 +295,7 @@
       "profileUrl": "https://voted.nz/people/costley-tim/",
       "photoUrl": "https://voted.nz/images/people/128/costley-tim.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "court-simon",
@@ -307,7 +307,7 @@
       "profileUrl": "https://voted.nz/people/court-simon/",
       "photoUrl": "https://voted.nz/images/people/128/court-simon.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "davidson-marama",
@@ -319,7 +319,7 @@
       "profileUrl": "https://voted.nz/people/davidson-marama/",
       "photoUrl": "https://voted.nz/images/people/128/davidson-marama.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "davidson-reuben",
@@ -331,7 +331,7 @@
       "profileUrl": "https://voted.nz/people/davidson-reuben/",
       "photoUrl": "https://voted.nz/images/people/128/davidson-reuben.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "doocey-matt",
@@ -343,7 +343,7 @@
       "profileUrl": "https://voted.nz/people/doocey-matt/",
       "photoUrl": "https://voted.nz/images/people/128/doocey-matt.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "doyle-benjamin",
@@ -355,7 +355,7 @@
       "profileUrl": "https://voted.nz/people/doyle-benjamin/",
       "photoUrl": "https://voted.nz/images/people/128/doyle-benjamin.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "edmonds-barbara",
@@ -367,7 +367,7 @@
       "profileUrl": "https://voted.nz/people/edmonds-barbara/",
       "photoUrl": "https://voted.nz/images/people/128/edmonds-barbara.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "ferris-takuta",
@@ -379,7 +379,7 @@
       "profileUrl": "https://voted.nz/people/ferris-takuta/",
       "photoUrl": "https://voted.nz/images/people/128/ferris-takuta.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "fleming-greg",
@@ -391,7 +391,7 @@
       "profileUrl": "https://voted.nz/people/fleming-greg/",
       "photoUrl": "https://voted.nz/images/people/128/fleming-greg.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "foster-andy",
@@ -403,7 +403,7 @@
       "profileUrl": "https://voted.nz/people/foster-andy/",
       "photoUrl": "https://voted.nz/images/people/128/foster-andy.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "garcia-paulo",
@@ -415,7 +415,7 @@
       "profileUrl": "https://voted.nz/people/garcia-paulo/",
       "photoUrl": "https://voted.nz/images/people/128/garcia-paulo.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "genter-julie-anne",
@@ -427,7 +427,7 @@
       "profileUrl": "https://voted.nz/people/genter-julie-anne/",
       "photoUrl": "https://voted.nz/images/people/128/genter-julie-anne.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "goldsmith-paul",
@@ -439,7 +439,7 @@
       "profileUrl": "https://voted.nz/people/goldsmith-paul/",
       "photoUrl": "https://voted.nz/images/people/128/goldsmith-paul.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "grigg-nicola",
@@ -451,7 +451,7 @@
       "profileUrl": "https://voted.nz/people/grigg-nicola/",
       "photoUrl": "https://voted.nz/images/people/128/grigg-nicola.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "halbert-shanan",
@@ -463,7 +463,7 @@
       "profileUrl": "https://voted.nz/people/halbert-shanan/",
       "photoUrl": "https://voted.nz/images/people/128/halbert-shanan.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "hamilton-ryan",
@@ -475,7 +475,7 @@
       "profileUrl": "https://voted.nz/people/hamilton-ryan/",
       "photoUrl": "https://voted.nz/images/people/128/hamilton-ryan.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "henare-peeni",
@@ -487,7 +487,7 @@
       "profileUrl": "https://voted.nz/people/henare-peeni/",
       "photoUrl": "https://voted.nz/images/people/128/henare-peeni.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "hernandez-francisco",
@@ -499,7 +499,7 @@
       "profileUrl": "https://voted.nz/people/hernandez-francisco/",
       "photoUrl": "https://voted.nz/images/people/128/hernandez-francisco.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "hipkins-chris",
@@ -511,7 +511,7 @@
       "profileUrl": "https://voted.nz/people/hipkins-chris/",
       "photoUrl": "https://voted.nz/images/people/128/hipkins-chris.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "hoggard-andrew",
@@ -523,7 +523,7 @@
       "profileUrl": "https://voted.nz/people/hoggard-andrew/",
       "photoUrl": "https://voted.nz/images/people/128/hoggard-andrew.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "jackson-willie",
@@ -535,7 +535,7 @@
       "profileUrl": "https://voted.nz/people/jackson-willie/",
       "photoUrl": "https://voted.nz/images/people/128/jackson-willie.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "jones-shane",
@@ -547,7 +547,7 @@
       "profileUrl": "https://voted.nz/people/jones-shane/",
       "photoUrl": "https://voted.nz/images/people/128/jones-shane.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "kapa-kingi-mariameno",
@@ -559,7 +559,7 @@
       "profileUrl": "https://voted.nz/people/kapa-kingi-mariameno/",
       "photoUrl": "https://voted.nz/images/people/128/kapa-kingi-mariameno.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "kirkpatrick-dana",
@@ -571,7 +571,7 @@
       "profileUrl": "https://voted.nz/people/kirkpatrick-dana/",
       "photoUrl": "https://voted.nz/images/people/128/kirkpatrick-dana.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "kuriger-barbara",
@@ -583,7 +583,7 @@
       "profileUrl": "https://voted.nz/people/kuriger-barbara/",
       "photoUrl": "https://voted.nz/images/people/128/kuriger-barbara.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "leary-ingrid",
@@ -595,7 +595,7 @@
       "profileUrl": "https://voted.nz/people/leary-ingrid/",
       "photoUrl": "https://voted.nz/images/people/128/leary-ingrid.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "lee-melissa",
@@ -607,7 +607,7 @@
       "profileUrl": "https://voted.nz/people/lee-melissa/",
       "photoUrl": "https://voted.nz/images/people/128/lee-melissa.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "lu-nancy",
@@ -619,7 +619,7 @@
       "profileUrl": "https://voted.nz/people/lu-nancy/",
       "photoUrl": "https://voted.nz/images/people/128/lu-nancy.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "luxon-christopher",
@@ -631,7 +631,7 @@
       "profileUrl": "https://voted.nz/people/luxon-christopher/",
       "photoUrl": "https://voted.nz/images/people/128/luxon-christopher.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "luxton-cameron",
@@ -643,7 +643,7 @@
       "profileUrl": "https://voted.nz/people/luxton-cameron/",
       "photoUrl": "https://voted.nz/images/people/128/luxton-cameron.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "luxton-jo-anne",
@@ -655,7 +655,7 @@
       "profileUrl": "https://voted.nz/people/luxton-jo-anne/",
       "photoUrl": "https://voted.nz/images/people/128/luxton-jo-anne.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "lyndon-hohana",
@@ -667,7 +667,7 @@
       "profileUrl": "https://voted.nz/people/lyndon-hohana/",
       "photoUrl": "https://voted.nz/images/people/128/lyndon-hohana.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "macleod-david",
@@ -679,7 +679,7 @@
       "profileUrl": "https://voted.nz/people/macleod-david/",
       "photoUrl": "https://voted.nz/images/people/128/macleod-david.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "maipi-clarke-hana-rawhiti",
@@ -691,7 +691,7 @@
       "profileUrl": "https://voted.nz/people/maipi-clarke-hana-rawhiti/",
       "photoUrl": "https://voted.nz/images/people/128/maipi-clarke-hana-rawhiti.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "marcroft-jenny",
@@ -703,7 +703,7 @@
       "profileUrl": "https://voted.nz/people/marcroft-jenny/",
       "photoUrl": "https://voted.nz/images/people/128/marcroft-jenny.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mcanulty-kieran",
@@ -715,7 +715,7 @@
       "profileUrl": "https://voted.nz/people/mcanulty-kieran/",
       "photoUrl": "https://voted.nz/images/people/128/mcanulty-kieran.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mccallum-grant",
@@ -727,7 +727,7 @@
       "profileUrl": "https://voted.nz/people/mccallum-grant/",
       "photoUrl": "https://voted.nz/images/people/128/mccallum-grant.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mcclay-todd",
@@ -739,7 +739,7 @@
       "profileUrl": "https://voted.nz/people/mcclay-todd/",
       "photoUrl": "https://voted.nz/images/people/128/mcclay-todd.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mcclure-laura",
@@ -751,7 +751,7 @@
       "profileUrl": "https://voted.nz/people/mcclure-laura/",
       "photoUrl": "https://voted.nz/images/people/128/mcclure-laura.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mckee-nicole",
@@ -763,7 +763,7 @@
       "profileUrl": "https://voted.nz/people/mckee-nicole/",
       "photoUrl": "https://voted.nz/images/people/128/mckee-nicole.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mclellan-tracey",
@@ -775,7 +775,7 @@
       "profileUrl": "https://voted.nz/people/mclellan-tracey/",
       "photoUrl": "https://voted.nz/images/people/128/mclellan-tracey.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "meager-james",
@@ -787,7 +787,7 @@
       "profileUrl": "https://voted.nz/people/meager-james/",
       "photoUrl": "https://voted.nz/images/people/128/meager-james.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "menendez-march-ricardo",
@@ -799,7 +799,7 @@
       "profileUrl": "https://voted.nz/people/menendez-march-ricardo/",
       "photoUrl": "https://voted.nz/images/people/128/menendez-march-ricardo.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mitchell-mark",
@@ -811,7 +811,7 @@
       "profileUrl": "https://voted.nz/people/mitchell-mark/",
       "photoUrl": "https://voted.nz/images/people/128/mitchell-mark.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "mooney-joseph",
@@ -823,7 +823,7 @@
       "profileUrl": "https://voted.nz/people/mooney-joseph/",
       "photoUrl": "https://voted.nz/images/people/128/mooney-joseph.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "nakhle-rima",
@@ -835,7 +835,7 @@
       "profileUrl": "https://voted.nz/people/nakhle-rima/",
       "photoUrl": "https://voted.nz/images/people/128/nakhle-rima.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "ngarewa-packer-debbie",
@@ -847,7 +847,7 @@
       "profileUrl": "https://voted.nz/people/ngarewa-packer-debbie/",
       "photoUrl": "https://voted.nz/images/people/128/ngarewa-packer-debbie.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "nimon-katie",
@@ -859,7 +859,7 @@
       "profileUrl": "https://voted.nz/people/nimon-katie/",
       "photoUrl": "https://voted.nz/images/people/128/nimon-katie.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "o-connor-damien",
@@ -871,7 +871,7 @@
       "profileUrl": "https://voted.nz/people/o-connor-damien/",
       "photoUrl": "https://voted.nz/images/people/128/o-connor-damien.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "o-connor-greg",
@@ -883,7 +883,7 @@
       "profileUrl": "https://voted.nz/people/o-connor-greg/",
       "photoUrl": "https://voted.nz/images/people/128/o-connor-greg.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "parmar-parmjeet",
@@ -895,7 +895,7 @@
       "profileUrl": "https://voted.nz/people/parmar-parmjeet/",
       "photoUrl": "https://voted.nz/images/people/128/parmar-parmjeet.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "patterson-mark",
@@ -907,7 +907,7 @@
       "profileUrl": "https://voted.nz/people/patterson-mark/",
       "photoUrl": "https://voted.nz/images/people/128/patterson-mark.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "paul-tamatha",
@@ -919,7 +919,7 @@
       "profileUrl": "https://voted.nz/people/paul-tamatha/",
       "photoUrl": "https://voted.nz/images/people/128/paul-tamatha.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "penk-chris",
@@ -931,7 +931,7 @@
       "profileUrl": "https://voted.nz/people/penk-chris/",
       "photoUrl": "https://voted.nz/images/people/128/penk-chris.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "peters-winston",
@@ -943,7 +943,7 @@
       "profileUrl": "https://voted.nz/people/peters-winston/",
       "photoUrl": "https://voted.nz/images/people/128/peters-winston.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "pham-lan",
@@ -955,7 +955,7 @@
       "profileUrl": "https://voted.nz/people/pham-lan/",
       "photoUrl": "https://voted.nz/images/people/128/pham-lan.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "potaka-tama",
@@ -967,7 +967,7 @@
       "profileUrl": "https://voted.nz/people/potaka-tama/",
       "photoUrl": "https://voted.nz/images/people/128/potaka-tama.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "prime-willow-jean",
@@ -979,7 +979,7 @@
       "profileUrl": "https://voted.nz/people/prime-willow-jean/",
       "photoUrl": "https://voted.nz/images/people/128/prime-willow-jean.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "pugh-maureen",
@@ -991,7 +991,7 @@
       "profileUrl": "https://voted.nz/people/pugh-maureen/",
       "photoUrl": "https://voted.nz/images/people/128/pugh-maureen.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "radhakrishnan-priyanca",
@@ -1003,7 +1003,7 @@
       "profileUrl": "https://voted.nz/people/radhakrishnan-priyanca/",
       "photoUrl": "https://voted.nz/images/people/128/radhakrishnan-priyanca.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "redmayne-suze",
@@ -1015,7 +1015,7 @@
       "profileUrl": "https://voted.nz/people/redmayne-suze/",
       "photoUrl": "https://voted.nz/images/people/128/redmayne-suze.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "reti-shane",
@@ -1027,7 +1027,7 @@
       "profileUrl": "https://voted.nz/people/reti-shane/",
       "photoUrl": "https://voted.nz/images/people/128/reti-shane.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "rurawhe-adrian",
@@ -1039,7 +1039,7 @@
       "profileUrl": "https://voted.nz/people/rurawhe-adrian/",
       "photoUrl": "https://voted.nz/images/people/128/rurawhe-adrian.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "russell-deborah",
@@ -1051,7 +1051,7 @@
       "profileUrl": "https://voted.nz/people/russell-deborah/",
       "photoUrl": "https://voted.nz/images/people/128/russell-deborah.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "rutherford-tom",
@@ -1063,7 +1063,7 @@
       "profileUrl": "https://voted.nz/people/rutherford-tom/",
       "photoUrl": "https://voted.nz/images/people/128/rutherford-tom.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "salesa-jenny",
@@ -1075,7 +1075,7 @@
       "profileUrl": "https://voted.nz/people/salesa-jenny/",
       "photoUrl": "https://voted.nz/images/people/128/salesa-jenny.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "sepuloni-carmel",
@@ -1087,7 +1087,7 @@
       "profileUrl": "https://voted.nz/people/sepuloni-carmel/",
       "photoUrl": "https://voted.nz/images/people/128/sepuloni-carmel.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "seymour-david",
@@ -1099,7 +1099,7 @@
       "profileUrl": "https://voted.nz/people/seymour-david/",
       "photoUrl": "https://voted.nz/images/people/128/seymour-david.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "simmonds-penny",
@@ -1111,7 +1111,7 @@
       "profileUrl": "https://voted.nz/people/simmonds-penny/",
       "photoUrl": "https://voted.nz/images/people/128/simmonds-penny.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "simpson-scott",
@@ -1123,7 +1123,7 @@
       "profileUrl": "https://voted.nz/people/simpson-scott/",
       "photoUrl": "https://voted.nz/images/people/128/simpson-scott.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "smith-stuart",
@@ -1135,7 +1135,7 @@
       "profileUrl": "https://voted.nz/people/smith-stuart/",
       "photoUrl": "https://voted.nz/images/people/128/smith-stuart.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "sosene-lemauga-lydia",
@@ -1147,7 +1147,7 @@
       "profileUrl": "https://voted.nz/people/sosene-lemauga-lydia/",
       "photoUrl": "https://voted.nz/images/people/128/sosene-lemauga-lydia.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "stanford-erica",
@@ -1159,7 +1159,7 @@
       "profileUrl": "https://voted.nz/people/stanford-erica/",
       "photoUrl": "https://voted.nz/images/people/128/stanford-erica.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "stephenson-todd",
@@ -1171,7 +1171,7 @@
       "profileUrl": "https://voted.nz/people/stephenson-todd/",
       "photoUrl": "https://voted.nz/images/people/128/stephenson-todd.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "swarbrick-chloe",
@@ -1183,7 +1183,7 @@
       "profileUrl": "https://voted.nz/people/swarbrick-chloe/",
       "photoUrl": "https://voted.nz/images/people/128/swarbrick-chloe.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "tangaere-manuel-cushla",
@@ -1195,7 +1195,7 @@
       "profileUrl": "https://voted.nz/people/tangaere-manuel-cushla/",
       "photoUrl": "https://voted.nz/images/people/128/tangaere-manuel-cushla.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "tinetti-jan",
@@ -1207,7 +1207,7 @@
       "profileUrl": "https://voted.nz/people/tinetti-jan/",
       "photoUrl": "https://voted.nz/images/people/128/tinetti-jan.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "tuiono-teanau",
@@ -1219,7 +1219,7 @@
       "profileUrl": "https://voted.nz/people/tuiono-teanau/",
       "photoUrl": "https://voted.nz/images/people/128/tuiono-teanau.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "twyford-philip",
@@ -1231,7 +1231,7 @@
       "profileUrl": "https://voted.nz/people/twyford-philip/",
       "photoUrl": "https://voted.nz/images/people/128/twyford-philip.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "uffindell-sam",
@@ -1243,7 +1243,7 @@
       "profileUrl": "https://voted.nz/people/uffindell-sam/",
       "photoUrl": "https://voted.nz/images/people/128/uffindell-sam.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "upston-louise",
@@ -1255,7 +1255,7 @@
       "profileUrl": "https://voted.nz/people/upston-louise/",
       "photoUrl": "https://voted.nz/images/people/128/upston-louise.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "utikere-tangi",
@@ -1267,7 +1267,7 @@
       "profileUrl": "https://voted.nz/people/utikere-tangi/",
       "photoUrl": "https://voted.nz/images/people/128/utikere-tangi.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "van-de-molen-tim",
@@ -1279,7 +1279,7 @@
       "profileUrl": "https://voted.nz/people/van-de-molen-tim/",
       "photoUrl": "https://voted.nz/images/people/128/van-de-molen-tim.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "van-velden-brooke",
@@ -1291,7 +1291,7 @@
       "profileUrl": "https://voted.nz/people/van-velden-brooke/",
       "photoUrl": "https://voted.nz/images/people/128/van-velden-brooke.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "verrall-ayesha",
@@ -1303,7 +1303,7 @@
       "profileUrl": "https://voted.nz/people/verrall-ayesha/",
       "photoUrl": "https://voted.nz/images/people/128/verrall-ayesha.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "wade-brown-celia",
@@ -1315,7 +1315,7 @@
       "profileUrl": "https://voted.nz/people/wade-brown-celia/",
       "photoUrl": "https://voted.nz/images/people/128/wade-brown-celia.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "waititi-rawiri",
@@ -1327,7 +1327,7 @@
       "profileUrl": "https://voted.nz/people/waititi-rawiri/",
       "photoUrl": "https://voted.nz/images/people/128/waititi-rawiri.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "walters-vanushi",
@@ -1339,7 +1339,7 @@
       "profileUrl": "https://voted.nz/people/walters-vanushi/",
       "photoUrl": "https://voted.nz/images/people/128/walters-vanushi.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "watts-simon",
@@ -1351,7 +1351,7 @@
       "profileUrl": "https://voted.nz/people/watts-simon/",
       "photoUrl": "https://voted.nz/images/people/128/watts-simon.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "webb-duncan",
@@ -1363,7 +1363,7 @@
       "profileUrl": "https://voted.nz/people/webb-duncan/",
       "photoUrl": "https://voted.nz/images/people/128/webb-duncan.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "wedd-catherine",
@@ -1375,7 +1375,7 @@
       "profileUrl": "https://voted.nz/people/wedd-catherine/",
       "photoUrl": "https://voted.nz/images/people/128/wedd-catherine.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "weenink-vanessa",
@@ -1387,7 +1387,7 @@
       "profileUrl": "https://voted.nz/people/weenink-vanessa/",
       "photoUrl": "https://voted.nz/images/people/128/weenink-vanessa.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "white-helen",
@@ -1399,7 +1399,7 @@
       "profileUrl": "https://voted.nz/people/white-helen/",
       "photoUrl": "https://voted.nz/images/people/128/white-helen.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "williams-arena",
@@ -1411,7 +1411,7 @@
       "profileUrl": "https://voted.nz/people/williams-arena/",
       "photoUrl": "https://voted.nz/images/people/128/williams-arena.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "willis-nicola",
@@ -1423,7 +1423,7 @@
       "profileUrl": "https://voted.nz/people/willis-nicola/",
       "photoUrl": "https://voted.nz/images/people/128/willis-nicola.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "willis-scott",
@@ -1435,7 +1435,7 @@
       "profileUrl": "https://voted.nz/people/willis-scott/",
       "photoUrl": "https://voted.nz/images/people/128/willis-scott.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "wilson-david",
@@ -1447,7 +1447,7 @@
       "profileUrl": "https://voted.nz/people/wilson-david/",
       "photoUrl": "https://voted.nz/images/people/128/wilson-david.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "woods-megan",
@@ -1459,7 +1459,7 @@
       "profileUrl": "https://voted.nz/people/woods-megan/",
       "photoUrl": "https://voted.nz/images/people/128/woods-megan.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     },
     {
       "mpId": "xu-nan-lawrence",
@@ -1471,7 +1471,7 @@
       "profileUrl": "https://voted.nz/people/xu-nan-lawrence/",
       "photoUrl": "https://voted.nz/images/people/128/xu-nan-lawrence.jpg",
       "sourceUrl": "https://catalogue.data.govt.nz/dataset/f0f878d5-e2da-477d-85a0-4d2006f8b558/resource/89069a40-abcf-4190-9665-3513ff004dd8/download/member-contact-details-as-at-22-july-2025.csv",
-      "fetchedAt": "2026-07-01T10:02:01.853Z"
+      "fetchedAt": "2026-07-01T20:04:36.818Z"
     }
   ]
 }

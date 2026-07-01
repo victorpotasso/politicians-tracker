@@ -1,3 +1,14 @@
+import {
+  ArrowLeft,
+  ArrowRight,
+  BarChart3,
+  Flag,
+  Landmark,
+  LineChart,
+  ShieldCheck,
+  Trophy,
+  Users,
+} from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -46,8 +57,12 @@ export default async function PartyDetailPage({ params }: Params) {
   return (
     <main id="main-content" className="mx-auto w-full max-w-5xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
-        <Link href="/parties" className="text-muted-foreground hover:text-foreground text-sm">
-          ← All parties
+        <Link
+          href="/parties"
+          className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1.5 text-sm"
+        >
+          <ArrowLeft className="size-3.5" aria-hidden />
+          All parties
         </Link>
       </Reveal>
 
@@ -55,10 +70,12 @@ export default async function PartyDetailPage({ params }: Params) {
         <div className="flex flex-col gap-3">
           <div className="flex flex-wrap items-center gap-3">
             <span
-              className="size-6 rounded-md ring-2 ring-white/10"
+              className="grid size-8 place-items-center rounded-lg text-white ring-2 ring-white/10"
               style={{ backgroundColor: summary.color }}
               aria-hidden
-            />
+            >
+              <Flag className="size-4" />
+            </span>
             <h1 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">
               {summary.party}
             </h1>
@@ -85,14 +102,34 @@ export default async function PartyDetailPage({ params }: Params) {
 
       <Reveal delay={0.12}>
         <section className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          <StatCard label="Seats now" value={summary.currentSeats ?? '—'} hint="Current House" />
+          <StatCard
+            label="Seats now"
+            value={summary.currentSeats ?? '—'}
+            hint="Current House"
+            icon={Landmark}
+            accent={summary.color}
+          />
           <StatCard
             label="Peak seats"
             value={summary.peakSeats || '—'}
             hint={summary.peakYear ? `${summary.peakYear} election` : undefined}
+            icon={Trophy}
+            accent={summary.color}
           />
-          <StatCard label="Terms in govt" value={summary.termsInGovernment} hint="MMP era" />
-          <StatCard label="MPs tracked" value={summary.mpCount} hint="In dataset" />
+          <StatCard
+            label="Terms in govt"
+            value={summary.termsInGovernment}
+            hint="MMP era"
+            icon={ShieldCheck}
+            accent={summary.color}
+          />
+          <StatCard
+            label="MPs tracked"
+            value={summary.mpCount}
+            hint="In dataset"
+            icon={Users}
+            accent={summary.color}
+          />
         </section>
       </Reveal>
 
@@ -100,7 +137,10 @@ export default async function PartyDetailPage({ params }: Params) {
         <section className="mt-4 grid gap-4 lg:grid-cols-3">
           <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
             <CardHeader>
-              <CardTitle>Seats over time</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <LineChart className="text-muted-foreground size-4" aria-hidden />
+                Seats over time
+              </CardTitle>
               <CardDescription>Seats won at each general election, 1996–2023</CardDescription>
             </CardHeader>
             <CardContent>
@@ -110,7 +150,10 @@ export default async function PartyDetailPage({ params }: Params) {
 
           <Card className="bg-card/60 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle>In government</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <ShieldCheck className="text-muted-foreground size-4" aria-hidden />
+                In government
+              </CardTitle>
               <CardDescription>
                 {governmentTerms.length > 0
                   ? `${governmentTerms.length} term${governmentTerms.length === 1 ? '' : 's'}`
@@ -156,7 +199,10 @@ export default async function PartyDetailPage({ params }: Params) {
           <section className="mt-4 grid gap-4 lg:grid-cols-3">
             <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
               <CardHeader>
-                <CardTitle>In the polls</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <BarChart3 className="text-muted-foreground size-4" aria-hidden />
+                  In the polls
+                </CardTitle>
                 <CardDescription>
                   {summary.party}&apos;s party-vote support across published polls for the next
                   election
@@ -178,11 +224,15 @@ export default async function PartyDetailPage({ params }: Params) {
                 label="Poll average"
                 value={polling.average !== null ? `${polling.average}%` : '—'}
                 hint="Recent poll of polls"
+                icon={BarChart3}
+                accent={summary.color}
               />
               <StatCard
                 label="Projected seats"
                 value={polling.projectedSeats || '—'}
                 hint={`vs ${polling.currentSeats || 0} now`}
+                icon={Landmark}
+                accent={summary.color}
               />
             </div>
           </section>
@@ -193,14 +243,21 @@ export default async function PartyDetailPage({ params }: Params) {
         <section className="mt-10">
           <div className="mb-4 flex items-end justify-between">
             <div>
-              <h2 className="text-xl font-semibold tracking-tight">Members</h2>
+              <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
+                <Users className="size-5" style={{ color: summary.color }} aria-hidden />
+                Members
+              </h2>
               <p className="text-muted-foreground text-sm">
                 {mps.length} tracked {mps.length === 1 ? 'MP' : 'MPs'} affiliated with{' '}
                 {summary.party}
               </p>
             </div>
-            <Link href="/politicians" className="text-primary text-sm underline underline-offset-4">
-              All politicians →
+            <Link
+              href="/politicians"
+              className="text-primary inline-flex items-center gap-1.5 text-sm underline underline-offset-4"
+            >
+              All politicians
+              <ArrowRight className="size-3.5" aria-hidden />
             </Link>
           </div>
           {mps.length > 0 ? (

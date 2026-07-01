@@ -1,5 +1,16 @@
 'use client';
 
+import {
+  Banknote,
+  BarChart3,
+  CalendarDays,
+  CalendarRange,
+  Gauge,
+  Landmark,
+  PiggyBank,
+  TrendingUp,
+  Trophy,
+} from 'lucide-react';
 import { useMemo, useState } from 'react';
 
 import {
@@ -142,7 +153,8 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
     <div className="flex flex-col gap-6">
       {/* Metric selector */}
       <div className="flex flex-col gap-3">
-        <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+        <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+          <Gauge className="size-3.5" aria-hidden />
           Measure
         </span>
         <div
@@ -160,12 +172,13 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
                 aria-selected={active}
                 onClick={() => setMetric(m.id)}
                 className={cn(
-                  'rounded-full border px-4 py-1.5 text-sm font-medium transition-colors',
+                  'inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-colors',
                   active
                     ? 'border-transparent bg-foreground text-background'
                     : 'border-border text-muted-foreground hover:text-foreground',
                 )}
               >
+                <BarChart3 className="size-3.5" aria-hidden />
                 {m.label}
               </button>
             );
@@ -176,7 +189,8 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
 
       {/* Year range */}
       <div className="flex flex-col gap-3">
-        <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+        <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+          <CalendarRange className="size-3.5" aria-hidden />
           Period
         </span>
         <YearRangePicker
@@ -191,7 +205,8 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
 
       {/* Mandate filter / legend */}
       <div className="flex flex-col gap-3">
-        <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+        <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+          <Landmark className="size-3.5" aria-hidden />
           Governments (mandates) — tap to toggle
         </span>
         <div className="flex flex-wrap gap-1.5">
@@ -232,24 +247,39 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
           label={`Latest (${lastV?.year ?? '—'})`}
           value={lastV ? formatMetric(lastV.value, percent) : '—'}
           hint={metricMeta.short}
+          icon={Banknote}
+          accent="var(--chart-5)"
         />
         <StatCard
           label="Peak"
           value={peak ? formatMetric(peak.value, percent) : '—'}
           hint={peak ? `Year ended ${peak.year}` : undefined}
+          icon={Trophy}
+          accent="var(--chart-1)"
         />
         <StatCard
           label="Change over range"
           value={growth === null ? '—' : `${growth > 0 ? '+' : ''}${growth.toFixed(0)}%`}
           hint={firstV && lastV ? `${firstV.year} → ${lastV.year}` : undefined}
+          icon={TrendingUp}
+          accent="var(--chart-2)"
         />
-        <StatCard label="Years shown" value={withValue.length} hint={`${lo}–${hi}`} />
+        <StatCard
+          label="Years shown"
+          value={withValue.length}
+          hint={`${lo}–${hi}`}
+          icon={CalendarRange}
+          accent="var(--chart-3)"
+        />
       </div>
 
       {/* Bar chart */}
       <Card className="bg-card/60 backdrop-blur-sm">
         <CardHeader>
-          <CardTitle>{metricMeta.label} by fiscal year</CardTitle>
+          <CardTitle className="flex items-center gap-2">
+            <BarChart3 className="text-muted-foreground size-4" aria-hidden />
+            {metricMeta.label} by fiscal year
+          </CardTitle>
           <CardDescription>
             {percent
               ? 'Core Crown expenses as a share of nominal GDP'
@@ -271,7 +301,10 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
       {/* Functional breakdown */}
       <Card className="bg-card/60 backdrop-blur-sm">
         <CardHeader>
-          <CardTitle>Where the money goes</CardTitle>
+          <CardTitle className="flex items-center gap-2">
+            <PiggyBank className="text-muted-foreground size-4" aria-hidden />
+            Where the money goes
+          </CardTitle>
           <CardDescription>
             Core Crown expenses by function, year ended {effectiveBreakdownYear ?? '—'}
           </CardDescription>
@@ -308,7 +341,10 @@ export function SpendingExplorer({ records }: SpendingExplorerProps) {
 
       {/* Table */}
       <div>
-        <h3 className="mb-4 text-lg font-semibold tracking-tight">Year-by-year</h3>
+        <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold tracking-tight">
+          <CalendarDays className="text-brand size-5" aria-hidden />
+          Year-by-year
+        </h3>
         <Card className="bg-card/60 overflow-hidden backdrop-blur-sm">
           <Table>
             <TableHeader>

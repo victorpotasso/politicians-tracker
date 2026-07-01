@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
+import { AppShell } from '@/components/app-shell';
 import { ModelPrefetcher } from '@/components/chat/model-prefetcher';
 import { CommandMenu } from '@/components/command-menu';
-import { SiteNav } from '@/components/site-nav';
 import { siteConfig } from '@/lib/site';
 
 const geistSans = Geist({
@@ -89,8 +89,7 @@ export default function RootLayout({
         </a>
         <ModelPrefetcher />
         <CommandMenu />
-        <SiteNav />
-        {children}
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

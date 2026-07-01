@@ -2,7 +2,7 @@
   "meta": {
     "domain": "bills",
     "count": 9,
-    "collectedAt": "2026-07-01T08:03:24.213Z",
+    "collectedAt": "2026-07-01T20:04:36.850Z",
     "sources": [
       "https://voted.nz/divisions"
     ]
@@ -19,7 +19,7 @@
       "introducedDate": "2019-08-08",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "end-of-life-choice-bill",
@@ -32,7 +32,7 @@
       "introducedDate": "2017-12-13",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "gambling-gambling-harm-reduction-amendment-bill",
@@ -45,7 +45,7 @@
       "introducedDate": "2012-05-09",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "marriage-definition-of-marriage-amendment-bill",
@@ -58,7 +58,7 @@
       "introducedDate": "2012-08-29",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "misuse-of-drugs-medicinal-cannabis-and-other-matters-amendment-bill",
@@ -71,7 +71,7 @@
       "introducedDate": "2018-01-31",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "new-zealand-international-convention-centre-bill",
@@ -84,7 +84,7 @@
       "introducedDate": "2013-07-11",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "sale-and-supply-of-alcohol-renewal-of-licences-amendment-bill-no-2",
@@ -97,7 +97,7 @@
       "introducedDate": "2018-02-21",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "shop-trading-hours-act-repeal-waitaki-easter-trading-amendment-bill",
@@ -110,7 +110,7 @@
       "introducedDate": "2012-06-27",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     },
     {
       "billId": "shop-trading-hours-amendment-bill",
@@ -123,7 +123,7 @@
       "introducedDate": "2015-11-03",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T08:03:24.210Z"
+      "fetchedAt": "2026-07-01T20:04:36.843Z"
     }
   ]
 }

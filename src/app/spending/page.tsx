@@ -1,3 +1,4 @@
+import { Banknote, CalendarRange, Landmark, LineChart } from 'lucide-react';
 import type { Metadata } from 'next';
 
 import { Reveal } from '@/components/reveal';
@@ -28,7 +29,8 @@ export default async function SpendingPage() {
       <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
         <Reveal>
           <header className="flex flex-col gap-3">
-            <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+            <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+              <Banknote className="size-3.5" aria-hidden />
               New Zealand · {earliest?.year}–{latest?.year} · Treasury Fiscal Time Series
             </span>
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -49,18 +51,30 @@ export default async function SpendingPage() {
               label={`Latest spend (${latest?.year ?? '—'})`}
               value={latestSpend !== null ? formatMillionsNZD(latestSpend) : '—'}
               hint="Core Crown expenses"
+              icon={Banknote}
+              accent="var(--chart-5)"
             />
             <StatCard
               label="Share of GDP"
               value={latestPct !== null ? `${latestPct.toFixed(1)}%` : '—'}
               hint="Core Crown / nominal GDP"
+              icon={LineChart}
+              accent="var(--chart-2)"
             />
             <StatCard
               label="Current government"
               value={latestMandate?.pm ?? '—'}
               hint={latestMandate?.party ?? undefined}
+              icon={Landmark}
+              accent="var(--chart-3)"
             />
-            <StatCard label="Years covered" value={records.length} hint="Annual series" />
+            <StatCard
+              label="Years covered"
+              value={records.length}
+              hint="Annual series"
+              icon={CalendarRange}
+              accent="var(--chart-1)"
+            />
           </section>
         </Reveal>
 

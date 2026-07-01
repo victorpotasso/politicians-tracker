@@ -1,5 +1,6 @@
 'use client';
 
+import { CalendarDays, FileText, Search, Vote } from 'lucide-react';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 
@@ -25,13 +26,16 @@ export function BillsList({ bills }: { bills: BillRow[] }) {
 
   return (
     <div className="flex flex-col gap-5">
-      <input
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search bills…"
-        className="border-input bg-background/60 focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px] sm:max-w-md"
-      />
+      <div className="group relative sm:max-w-md">
+        <Search className="text-muted-foreground group-focus-within:text-foreground pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 transition-colors" />
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search bills…"
+          className="border-input bg-background/60 focus-visible:ring-ring/50 h-10 w-full rounded-md border pr-3 pl-9 text-sm outline-none focus-visible:ring-[3px]"
+        />
+      </div>
 
       <p className="text-muted-foreground text-xs">
         {filtered.length} of {bills.length} bills
@@ -43,8 +47,15 @@ export function BillsList({ bills }: { bills: BillRow[] }) {
             <Card className="bg-card/60 group-hover:border-primary/40 h-full py-5 backdrop-blur-sm transition-colors">
               <CardContent className="flex h-full flex-col gap-2">
                 <div className="flex items-start justify-between gap-3">
-                  <h3 className="font-medium leading-snug">{bill.title}</h3>
+                  <h3 className="flex min-w-0 items-start gap-2 font-medium leading-snug">
+                    <FileText
+                      className="text-muted-foreground mt-0.5 size-4 shrink-0"
+                      aria-hidden
+                    />
+                    <span>{bill.title}</span>
+                  </h3>
                   <Badge variant="secondary" className="shrink-0">
+                    <Vote aria-hidden />
                     {bill.divisions} {bill.divisions === 1 ? 'vote' : 'votes'}
                   </Badge>
                 </div>
@@ -52,7 +63,8 @@ export function BillsList({ bills }: { bills: BillRow[] }) {
                   <p className="text-muted-foreground line-clamp-3 text-sm">{bill.abstract}</p>
                 ) : null}
                 {bill.introducedDate ? (
-                  <p className="text-muted-foreground/70 mt-auto pt-1 text-xs">
+                  <p className="text-muted-foreground/70 mt-auto flex items-center gap-1.5 pt-1 text-xs">
+                    <CalendarDays className="size-3.5" aria-hidden />
                     First recorded {formatDayMonthYear(bill.introducedDate)}
                   </p>
                 ) : null}

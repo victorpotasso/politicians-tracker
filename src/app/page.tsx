@@ -1,3 +1,18 @@
+import {
+  ArrowRight,
+  BarChart3,
+  FileText,
+  Flag,
+  Landmark,
+  LineChart,
+  PiggyBank,
+  Scale,
+  Sparkles,
+  TrendingUp,
+  Users,
+  Vote,
+  Wallet,
+} from 'lucide-react';
 import Link from 'next/link';
 import { CompositionChart, ElectorateListDonut } from '@/components/composition-chart';
 import { SpendByCategoryDonut, SpendTrendChart } from '@/components/money-charts';
@@ -100,19 +115,22 @@ export default async function Home() {
       <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
         <Reveal>
           <header className="flex flex-col gap-3">
-            <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+            <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+              <Sparkles className="size-3.5" aria-hidden />
               New Zealand · Public political data
             </span>
             <h1 className="text-fluid-hero font-display text-brand-gradient font-bold text-balance">
               Political data dashboard
             </h1>
             <p className="text-muted-foreground max-w-2xl text-balance">
-              A local, JSON-backed database of MPs, bills, and voting records for data analysis.
-              Refresh anytime with <code className="text-foreground">pnpm data:collect</code>.
+              A database of MPs, bills, and voting records for data analysis.
             </p>
             <div className="mt-1 flex gap-2">
               <Button asChild>
-                <Link href="/politicians">Browse politicians →</Link>
+                <Link href="/politicians">
+                  Browse politicians
+                  <ArrowRight className="size-4" aria-hidden />
+                </Link>
               </Button>
             </div>
           </header>
@@ -120,13 +138,33 @@ export default async function Home() {
 
         <Reveal delay={0.08}>
           <section className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
-            <StatCard label="Current MPs" value={mps.length} hint="122nd Parliament" />
-            <StatCard label="Bills tracked" value={bills.length} hint="With recorded votes" />
-            <StatCard label="Divisions" value={distinctDivisions} hint="Personal-vote records" />
+            <StatCard
+              label="Current MPs"
+              value={mps.length}
+              hint="122nd Parliament"
+              icon={Users}
+              accent="var(--chart-2)"
+            />
+            <StatCard
+              label="Bills tracked"
+              value={bills.length}
+              hint="With recorded votes"
+              icon={FileText}
+              accent="var(--chart-1)"
+            />
+            <StatCard
+              label="Divisions"
+              value={distinctDivisions}
+              hint="Personal-vote records"
+              icon={Vote}
+              accent="var(--chart-4)"
+            />
             <StatCard
               label="Tracked spend"
               value={formatNZDCompact(totalSpend)}
               hint="Travel & accommodation"
+              icon={Wallet}
+              accent="var(--chart-5)"
             />
           </section>
         </Reveal>
@@ -136,7 +174,8 @@ export default async function Home() {
             <section className="mt-8">
               <div className="mb-4 flex items-end justify-between">
                 <div>
-                  <h2 className="font-display text-2xl font-semibold tracking-tight">
+                  <h2 className="font-display flex items-center gap-2 text-2xl font-semibold tracking-tight">
+                    <LineChart className="text-brand size-5" aria-hidden />
                     Race to 2026
                   </h2>
                   <p className="text-muted-foreground text-sm">
@@ -144,13 +183,19 @@ export default async function Home() {
                   </p>
                 </div>
                 <Link href="/polls" className="text-primary text-sm underline underline-offset-4">
-                  Full polling →
+                  <span className="inline-flex items-center gap-1.5">
+                    Full polling
+                    <ArrowRight className="size-3.5" aria-hidden />
+                  </span>
                 </Link>
               </div>
               <div className="grid gap-4 lg:grid-cols-3">
                 <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
                   <CardHeader>
-                    <CardTitle>Party-vote trend</CardTitle>
+                    <CardTitle className="flex items-center gap-2">
+                      <LineChart className="text-muted-foreground size-4" aria-hidden />
+                      Party-vote trend
+                    </CardTitle>
                     <CardDescription>Support over time, by party</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -159,7 +204,10 @@ export default async function Home() {
                 </Card>
                 <Card className="bg-card/60 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle>Poll of polls</CardTitle>
+                    <CardTitle className="flex items-center gap-2">
+                      <BarChart3 className="text-muted-foreground size-4" aria-hidden />
+                      Poll of polls
+                    </CardTitle>
                     <CardDescription>Mean of the 6 most recent polls</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -182,7 +230,10 @@ export default async function Home() {
           <section className="mt-8 grid gap-4 lg:grid-cols-3">
             <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
               <CardHeader>
-                <CardTitle>MPs by party</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Users className="text-muted-foreground size-4" aria-hidden />
+                  MPs by party
+                </CardTitle>
                 <CardDescription>Current Parliament composition</CardDescription>
               </CardHeader>
               <CardContent>
@@ -192,7 +243,10 @@ export default async function Home() {
 
             <Card className="bg-card/60 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>Top parties</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Flag className="text-muted-foreground size-4" aria-hidden />
+                  Top parties
+                </CardTitle>
                 <CardDescription>Ranked by number of MPs</CardDescription>
               </CardHeader>
               <CardContent>
@@ -206,7 +260,10 @@ export default async function Home() {
           <section className="mt-8">
             <div className="mb-4 flex items-end justify-between">
               <div>
-                <h2 className="text-xl font-semibold tracking-tight">Follow the money</h2>
+                <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
+                  <Wallet className="text-brand size-5" aria-hidden />
+                  Follow the money
+                </h2>
                 <p className="text-muted-foreground text-sm">
                   MP travel &amp; accommodation ·{' '}
                   {formatPeriodRange(spendCoverage.first, spendCoverage.last)} ·{' '}
@@ -227,7 +284,10 @@ export default async function Home() {
             <div className="grid gap-4 lg:grid-cols-3">
               <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
                 <CardHeader>
-                  <CardTitle>Spend over time</CardTitle>
+                  <CardTitle className="flex items-center gap-2">
+                    <TrendingUp className="text-muted-foreground size-4" aria-hidden />
+                    Spend over time
+                  </CardTitle>
                   <CardDescription>Total disclosed expenses per quarter</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -236,7 +296,10 @@ export default async function Home() {
               </Card>
               <Card className="bg-card/60 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle>By category</CardTitle>
+                  <CardTitle className="flex items-center gap-2">
+                    <PiggyBank className="text-muted-foreground size-4" aria-hidden />
+                    By category
+                  </CardTitle>
                   <CardDescription>Travel vs accommodation</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -247,7 +310,10 @@ export default async function Home() {
             <div className="mt-4 grid gap-4 lg:grid-cols-2">
               <Card className="bg-card/60 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle>Top spenders</CardTitle>
+                  <CardTitle className="flex items-center gap-2">
+                    <Users className="text-muted-foreground size-4" aria-hidden />
+                    Top spenders
+                  </CardTitle>
                   <CardDescription>Highest disclosed spend (matched MPs)</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -256,7 +322,10 @@ export default async function Home() {
               </Card>
               <Card className="bg-card/60 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle>Spend by party</CardTitle>
+                  <CardTitle className="flex items-center gap-2">
+                    <Flag className="text-muted-foreground size-4" aria-hidden />
+                    Spend by party
+                  </CardTitle>
                   <CardDescription>Total disclosed spend per party</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -271,7 +340,10 @@ export default async function Home() {
           <section className="mt-8">
             <Card className="bg-card/60 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>Most contested bills</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Vote className="text-muted-foreground size-4" aria-hidden />
+                  Most contested bills
+                </CardTitle>
                 <CardDescription>Ranked by number of recorded divisions</CardDescription>
               </CardHeader>
               <CardContent>
@@ -285,7 +357,8 @@ export default async function Home() {
           <section className="mt-8">
             <div className="mb-4 flex items-end justify-between">
               <div>
-                <h2 className="font-display text-2xl font-semibold tracking-tight">
+                <h2 className="font-display flex items-center gap-2 text-2xl font-semibold tracking-tight">
+                  <Scale className="text-brand size-5" aria-hidden />
                   Balance of power
                 </h2>
                 <p className="text-muted-foreground text-sm">
@@ -296,13 +369,19 @@ export default async function Home() {
                 href="/parliament"
                 className="text-primary text-sm underline underline-offset-4"
               >
-                Explore Parliament →
+                <span className="inline-flex items-center gap-1.5">
+                  Explore Parliament
+                  <ArrowRight className="size-3.5" aria-hidden />
+                </span>
               </Link>
             </div>
             <div className="grid gap-4 lg:grid-cols-3">
               <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
                 <CardHeader>
-                  <CardTitle>Seats over time</CardTitle>
+                  <CardTitle className="flex items-center gap-2">
+                    <Landmark className="text-muted-foreground size-4" aria-hidden />
+                    Seats over time
+                  </CardTitle>
                   <CardDescription>Party seats won at each election, 1996–2023</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -311,7 +390,10 @@ export default async function Home() {
               </Card>
               <Card className="bg-card/60 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle>Electorate vs list</CardTitle>
+                  <CardTitle className="flex items-center gap-2">
+                    <Scale className="text-muted-foreground size-4" aria-hidden />
+                    Electorate vs list
+                  </CardTitle>
                   <CardDescription>Current {mps.length}-seat House</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -326,14 +408,20 @@ export default async function Home() {
           <section className="mt-10">
             <div className="mb-4 flex items-end justify-between">
               <div>
-                <h2 className="font-display text-xl font-semibold tracking-tight">Politicians</h2>
+                <h2 className="font-display flex items-center gap-2 text-xl font-semibold tracking-tight">
+                  <Users className="text-brand size-5" aria-hidden />
+                  Politicians
+                </h2>
                 <p className="text-muted-foreground text-sm">A sample of the {mps.length} MPs</p>
               </div>
               <Link
                 href="/politicians"
                 className="text-primary text-sm underline underline-offset-4"
               >
-                View all →
+                <span className="inline-flex items-center gap-1.5">
+                  View all
+                  <ArrowRight className="size-3.5" aria-hidden />
+                </span>
               </Link>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

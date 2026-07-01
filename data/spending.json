@@ -2,7 +2,7 @@
   "meta": {
     "domain": "spending",
     "count": 54,
-    "collectedAt": "2026-07-01T19:41:10.876Z",
+    "collectedAt": "2026-07-01T20:05:09.367Z",
     "sources": [
       "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
       "https://www.treasury.govt.nz/sites/default/files/2026-01/fiscaltimeseries1972-2025-year-end25.xlsx"
@@ -60,7 +60,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1973,
@@ -113,7 +113,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1974,
@@ -166,7 +166,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1975,
@@ -219,7 +219,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1976,
@@ -272,7 +272,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1977,
@@ -325,7 +325,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1978,
@@ -378,7 +378,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1979,
@@ -431,7 +431,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1980,
@@ -484,7 +484,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1981,
@@ -537,7 +537,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1982,
@@ -590,7 +590,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1983,
@@ -643,7 +643,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1984,
@@ -696,7 +696,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1985,
@@ -749,7 +749,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1986,
@@ -802,7 +802,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1987,
@@ -855,7 +855,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1988,
@@ -908,7 +908,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1989,
@@ -961,7 +961,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1990,
@@ -1014,7 +1014,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1991,
@@ -1067,7 +1067,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1992,
@@ -1120,7 +1120,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1993,
@@ -1173,7 +1173,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1994,
@@ -1230,7 +1230,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1995,
@@ -1287,7 +1287,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1996,
@@ -1344,7 +1344,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1997,
@@ -1397,7 +1397,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1998,
@@ -1450,7 +1450,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 1999,
@@ -1503,7 +1503,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2000,
@@ -1556,7 +1556,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2001,
@@ -1609,7 +1609,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2002,
@@ -1662,7 +1662,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2003,
@@ -1715,7 +1715,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2004,
@@ -1768,7 +1768,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2005,
@@ -1821,7 +1821,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2006,
@@ -1874,7 +1874,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2007,
@@ -1927,7 +1927,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2008,
@@ -1980,7 +1980,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2009,
@@ -2033,7 +2033,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2010,
@@ -2086,7 +2086,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2011,
@@ -2139,7 +2139,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2012,
@@ -2192,7 +2192,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2013,
@@ -2245,7 +2245,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2014,
@@ -2298,7 +2298,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2015,
@@ -2351,7 +2351,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2016,
@@ -2404,7 +2404,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2017,
@@ -2457,7 +2457,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2018,
@@ -2510,7 +2510,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2019,
@@ -2563,7 +2563,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2020,
@@ -2616,7 +2616,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2021,
@@ -2669,7 +2669,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2022,
@@ -2722,7 +2722,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2023,
@@ -2775,7 +2775,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2024,
@@ -2828,7 +2828,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     },
     {
       "year": 2025,
@@ -2881,7 +2881,7 @@
         }
       ],
       "sourceUrl": "https://www.treasury.govt.nz/publications/information-release/data-fiscal-time-series-historical-fiscal-indicators",
-      "fetchedAt": "2026-07-01T19:41:10.874Z"
+      "fetchedAt": "2026-07-01T20:05:09.366Z"
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { Flag, Landmark } from 'lucide-react';
 import Link from 'next/link';
 
 import { MpPhoto } from '@/components/mp-photo';
@@ -15,9 +16,13 @@ export function MpCard({ mp }: { mp: MP }) {
             {mp.role ? <span className="text-muted-foreground text-sm">{mp.role} </span> : null}
             {mp.name}
           </p>
-          <p className="text-muted-foreground truncate text-xs">{mp.electorate ?? '—'}</p>
+          <p className="text-muted-foreground mt-1 flex items-center gap-1.5 truncate text-xs">
+            <Landmark className="size-3.5 shrink-0" aria-hidden />
+            {mp.electorate ?? '—'}
+          </p>
           {mp.party ? (
             <Badge variant="secondary" className="mt-1.5">
+              <Flag aria-hidden />
               {mp.party}
             </Badge>
           ) : null}

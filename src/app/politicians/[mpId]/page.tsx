@@ -1,3 +1,14 @@
+import type { LucideIcon } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  ArrowUpRight,
+  Banknote,
+  FileText,
+  Landmark,
+  Vote,
+  Wallet,
+} from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -41,10 +52,21 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   };
 }
 
-function HeroStat({ label, value }: { label: string; value: string }) {
+function HeroStat({
+  label,
+  value,
+  icon: Icon,
+}: {
+  label: string;
+  value: string;
+  icon?: LucideIcon;
+}) {
   return (
-    <div className="flex flex-col gap-0.5 px-4 py-3 sm:px-6 sm:py-4">
-      <span className="text-muted-foreground text-[10px] tracking-widest uppercase">{label}</span>
+    <div className="flex flex-col gap-1 px-4 py-3 sm:px-6 sm:py-4">
+      <span className="text-muted-foreground inline-flex items-center gap-1.5 text-[10px] tracking-widest uppercase">
+        {Icon ? <Icon className="size-3" aria-hidden /> : null}
+        {label}
+      </span>
       <span className="font-display text-xl font-semibold tabular-nums sm:text-2xl">{value}</span>
     </div>
   );
@@ -83,8 +105,12 @@ export default async function PoliticianProfilePage({ params }: Params) {
   return (
     <main id="main-content" className="mx-auto w-full max-w-4xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
-        <Link href="/politicians" className="text-muted-foreground hover:text-foreground text-sm">
-          ← All politicians
+        <Link
+          href="/politicians"
+          className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1.5 text-sm"
+        >
+          <ArrowLeft className="size-3.5" aria-hidden />
+          All politicians
         </Link>
       </Reveal>
 
@@ -146,12 +172,13 @@ export default async function PoliticianProfilePage({ params }: Params) {
           </div>
 
           <div className="divide-border/50 border-border/50 relative grid grid-cols-2 divide-x divide-y border-t sm:grid-cols-4 sm:divide-y-0">
-            <HeroStat label="Seat" value={mp.electorate ?? '—'} />
-            <HeroStat label="Votes cast" value={String(mpVotes.length)} />
-            <HeroStat label="Bills voted" value={String(voteGroups.length)} />
+            <HeroStat label="Seat" value={mp.electorate ?? '—'} icon={Landmark} />
+            <HeroStat label="Votes cast" value={String(mpVotes.length)} icon={Vote} />
+            <HeroStat label="Bills voted" value={String(voteGroups.length)} icon={FileText} />
             <HeroStat
               label="Tracked spend"
               value={spend.total ? formatNZDCompact(spend.total) : '—'}
+              icon={Wallet}
             />
           </div>
         </div>
@@ -169,9 +196,10 @@ export default async function PoliticianProfilePage({ params }: Params) {
                   href={enrichment.wikipediaUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary w-fit text-sm underline underline-offset-4"
+                  className="text-primary inline-flex w-fit items-center gap-1.5 text-sm underline underline-offset-4"
                 >
-                  Read more on Wikipedia ↗
+                  Read more on Wikipedia
+                  <ArrowUpRight className="size-3.5" aria-hidden />
                 </a>
               ) : null}
             </CardContent>
@@ -184,7 +212,10 @@ export default async function PoliticianProfilePage({ params }: Params) {
           <section className="grid gap-4 lg:grid-cols-3">
             <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
               <CardHeader>
-                <CardTitle>Spending over time</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Banknote className="text-muted-foreground size-4" aria-hidden />
+                  Spending over time
+                </CardTitle>
                 <CardDescription>
                   Disclosed travel &amp; accommodation per quarter ·{' '}
                   {formatPeriodRange(spendFrom, spendTo)}
@@ -196,7 +227,10 @@ export default async function PoliticianProfilePage({ params }: Params) {
             </Card>
             <Card className="bg-card/60 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>By category</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Wallet className="text-muted-foreground size-4" aria-hidden />
+                  By category
+                </CardTitle>
                 <CardDescription>
                   {formatNZD(spend.total)} total
                   {expensesData.meta.collectedAt
@@ -216,7 +250,10 @@ export default async function PoliticianProfilePage({ params }: Params) {
         <Reveal delay={0.16} className="mt-6">
           <Card className="bg-card/60 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle>Voting record</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <Vote className="text-muted-foreground size-4" aria-hidden />
+                Voting record
+              </CardTitle>
               <CardDescription>
                 How {mp.name} voted on {voteGroups.length} bills
               </CardDescription>
@@ -238,6 +275,7 @@ export default async function PoliticianProfilePage({ params }: Params) {
                       <span className="text-muted-foreground text-xs tabular-nums">
                         {group.votes.length} {group.votes.length === 1 ? 'vote' : 'votes'}
                       </span>
+                      <ArrowRight className="text-muted-foreground size-3.5" aria-hidden />
                     </span>
                   </Link>
                 );
@@ -250,7 +288,10 @@ export default async function PoliticianProfilePage({ params }: Params) {
       <Reveal delay={0.2} className="mt-6">
         <Card className="bg-card/60 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle>Sources</CardTitle>
+            <CardTitle className="flex items-center gap-2">
+              <FileText className="text-muted-foreground size-4" aria-hidden />
+              Sources
+            </CardTitle>
             <CardDescription>All data is collected locally and attributed</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-2 text-xs">

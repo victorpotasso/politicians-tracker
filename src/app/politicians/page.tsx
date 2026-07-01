@@ -1,3 +1,4 @@
+import { Users } from 'lucide-react';
 import type { Metadata } from 'next';
 
 import { PoliticiansGrid } from '@/components/politicians-grid';
@@ -16,7 +17,8 @@ export default async function PoliticiansPage() {
     <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
         <header className="flex flex-col gap-2">
-          <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
+          <span className="text-muted-foreground inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+            <Users className="size-3.5" aria-hidden />
             Members of Parliament
           </span>
           <h1 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">
