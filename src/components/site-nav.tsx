@@ -8,6 +8,7 @@ import {
   Info,
   Landmark,
   LayoutDashboard,
+  LineChart,
   MessageSquare,
   Search,
   Users,
@@ -29,6 +30,7 @@ const LINKS: Array<{ href: string; label: string; icon: LucideIcon }> = [
   { href: '/parties', label: 'Parties', icon: Flag },
   { href: '/polls', label: 'Polls', icon: BarChart3 },
   { href: '/spending', label: 'Spending', icon: Wallet },
+  { href: '/analytics', label: 'Analytics', icon: LineChart },
   { href: '/chat', label: 'Ask AI', icon: MessageSquare },
 ];
 

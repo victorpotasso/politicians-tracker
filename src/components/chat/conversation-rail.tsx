@@ -1,6 +1,6 @@
 'use client';
 
-import { Plus, Trash2 } from 'lucide-react';
+import { PanelRightClose, Plus, Trash2 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import type { Conversation } from '@/lib/chat/types';
@@ -22,7 +22,13 @@ const BUCKET_LABELS: Record<string, string> = {
   earlier: 'Earlier',
 };
 
-export function ConversationRail({ onNavigate }: { onNavigate?: () => void }) {
+export function ConversationRail({
+  onCollapse,
+  onNavigate,
+}: {
+  onCollapse?: () => void;
+  onNavigate?: () => void;
+}) {
   const { conversations, removeConversation } = useChat();
   const pathname = usePathname();
   const router = useRouter();
@@ -38,16 +44,29 @@ export function ConversationRail({ onNavigate }: { onNavigate?: () => void }) {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="border-border/40 flex items-center justify-between border-b px-4 py-3">
+      <div className="border-border/40 flex items-center justify-between gap-2 border-b px-4 py-3">
         <span className="text-sm font-semibold">History</span>
-        <Link
-          href="/chat"
-          onClick={onNavigate}
-          className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 rounded-full border border-border/50 px-2.5 py-1 text-xs transition-colors"
-        >
-          <Plus className="size-3.5" />
-          New chat
-        </Link>
+        <div className="flex items-center gap-1.5">
+          <Link
+            href="/chat"
+            onClick={onNavigate}
+            className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 rounded-full border border-border/50 px-2.5 py-1 text-xs transition-colors"
+          >
+            <Plus className="size-3.5" />
+            New chat
+          </Link>
+          {onCollapse ? (
+            <button
+              type="button"
+              aria-label="Collapse history"
+              title="Collapse history"
+              onClick={onCollapse}
+              className="text-muted-foreground hover:text-foreground hidden rounded-full border border-border/50 p-1.5 transition-colors md:inline-flex"
+            >
+              <PanelRightClose className="size-3.5" />
+            </button>
+          ) : null}
+        </div>
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto p-2">

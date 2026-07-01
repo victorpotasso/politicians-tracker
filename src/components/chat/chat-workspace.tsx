@@ -1,6 +1,6 @@
 'use client';
 
-import { History, Plus, X } from 'lucide-react';
+import { History, PanelRightOpen, Plus, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
@@ -10,6 +10,7 @@ import { ChatPreloader } from './chat-preloader';
 import { ConversationRail } from './conversation-rail';
 
 export function ChatWorkspace({ children }: { children: ReactNode }) {
+  const [historyOpen, setHistoryOpen] = useState(true);
   const [sheetOpen, setSheetOpen] = useState(false);
 
   return (
@@ -41,9 +42,21 @@ export function ChatWorkspace({ children }: { children: ReactNode }) {
           {children}
         </div>
 
-        <aside className="border-border/40 bg-background/30 hidden w-72 shrink-0 flex-col border-l backdrop-blur-2xl md:flex lg:w-80">
-          <ConversationRail />
-        </aside>
+        {historyOpen ? (
+          <aside className="border-border/40 bg-background/30 hidden w-72 shrink-0 flex-col border-l backdrop-blur-2xl md:flex lg:w-80">
+            <ConversationRail onCollapse={() => setHistoryOpen(false)} />
+          </aside>
+        ) : (
+          <button
+            type="button"
+            aria-label="Expand history"
+            title="Expand history"
+            onClick={() => setHistoryOpen(true)}
+            className="border-border/50 bg-background/80 text-muted-foreground hover:text-foreground absolute right-4 top-4 z-30 hidden rounded-full border p-2 shadow-sm backdrop-blur-xl transition-colors md:inline-flex"
+          >
+            <PanelRightOpen className="size-4" />
+          </button>
+        )}
       </div>
 
       {/* Mobile history drawer */}
