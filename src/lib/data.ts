@@ -11,6 +11,7 @@ import type {
   Expense,
   MP,
   MpEnrichment,
+  NewsArticle,
   Poll,
   SpendingYear,
   Vote,
@@ -36,7 +37,6 @@ export const getVotes = () => loadDataset<Vote>('votes');
 export const getExpenses = () => loadDataset<Expense>('expenses');
 export const getMinisterExpenses = () => loadDataset<Expense>('ministers');
 export const getPolls = () => loadDataset<Poll>('polls');
-
 /** Annual Crown spending & GDP from the Treasury Fiscal Time Series, oldest-first. */
 export async function getSpending(): Promise<Dataset<SpendingYear>> {
   const dataset = await loadDataset<SpendingYear>('spending');
@@ -808,4 +808,44 @@ export async function getPartyPolling(canonName: string): Promise<PartyPolling |
     color: partyColor(canonName),
     trend,
   };
+}
+
+// ---------------------------------------------------------------------------
+// News
+// ---------------------------------------------------------------------------
+
+/** Politics articles from RNZ & NZ Herald, cross-referenced to MPs, newest first. */
+export async function getNews(): Promise<Dataset<NewsArticle>> {
+  const dataset = await loadDataset<NewsArticle>('news');
+  return {
+    ...dataset,
+    records: [...dataset.records].sort((a, b) =>
+      (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''),
+    ),
+  };
+}
+
+/** A news article with its matched MPs resolved to name/party for display. */
+export interface NewsArticleView extends NewsArticle {
+  mentioned: { mpId: string; name: string; party: string | null }[];
+}
+
+/** Attach resolved MP details to each article's `mentions`. */
+export function withMentionedMps(articles: NewsArticle[], mps: MP[]): NewsArticleView[] {
+  const byId = new Map(mps.map((m) => [m.mpId, m]));
+  return articles.map((article) => ({
+    ...article,
+    mentioned: article.mentions
+      .map((mpId) => {
+        const mp = byId.get(mpId);
+        return mp ? { mpId, name: mp.name, party: mp.party } : null;
+      })
+      .filter((m): m is { mpId: string; name: string; party: string | null } => m !== null),
+  }));
+}
+
+/** Recent articles that mention a given MP, newest first. */
+export async function getNewsForMp(mpId: string, limit = 6): Promise<NewsArticle[]> {
+  const { records } = await getNews();
+  return records.filter((a) => a.mentions.includes(mpId)).slice(0, limit);
 }

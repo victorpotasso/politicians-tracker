@@ -1,8 +1,8 @@
 # Politicians Tracker
 
 A local, JSON-backed dashboard for public New Zealand political data. The app
-tracks MPs, bills, voting records, expenses, opinion polls, Crown spending, and
-related source-backed context for analysis.
+tracks MPs, bills, voting records, expenses, opinion polls, Crown spending, news
+coverage, and related source-backed context for analysis.
 
 The project is intentionally file-based: collectors normalize public sources into
 versionable JSON under `data/`, and the Next.js app reads those files at request
@@ -118,6 +118,7 @@ domains are:
 - `ministers`
 - `polls`
 - `spending`
+- `news`
 
 Every collected record should include `sourceUrl` and `fetchedAt` where the type
 allows it. Preserve those fields when transforming or filtering data; they are
@@ -145,6 +146,7 @@ pnpm data:collect expenses
 pnpm data:collect ministers
 pnpm data:collect polls
 pnpm data:collect spending
+pnpm data:collect news
 ```
 
 Most collectors cache fetched responses for 24 hours under `.cache/`. Use
@@ -186,6 +188,8 @@ For smaller updates:
 - Update `polls` independently when Wikipedia polling tables change.
 - Update `spending` when Treasury republishes the Fiscal Time Series workbook;
    if the workbook URL changes, update `scripts/collect/spending.ts`.
+- Update `news` after `mps`; it cross-references RSS headlines against the roster
+   by name, so accurate MP matches depend on an up-to-date `mps` dataset.
 
 ### Data Sources
 
@@ -198,6 +202,7 @@ For smaller updates:
 | `ministers` | DIA Ministers' expense releases | Best-effort HTML parsing. This source may require a real browser and can produce an empty dataset with a warning. |
 | `polls` | Wikipedia parse API | Party-vote polling tables across recent election cycles. Source content is CC BY-SA 4.0. |
 | `spending` | Treasury Fiscal Time Series XLSX | Annual Crown spending, functional categories, and nominal GDP in NZD millions. |
+| `news` | RNZ & NZ Herald politics RSS | Politics headlines cross-referenced to `mps` by name (`mentions`) and party. RNZ feeds are licensed for personal use only, so the UI shows RNZ items as headline + link and does not republish their summary text. |
 | `enrichment` | Wikipedia API | Optional MP biographies, descriptions, and portrait backfill data. |
 
 Prefer official or machine-readable public sources. Current known good sources

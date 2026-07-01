@@ -221,3 +221,193 @@ export function partyDiscipline(deviations: MpDeviation[]): PartyDiscipline[] {
     }))
     .sort((a, b) => b.deviationRate - a.deviationRate);
 }
+
+/** A single MP's combined money + voting profile, for cross-cutting rankings. */
+export interface MpProfile {
+  mpId: string;
+  name: string;
+  party: string;
+  seatType: SeatType;
+  total: number;
+  travel: number;
+  accommodation: number;
+  other: number;
+  quarters: number;
+  votesConsidered: number;
+  deviations: number;
+  deviationRate: number;
+}
+
+/** Join expense totals with voting independence into one row per MP. */
+export function mpCrossProfiles(rows: EnrichedExpense[], voting: VotingDiscipline): MpProfile[] {
+  const byId = new Map<string, MpProfile>();
+  const periods = new Map<string, Set<string>>();
+
+  for (const r of rows) {
+    const profile =
+      byId.get(r.mpId) ??
+      ({
+        mpId: r.mpId,
+        name: r.name,
+        party: r.party,
+        seatType: r.seatType,
+        total: 0,
+        travel: 0,
+        accommodation: 0,
+        other: 0,
+        quarters: 0,
+        votesConsidered: 0,
+        deviations: 0,
+        deviationRate: 0,
+      } satisfies MpProfile);
+    profile.total += r.amount;
+    if (r.category === 'travel' || r.category === 'accommodation' || r.category === 'other') {
+      profile[r.category] += r.amount;
+    }
+    byId.set(r.mpId, profile);
+
+    const set = periods.get(r.mpId) ?? new Set<string>();
+    set.add(r.period);
+    periods.set(r.mpId, set);
+  }
+
+  for (const [mpId, set] of periods) {
+    const profile = byId.get(mpId);
+    if (profile) profile.quarters = set.size;
+  }
+
+  const votingById = new Map(voting.mpDeviations.map((d) => [d.mpId, d]));
+  for (const d of voting.mpDeviations) {
+    if (byId.has(d.mpId)) continue;
+    byId.set(d.mpId, {
+      mpId: d.mpId,
+      name: d.name,
+      party: d.party,
+      seatType: 'list',
+      total: 0,
+      travel: 0,
+      accommodation: 0,
+      other: 0,
+      quarters: 0,
+      votesConsidered: 0,
+      deviations: 0,
+      deviationRate: 0,
+    });
+  }
+
+  for (const profile of byId.values()) {
+    const d = votingById.get(profile.mpId);
+    if (d) {
+      profile.votesConsidered = d.votesConsidered;
+      profile.deviations = d.deviations;
+      profile.deviationRate = d.deviationRate;
+    }
+  }
+
+  return [...byId.values()].sort((a, b) => b.total - a.total);
+}
+
+/** An MP whose total spend sits well above the cohort average. */
+export interface SpendOutlier {
+  mpId: string;
+  name: string;
+  party: string;
+  seatType: SeatType;
+  total: number;
+  /** Standard deviations above the cohort mean. */
+  z: number;
+  /** Multiple of the cohort average (e.g. 2.4 = 2.4x the typical MP). */
+  vsAverage: number;
+}
+
+/** An MP whose spend in one quarter dwarfs their own typical quarter. */
+export interface SpendSpike {
+  mpId: string;
+  name: string;
+  party: string;
+  period: string;
+  amount: number;
+  /** Multiple of the MP's own average active quarter. */
+  ratio: number;
+}
+
+export interface SpendingInsights {
+  cohortAverage: number;
+  cohortStdDev: number;
+  mpCount: number;
+  outliers: SpendOutlier[];
+  spikes: SpendSpike[];
+}
+
+/**
+ * Surface expense patterns worth a second look: MPs spending far above their
+ * peers (z-score on total spend) and single-quarter spikes against an MP's own
+ * baseline. These are prompts for scrutiny, not accusations - high spend can be
+ * entirely legitimate (a far-flung electorate, a ministerial travel schedule).
+ */
+export function detectSpendingInsights(rows: EnrichedExpense[]): SpendingInsights {
+  const totals = new Map<
+    string,
+    { name: string; party: string; seatType: SeatType; total: number }
+  >();
+  const byMpPeriod = new Map<string, Map<string, number>>();
+
+  for (const r of rows) {
+    const entry = totals.get(r.mpId) ?? {
+      name: r.name,
+      party: r.party,
+      seatType: r.seatType,
+      total: 0,
+    };
+    entry.total += r.amount;
+    totals.set(r.mpId, entry);
+
+    const periodMap = byMpPeriod.get(r.mpId) ?? new Map<string, number>();
+    periodMap.set(r.period, (periodMap.get(r.period) ?? 0) + r.amount);
+    byMpPeriod.set(r.mpId, periodMap);
+  }
+
+  const values = [...totals.values()].map((t) => t.total);
+  const mpCount = values.length;
+  const mean = mpCount > 0 ? values.reduce((sum, v) => sum + v, 0) / mpCount : 0;
+  const variance = mpCount > 0 ? values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / mpCount : 0;
+  const stdDev = Math.sqrt(variance);
+
+  const outliers: SpendOutlier[] = [...totals.entries()]
+    .map(([mpId, t]) => ({
+      mpId,
+      name: t.name,
+      party: t.party,
+      seatType: t.seatType,
+      total: t.total,
+      z: stdDev > 0 ? (t.total - mean) / stdDev : 0,
+      vsAverage: mean > 0 ? t.total / mean : 0,
+    }))
+    .filter((o) => o.z >= 1.5)
+    .sort((a, b) => b.z - a.z)
+    .slice(0, 12);
+
+  const spikes: SpendSpike[] = [];
+  for (const [mpId, periodMap] of byMpPeriod) {
+    if (periodMap.size < 2) continue;
+    const entry = totals.get(mpId);
+    if (!entry) continue;
+    const periodValues = [...periodMap.entries()];
+    const avg = periodValues.reduce((sum, [, v]) => sum + v, 0) / periodValues.length;
+    if (avg <= 0) continue;
+    const [period, amount] = periodValues.reduce((best, cur) => (cur[1] > best[1] ? cur : best));
+    const ratio = amount / avg;
+    if (ratio >= 1.8 && amount >= 5000) {
+      spikes.push({ mpId, name: entry.name, party: entry.party, period, amount, ratio });
+    }
+  }
+  spikes.sort((a, b) => b.ratio - a.ratio);
+
+  return {
+    cohortAverage: mean,
+    cohortStdDev: stdDev,
+    mpCount,
+    outliers,
+    spikes: spikes.slice(0, 12),
+  };
+}

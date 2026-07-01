@@ -4,8 +4,10 @@ import {
   ArrowRight,
   ArrowUpRight,
   Banknote,
+  ExternalLink,
   FileText,
   Landmark,
+  Newspaper,
   Vote,
   Wallet,
 } from 'lucide-react';
@@ -24,6 +26,7 @@ import {
   getMp,
   getMpEnrichment,
   getMps,
+  getNewsForMp,
   getVotes,
   groupMpVotesByBill,
   partyLeader,
@@ -80,12 +83,13 @@ function positionLabel(ayes: number, noes: number): { text: string; tone: string
 
 export default async function PoliticianProfilePage({ params }: Params) {
   const { mpId } = await params;
-  const [mp, votesData, billsData, expensesData, enrichment] = await Promise.all([
+  const [mp, votesData, billsData, expensesData, enrichment, news] = await Promise.all([
     getMp(mpId),
     getVotes(),
     getBills(),
     getExpenses(),
     getMpEnrichment(mpId),
+    getNewsForMp(mpId),
   ]);
   if (!mp) notFound();
 
@@ -280,6 +284,44 @@ export default async function PoliticianProfilePage({ params }: Params) {
                   </Link>
                 );
               })}
+            </CardContent>
+          </Card>
+        </Reveal>
+      ) : null}
+
+      {news.length > 0 ? (
+        <Reveal delay={0.18} className="mt-6">
+          <Card className="bg-card/60 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Newspaper className="text-muted-foreground size-4" aria-hidden />
+                In the news
+              </CardTitle>
+              <CardDescription>
+                Recent RNZ &amp; NZ Herald coverage mentioning {mp.name}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col divide-y">
+              {news.map((article) => (
+                <a
+                  key={article.articleId}
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:bg-accent/40 group -mx-2 flex items-center justify-between gap-3 rounded-md px-2 py-3 transition-colors"
+                >
+                  <span className="flex min-w-0 flex-col gap-0.5">
+                    <span className="truncate text-sm font-medium">{article.title}</span>
+                    <span className="text-muted-foreground text-xs">
+                      {article.source} · {formatDayMonthYear(article.publishedAt)}
+                    </span>
+                  </span>
+                  <ExternalLink
+                    className="text-muted-foreground size-3.5 shrink-0 opacity-60 transition-opacity group-hover:opacity-100"
+                    aria-hidden
+                  />
+                </a>
+              ))}
             </CardContent>
           </Card>
         </Reveal>

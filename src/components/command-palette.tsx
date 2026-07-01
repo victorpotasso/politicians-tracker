@@ -7,6 +7,7 @@ import {
   Info,
   Landmark,
   LayoutDashboard,
+  LineChart,
   MessageSquare,
   Search,
   Users,
@@ -84,6 +85,14 @@ const PAGES: CommandEntity[] = [
     keywords: 'money expenses budget treasury',
   },
   {
+    id: 'page:analytics',
+    type: 'page',
+    title: 'Analytics',
+    subtitle: 'Cross-cutting analysis',
+    href: '/analytics',
+    keywords: 'insights money politicians parties bills scrutiny outliers anomalies',
+  },
+  {
     id: 'page:chat',
     type: 'page',
     title: 'Ask AI',
@@ -102,6 +111,7 @@ const PAGE_ICONS: Record<string, typeof LayoutDashboard> = {
   '/bills': FileText,
   '/polls': BarChart3,
   '/spending': Wallet,
+  '/analytics': LineChart,
   '/chat': MessageSquare,
   '/about': Info,
 };

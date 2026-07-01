@@ -1,8 +1,18 @@
 'use client';
 
-import { Filter, Landmark, MapPinned, Search, Users, Vote, Wallet, X } from 'lucide-react';
+import {
+  FileText,
+  Filter,
+  Flag,
+  Landmark,
+  ScanSearch,
+  Search,
+  Users,
+  Wallet,
+  X,
+} from 'lucide-react';
 import { useMemo, useState } from 'react';
-
+import { type BillRankRow, BillsAnalysis } from '@/components/analytics/bills-analysis';
 import {
   type AnalyticsFilters,
   Chip,
@@ -11,11 +21,13 @@ import {
 } from '@/components/analytics/controls';
 import { ElectorateAnalysis } from '@/components/analytics/electorate-analysis';
 import { ExpensesAnalysis } from '@/components/analytics/expenses-analysis';
+import { PartiesAnalysis, type PartyPollingRow } from '@/components/analytics/parties-analysis';
+import { PoliticiansAnalysis } from '@/components/analytics/politicians-analysis';
+import { ScrutinyAnalysis } from '@/components/analytics/scrutiny-analysis';
 import { SpendingAnalysis } from '@/components/analytics/spending-analysis';
-import { VotingAnalysis } from '@/components/analytics/voting-analysis';
 import { Reveal } from '@/components/reveal';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import type { EnrichedExpense, VotingDiscipline } from '@/lib/analytics';
+import type { EnrichedExpense, MpProfile, VotingDiscipline } from '@/lib/analytics';
 import { partyColor } from '@/lib/party';
 import type { SpendingYear } from '@/types/records';
 
@@ -23,6 +35,9 @@ interface AnalyticsExplorerProps {
   rows: EnrichedExpense[];
   periods: string[];
   voting: VotingDiscipline;
+  profiles: MpProfile[];
+  polling: PartyPollingRow[];
+  billRanks: BillRankRow[];
   spendingRecords: SpendingYear[];
 }
 
@@ -32,11 +47,14 @@ const SEAT_OPTIONS: Array<{ value: AnalyticsFilters['seatType']; label: string }
   { value: 'list', label: 'List' },
 ];
 
-/** Analytics workspace: a shared filter bar over four cross-cutting analyses. */
+/** Analytics workspace: a shared filter bar over the category analyses. */
 export function AnalyticsExplorer({
   rows,
   periods,
   voting,
+  profiles,
+  polling,
+  billRanks,
   spendingRecords,
 }: AnalyticsExplorerProps) {
   const [parties, setParties] = useState<Set<string>>(() => new Set());
@@ -147,7 +165,7 @@ export function AnalyticsExplorer({
 
           <div className="flex flex-col gap-2">
             <span className="text-muted-foreground text-[11px] font-medium tracking-wide uppercase">
-              Seat type <span className="normal-case">(applies to expenses)</span>
+              Seat type <span className="normal-case">(money, politicians & scrutiny)</span>
             </span>
             <div className="flex flex-wrap gap-1.5">
               {SEAT_OPTIONS.map((option) => (
@@ -164,45 +182,69 @@ export function AnalyticsExplorer({
         </div>
       </div>
 
-      {/* Analyses */}
-      <Tabs defaultValue="expenses" className="gap-6">
+      {/* Category analyses */}
+      <Tabs defaultValue="money" className="gap-6">
         <TabsList className="h-auto flex-wrap">
-          <TabsTrigger value="expenses">
+          <TabsTrigger value="money">
             <Wallet className="size-4" />
-            Expenses
+            Money
           </TabsTrigger>
-          <TabsTrigger value="electorate">
-            <MapPinned className="size-4" />
-            Electorate vs list
+          <TabsTrigger value="politicians">
+            <Users className="size-4" />
+            Politicians
           </TabsTrigger>
-          <TabsTrigger value="voting">
-            <Vote className="size-4" />
-            Voting discipline
+          <TabsTrigger value="parties">
+            <Flag className="size-4" />
+            Parties
+          </TabsTrigger>
+          <TabsTrigger value="bills">
+            <FileText className="size-4" />
+            Bills
           </TabsTrigger>
           <TabsTrigger value="spending">
             <Landmark className="size-4" />
-            Crown spending
+            Spending
+          </TabsTrigger>
+          <TabsTrigger value="scrutiny">
+            <ScanSearch className="size-4" />
+            Under scrutiny
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="expenses">
+        <TabsContent value="money">
           <Reveal>
-            <ExpensesAnalysis rows={rows} periods={periods} filters={filters} />
+            <div className="flex flex-col gap-10">
+              <ExpensesAnalysis rows={rows} periods={periods} filters={filters} />
+              <div className="flex flex-col gap-6 border-t pt-8">
+                <h3 className="text-lg font-semibold tracking-tight">Electorate vs list travel</h3>
+                <ElectorateAnalysis rows={rows} filters={filters} />
+              </div>
+            </div>
           </Reveal>
         </TabsContent>
-        <TabsContent value="electorate">
+        <TabsContent value="politicians">
           <Reveal>
-            <ElectorateAnalysis rows={rows} filters={filters} />
+            <PoliticiansAnalysis profiles={profiles} filters={filters} />
           </Reveal>
         </TabsContent>
-        <TabsContent value="voting">
+        <TabsContent value="parties">
           <Reveal>
-            <VotingAnalysis voting={voting} filters={filters} />
+            <PartiesAnalysis rows={rows} voting={voting} polling={polling} filters={filters} />
+          </Reveal>
+        </TabsContent>
+        <TabsContent value="bills">
+          <Reveal>
+            <BillsAnalysis billRanks={billRanks} cohesion={voting.billCohesion} />
           </Reveal>
         </TabsContent>
         <TabsContent value="spending">
           <Reveal>
             <SpendingAnalysis records={spendingRecords} />
+          </Reveal>
+        </TabsContent>
+        <TabsContent value="scrutiny">
+          <Reveal>
+            <ScrutinyAnalysis rows={rows} filters={filters} />
           </Reveal>
         </TabsContent>
       </Tabs>

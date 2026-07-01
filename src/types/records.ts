@@ -126,7 +126,45 @@ export interface SpendingYear extends Provenance {
   categories: SpendingCategory[];
 }
 
-export type Domain = 'mps' | 'bills' | 'votes' | 'expenses' | 'ministers' | 'polls' | 'spending';
+/** The two news sources cross-referenced against the politician roster. */
+export type NewsSource = 'RNZ' | 'NZ Herald';
+
+/**
+ * A politics news article from an RSS feed, cross-referenced against the MP
+ * roster. `mentions` holds the ids of MPs named in the headline/summary and
+ * `parties` the canonical parties referenced, linking coverage to politicians.
+ *
+ * Note on licensing: RNZ's RSS feeds are "for personal use only" and their text
+ * must not be republished. `summary` is retained for name-matching, but the UI
+ * renders RNZ items as headline + link only (gated on `source`).
+ */
+export interface NewsArticle extends Provenance {
+  articleId: string;
+  source: NewsSource;
+  title: string;
+  url: string;
+  /** Plain-text summary/standfirst from the feed, or null. */
+  summary: string | null;
+  author: string | null;
+  /** Publication date (ISO `YYYY-MM-DD`), or null when unparseable. */
+  publishedAt: IsoDate | null;
+  /** Lead image URL where the feed provides one (Herald `media:content`). */
+  imageUrl: string | null;
+  /** Ids of MPs named in the article (matched against the roster). */
+  mentions: string[];
+  /** Canonical party names referenced in the article. */
+  parties: string[];
+}
+
+export type Domain =
+  | 'mps'
+  | 'bills'
+  | 'votes'
+  | 'expenses'
+  | 'ministers'
+  | 'polls'
+  | 'spending'
+  | 'news';
 
 export interface DatasetMeta {
   domain: Domain;

@@ -4,6 +4,7 @@ import { billsCollector } from './bills';
 import { expensesCollector } from './expenses';
 import { ministersCollector } from './ministers';
 import { mpsCollector } from './mps';
+import { newsCollector } from './news';
 import { pollsCollector } from './polls';
 import { spendingCollector } from './spending';
 import type { Collector } from './types';
@@ -17,6 +18,7 @@ const COLLECTORS: Record<Domain, Collector> = {
   ministers: ministersCollector,
   polls: pollsCollector,
   spending: spendingCollector,
+  news: newsCollector,
 };
 
 const ALL_DOMAINS = Object.keys(COLLECTORS) as Domain[];

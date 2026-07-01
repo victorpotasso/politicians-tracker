@@ -2,6 +2,7 @@
 
 import {
   Banknote,
+  BarChart3,
   FileText,
   Info,
   Landmark,
@@ -9,6 +10,7 @@ import {
   LineChart,
   type LucideIcon,
   Menu,
+  Newspaper,
   PanelLeftClose,
   PanelLeftOpen,
   Search,
@@ -36,8 +38,10 @@ const PRIMARY_NAV: NavItem[] = [
   { href: '/parties', label: 'Parties', icon: Vote },
   { href: '/parliament', label: 'Parliament', icon: Landmark },
   { href: '/bills', label: 'Bills', icon: FileText },
+  { href: '/news', label: 'News', icon: Newspaper },
   { href: '/polls', label: 'Polls', icon: LineChart },
   { href: '/spending', label: 'Spending', icon: Banknote },
+  { href: '/analytics', label: 'Analytics', icon: BarChart3 },
 ];
 
 const SECONDARY_NAV: NavItem[] = [

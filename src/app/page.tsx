@@ -5,17 +5,14 @@ import {
   Flag,
   Landmark,
   LineChart,
-  PiggyBank,
   Scale,
   Sparkles,
-  TrendingUp,
   Users,
   Vote,
   Wallet,
 } from 'lucide-react';
 import Link from 'next/link';
 import { CompositionChart, ElectorateListDonut } from '@/components/composition-chart';
-import { SpendByCategoryDonut, SpendTrendChart } from '@/components/money-charts';
 import { MpCard } from '@/components/mp-card';
 import { PartyChart } from '@/components/party-chart';
 import { PollTrendChart } from '@/components/poll-charts';
@@ -28,7 +25,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import {
   countByParty,
   electorateListSplit,
-  expenseCoverage,
   getBills,
   getExpenses,
   getMps,
@@ -37,15 +33,10 @@ import {
   latestPoll,
   pollAverage,
   pollTrend,
-  rankBillsByDivisions,
-  rankTopSpenders,
   seatCompositionSeries,
-  spendByCategory,
-  spendByParty,
-  spendByPeriod,
 } from '@/lib/data';
 import { partyColor } from '@/lib/party';
-import { formatDayMonthYear, formatNZD, formatNZDCompact, formatPeriodRange } from '@/lib/utils';
+import { formatNZDCompact } from '@/lib/utils';
 
 export default async function Home() {
   const [mpsData, billsData, votesData, expensesData, pollsData] = await Promise.all([
@@ -61,7 +52,6 @@ export default async function Home() {
   const expenses = expensesData.records;
   const polls = pollsData.records;
   const parties = countByParty(mps);
-  const billRanks = rankBillsByDivisions(bills, votes);
 
   const distinctDivisions = new Set(votes.map((v) => v.voteId)).size;
   const totalSpend = expenses.reduce((sum, e) => sum + (e.amount ?? 0), 0);
@@ -74,31 +64,6 @@ export default async function Home() {
   const latest = latestPoll(polls);
 
   const topParties = parties.slice(0, 6).map((p) => ({ label: p.party, value: p.count }));
-  const topBills = billRanks.slice(0, 6).map((b) => ({
-    label: b.title,
-    value: b.divisions,
-    accent: 'var(--chart-1)',
-    href: `/bills/${b.billId}`,
-  }));
-
-  const topSpenders = rankTopSpenders(expenses, mps, 8).map((s) => ({
-    label: s.name,
-    value: s.total,
-    href: `/politicians/${s.mpId}`,
-    sublabel: s.party ?? undefined,
-    accent: partyColor(s.party),
-  }));
-  const partySpend = spendByParty(expenses, mps).map((p) => ({
-    label: p.category,
-    value: p.amount,
-    accent: partyColor(p.category),
-  }));
-  const categorySpend = spendByCategory(expenses).map((c) => ({
-    category: c.category[0].toUpperCase() + c.category.slice(1),
-    amount: c.amount,
-  }));
-  const periodSpend = spendByPeriod(expenses);
-  const spendCoverage = expenseCoverage(expenses);
 
   const ministers = [...mps].filter((mp) => mp.role && /minister|speaker|rt hon/i.test(mp.role));
   const featuredMps = (ministers.length >= 6 ? ministers : mps).slice(0, 6);
@@ -258,96 +223,24 @@ export default async function Home() {
 
         <Reveal delay={0.2}>
           <section className="mt-8">
-            <div className="mb-4 flex items-end justify-between">
-              <div>
-                <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
-                  <Wallet className="text-brand size-5" aria-hidden />
-                  Follow the money
-                </h2>
-                <p className="text-muted-foreground text-sm">
-                  MP travel &amp; accommodation ·{' '}
-                  {formatPeriodRange(spendCoverage.first, spendCoverage.last)} ·{' '}
-                  {spendCoverage.quarters} {spendCoverage.quarters === 1 ? 'quarter' : 'quarters'}
-                </p>
-              </div>
-              <div className="text-right">
-                <span className="text-muted-foreground text-sm tabular-nums">
-                  {formatNZD(totalSpend)} total
-                </span>
-                {expensesData.meta.collectedAt ? (
-                  <p className="text-muted-foreground/70 text-xs">
-                    As of {formatDayMonthYear(expensesData.meta.collectedAt)}
-                  </p>
-                ) : null}
-              </div>
-            </div>
-            <div className="grid gap-4 lg:grid-cols-3">
-              <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <TrendingUp className="text-muted-foreground size-4" aria-hidden />
-                    Spend over time
-                  </CardTitle>
-                  <CardDescription>Total disclosed expenses per quarter</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <SpendTrendChart data={periodSpend} />
-                </CardContent>
-              </Card>
-              <Card className="bg-card/60 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <PiggyBank className="text-muted-foreground size-4" aria-hidden />
-                    By category
-                  </CardTitle>
-                  <CardDescription>Travel vs accommodation</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <SpendByCategoryDonut data={categorySpend} />
-                </CardContent>
-              </Card>
-            </div>
-            <div className="mt-4 grid gap-4 lg:grid-cols-2">
-              <Card className="bg-card/60 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Users className="text-muted-foreground size-4" aria-hidden />
-                    Top spenders
-                  </CardTitle>
-                  <CardDescription>Highest disclosed spend (matched MPs)</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <RankingList items={topSpenders} formatValue={formatNZDCompact} />
-                </CardContent>
-              </Card>
-              <Card className="bg-card/60 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Flag className="text-muted-foreground size-4" aria-hidden />
-                    Spend by party
-                  </CardTitle>
-                  <CardDescription>Total disclosed spend per party</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <RankingList items={partySpend} formatValue={formatNZDCompact} />
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-        </Reveal>
-
-        <Reveal delay={0.24}>
-          <section className="mt-8">
             <Card className="bg-card/60 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Vote className="text-muted-foreground size-4" aria-hidden />
-                  Most contested bills
-                </CardTitle>
-                <CardDescription>Ranked by number of recorded divisions</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <RankingList items={topBills} />
+              <CardContent className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+                <div className="flex flex-col gap-1">
+                  <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
+                    <BarChart3 className="text-brand size-5" aria-hidden />
+                    Cross the data in Analytics
+                  </h2>
+                  <p className="text-muted-foreground text-sm">
+                    Money, politicians, parties, bills and Crown spending &mdash; filterable, with
+                    an under-scrutiny layer that flags unusual expenses.
+                  </p>
+                </div>
+                <Button asChild>
+                  <Link href="/analytics">
+                    Open Analytics
+                    <ArrowRight className="size-4" aria-hidden />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </section>

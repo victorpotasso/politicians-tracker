@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "domain": "news",
+    "count": 28,
+    "collectedAt": "2026-07-01T20:42:50.197Z",
+    "sources": [
+      "https://www.rnz.co.nz/rss/political.xml",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh"
+    ]
+  },
+  "records": [
+    {
+      "articleId": "76267ec63463085d",
+      "source": "RNZ",
+      "title": "Union warns of multibillion-dollar hit from National's KiwiSaver pledge",
+      "url": "https://www.rnz.co.nz/news/political/651939/union-warns-of-multibillion-dollar-hit-from-national-s-kiwisaver-pledge",
+      "summary": "The Public Service Association has taken aim at National's KiwiSaver policy, claiming it carries a multibillion-dollar hidden cost for schools, hospitals and other public services.",
+      "author": null,
+      "publishedAt": "2026-07-02",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [
+        "National"
+      ],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "613e42a277086540",
+      "source": "RNZ",
+      "title": "Third of those declined emergency housing not offered any alternative",
+      "url": "https://www.rnz.co.nz/news/political/651934/third-of-those-declined-emergency-housing-not-offered-any-alternative",
+      "summary": "MSD says the other 70 percent are offered alternative support like transitional housing, rent arrears assistance or a bond in advance payment.",
+      "author": null,
+      "publishedAt": "2026-07-02",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "38acd2ebd17bbbb6",
+      "source": "RNZ",
+      "title": "Minister accuses Forest and Bird of 'unnecessary scaremongering' over game animal bill",
+      "url": "https://www.rnz.co.nz/news/political/652077/minister-accuses-forest-and-bird-of-unnecessary-scaremongering-over-game-animal-bill",
+      "summary": "Forest and Bird has slammed the Game Animal Council (Herds of Special Interest) Amendment Bill, saying it will prioritise \"wealthy trophy hunters\" over conservation.",
+      "author": null,
+      "publishedAt": "2026-07-02",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "5e6ac8bb258ae2e0",
+      "source": "RNZ",
+      "title": "Defence minister received no advice over nuclear comments",
+      "url": "https://www.rnz.co.nz/news/political/651955/defence-minister-received-no-advice-over-nuclear-comments",
+      "summary": "Chris Penk's suggestion NZ have a \"conversation\" about its nuclear-free policies was quickly shut down by the prime minister.",
+      "author": null,
+      "publishedAt": "2026-07-02",
+      "imageUrl": null,
+      "mentions": [
+        "penk-chris"
+      ],
+      "parties": [
+        "National"
+      ],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "c203adc5f6c73940",
+      "source": "RNZ",
+      "title": "Treasury reveals its advice to government during early days of fuel crisis",
+      "url": "https://www.rnz.co.nz/news/political/651792/treasury-reveals-its-advice-to-government-during-early-days-of-fuel-crisis",
+      "summary": "One suggestion was that there was \"value in waiting\" before giving New Zealanders fuel relief through the in-work tax credit.",
+      "author": null,
+      "publishedAt": "2026-07-02",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "c904ccdcbec167f3",
+      "source": "RNZ",
+      "title": "Rare 'inconsistency' debate starts Parliament's week",
+      "url": "https://www.rnz.co.nz/news/political/651315/rare-inconsistency-debate-starts-parliament-s-week",
+      "summary": "Before Parliament got into the trenches, MPs debated a declaration from the Supreme Court that some Corrections regimes are inconsistent with the Bill of Rights Act.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "92ce7a419322e228",
+      "source": "RNZ",
+      "title": "Second Z Energy lobbying document will be released: Luxon",
+      "url": "https://www.rnz.co.nz/news/political/651080/second-z-energy-lobbying-document-will-be-released-luxon",
+      "summary": "RNZ has requested the document, and Luxon told RNZ his office was working on releasing it.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [
+        "luxon-christopher"
+      ],
+      "parties": [
+        "National"
+      ],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "845be89e39226b5c",
+      "source": "RNZ",
+      "title": "Waikato Hospital ED death: Mum and daughter describe chaos as staff tried to resuscitate man",
+      "url": "https://www.rnz.co.nz/news/health/650382/waikato-hospital-ed-death-mum-and-daughter-describe-chaos-as-staff-tried-to-resuscitate-man",
+      "summary": "\"The nurses were trying to do the best they could with the amount of people that they had - they were stressed, and the patients were getting quite agitated.\"",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "a3e8b5b8e2b9a982",
+      "source": "RNZ",
+      "title": "'AI slop' - Greens criticise National attack ad",
+      "url": "https://www.rnz.co.nz/news/political/650807/ai-slop-greens-criticise-national-attack-ad",
+      "summary": "The Greens say the National Party's attack advert misrepresents the party's tax policy and NZ's tax settings.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [
+        "Green",
+        "National"
+      ],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "615dc1df9b198948",
+      "source": "RNZ",
+      "title": "Health and safety bill passes third reading, Labour promises repeal",
+      "url": "https://www.rnz.co.nz/news/political/651085/health-and-safety-bill-passes-third-reading-labour-promises-repeal",
+      "summary": "The legislation reverses many of the changes brought in by the 2015 Health and Safety at Work Act, which was passed in response to the Pike River tragedy.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [
+        "Labour"
+      ],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "226cd072acac16e3",
+      "source": "RNZ",
+      "title": "Watchdog finds decision by Prime Minister's Office about official information request 'unreasonable'",
+      "url": "https://www.rnz.co.nz/news/political/649997/watchdog-finds-decision-by-prime-minister-s-office-about-official-information-request-unreasonable",
+      "summary": "The Ombudsman says the use of a personal email address was particularly concerning.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "973fe194cf40ce3e",
+      "source": "RNZ",
+      "title": "‘What have you done for me lately?’ former top US diplomat David Stilwell asks NZ",
+      "url": "https://www.rnz.co.nz/news/world/647757/what-have-you-done-for-me-lately-former-top-us-diplomat-david-stilwell-asks-nz",
+      "summary": "'People forget ... it's quid pro quo' the former high ranking US diplomat says of relationship with New Zealand.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "75f1ec1e3c5de83c",
+      "source": "RNZ",
+      "title": "Waitaki District Council's water plan approved",
+      "url": "https://www.rnz.co.nz/news/regional/650315/waitaki-district-council-s-water-plan-approved",
+      "summary": "It will team up with Central Otago, Clutha and Gore councils to deliver drinking water, wastewater and stormwater services",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "e9eb83b04325e58d",
+      "source": "RNZ",
+      "title": "'You pay the price for the price you pay' - original school lunch contractor",
+      "url": "https://www.rnz.co.nz/news/education/648143/you-pay-the-price-for-the-price-you-pay-original-school-lunch-contractor",
+      "summary": "A group that lost its contracts through the government's shake-up says a scathing review confirms long-standing warnings.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "30f28286d6b03992",
+      "source": "RNZ",
+      "title": "Underestimated disaster recovery costs partly to blame for Auckland rate rises - Wayne Brown",
+      "url": "https://www.rnz.co.nz/news/regions_auckland/648435/underestimated-disaster-recovery-costs-partly-to-blame-for-auckland-rate-rises-wayne-brown",
+      "summary": "A partnership with central government to help Auckland rebuild after severe weather events in 2023, costing $2 billion, wrapped up this week.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "e5488cd59902bd68",
+      "source": "RNZ",
+      "title": "Winston Peters expresses no concern over China's new ethnic unity law",
+      "url": "https://www.rnz.co.nz/news/political/650735/winston-peters-expresses-no-concern-over-china-s-new-ethnic-unity-law",
+      "summary": "It comes after Australia's government lodged objections with Beijing about the legislation.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [
+        "peters-winston"
+      ],
+      "parties": [
+        "New Zealand First"
+      ],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "be52443feb7887a6",
+      "source": "RNZ",
+      "title": "Nelson Tenths: Submissions sought on bill to return land to customary owners",
+      "url": "https://www.rnz.co.nz/news/te-manu-korihi/650578/nelson-tenths-submissions-sought-on-bill-to-return-land-to-customary-owners",
+      "summary": "The bill would enable the transfer of land from the Crown to Te Here-ā-Nuku Trust on behalf of the customary landowners.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "cf8a47286bbd70ea",
+      "source": "RNZ",
+      "title": "MP expresses concern over China's new ethnic unity law",
+      "url": "https://www.rnz.co.nz/news/political/650379/mp-expresses-concern-over-china-s-new-ethnic-unity-law",
+      "summary": "The Inter-Parliamentary Alliance on China will be having a discussion about the issue.",
+      "author": null,
+      "publishedAt": "2026-07-01",
+      "imageUrl": null,
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.rnz.co.nz/rss/political.xml",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "4eba1df8e2fe7cc2",
+      "source": "NZ Herald",
+      "title": "Poor kids left behind in schools. Erica Stanford is looking at ECE to fix it",
+      "url": "https://www.nzherald.co.nz/nz/politics/poor-kids-left-behind-in-schools-erica-stanford-is-looking-at-ece-to-fix-it/premium/MQMLKYGPENAU7JLALMZNOWG52A/",
+      "summary": "The minister says your means determines your destiny in this country - but it shouldn't.",
+      "author": "Derek Cheng",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/YCPS73AK2VHPRIBGNXO6GJ3P4U.jpg?auth=f2b526ab28dcd930cdc41172cf750070115f9d677679386edeb603c3d9d37568&smart=true&width=1280&height=720",
+      "mentions": [
+        "stanford-erica"
+      ],
+      "parties": [
+        "National"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "5ba9bc2cf7d58dd0",
+      "source": "NZ Herald",
+      "title": "Inside Government’s fuel disruption response: Document dump reveals how ministers decided on financial support, worst-case scenario",
+      "url": "https://www.nzherald.co.nz/nz/politics/inside-governments-fuel-disruption-response-document-dump-reveals-how-ministers-decided-on-financial-support-worst-case-scenario/premium/VNATEOSQZ5DW5N52KXOQ5FS5WA/",
+      "summary": "New documents have been released about how the Government handled the situation.",
+      "author": "Jamie Ensor, Thomas Coughlan",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/252KYCSFEZFXHCHTR6PQU3KBSE.jpg?auth=a6f3c62af29edc1367cb7753eb3c5ad7fba4da4070a2fdaa202b7ad946dfe7c6&smart=true&width=1280&height=720",
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "3169550f8192aade",
+      "source": "NZ Herald",
+      "title": "Election 2026: Chris Hipkins calls rental support ‘subsidy for private landlords’ – Labour increased it in Govt",
+      "url": "https://www.nzherald.co.nz/nz/politics/election-2026-chris-hipkins-calls-rental-support-subsidy-for-private-landlords-labour-increased-it-in-government/6XZYW4IKSNBPPPL45A27NGFLQY/",
+      "summary": "Labour appears to have changed its position, saying social housing renters would lose out.",
+      "author": "Jamie Ensor",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/YHZ272LV4JGMNCSIAWOA5G4WOA.jpg?auth=6ded188129f1019dff8a17269f9447696913d0f1935b93abccdd3f0c996a91bf&smart=true&width=1280&height=720",
+      "mentions": [
+        "hipkins-chris"
+      ],
+      "parties": [
+        "Labour"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "c27d4fbe3ed3cd8e",
+      "source": "NZ Herald",
+      "title": "New Zealand finally has a new ambassador from the United States",
+      "url": "https://www.nzherald.co.nz/nz/politics/new-zealand-finally-has-a-new-ambassador-from-the-united-states/premium/F6N7EPSKKNG5RPFOH6QW7YFPCM/",
+      "summary": "Jared Novelly has presented his credentials to the Governor General.",
+      "author": "Thomas Coughlan",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/KXQCLFJBL5DRVE4QUNX56GW37Q.jpg?auth=19ac0d227109eaf0206a69330af511fee1ecc2b80b262955d9178803f0c49caf&smart=true&width=1280&height=720",
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "287c0d7c4a48826a",
+      "source": "NZ Herald",
+      "title": "Coalition insults escalate as Peters labelled ‘confused’ by top National figures",
+      "url": "https://www.nzherald.co.nz/nz/politics/coalition-insults-escalate-as-peters-labelled-confused-by-top-national-figures/premium/ZMRFHO6UTVDQFEQV7CG5YHP7IM/",
+      "summary": "Inter-party scraps among our coalition partners are escalating.",
+      "author": "Audrey Young",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/RT5MNXQQTNDV5FZCWLHFELSLHA.jpg?auth=423464debcecb2469f967c22056a740fe2892a8f35e28ad0132a791489232266&smart=true&width=1280&height=720",
+      "mentions": [
+        "peters-winston"
+      ],
+      "parties": [
+        "National",
+        "New Zealand First"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "0d43b1344e217738",
+      "source": "NZ Herald",
+      "title": "Protesters disrupt David Seymour announcement in Toyworld store, police called",
+      "url": "https://www.nzherald.co.nz/nz/politics/protesters-disrupt-david-seymour-announcement-in-toyworld-store-police-called/7E5SMVNHXBACDFFF2RLZFLJJFI/",
+      "summary": "He was announcing changes to toy standards when the protesters entered the store.",
+      "author": "Adam Pearse",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/2CBFVPR6A5FXDOCCD5AYIYSBLU.jpg?auth=6000634e0c3616e2ae89179e9acaf2a5542c463f6d06cc269c44983a46897f60&smart=true&width=1280&height=720",
+      "mentions": [
+        "seymour-david"
+      ],
+      "parties": [
+        "ACT"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "b00372f0f3bc8098",
+      "source": "NZ Herald",
+      "title": "Ombudsman rules against PM Christopher Luxon in climate lobbying document blunder",
+      "url": "https://www.nzherald.co.nz/nz/politics/unreasonable-chief-ombudsman-rules-against-pm-christopher-luxon-in-climate-lobbying-document-debacle/7KTKWZALUFFCRDAEK6TB3FUFEM/",
+      "summary": "Christopher Luxon has been told to remind his staff of their obligations.",
+      "author": "Julia Gabel, Adam Pearse",
+      "publishedAt": "2026-07-01",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/JVLI6JIHO5B4TCT3PHPHZEP55U.jpg?auth=3593a6667860eba2b8d926eb3caedbe3e243ec9aa0d496850bcb74ef9024c8bf&smart=true&width=1280&height=720",
+      "mentions": [
+        "luxon-christopher"
+      ],
+      "parties": [
+        "National"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "88d347bf3698392b",
+      "source": "NZ Herald",
+      "title": "Motorcycle WoF changes could reduce road safety, officials warn; overall package could save billions",
+      "url": "https://www.nzherald.co.nz/nz/politics/officials-warn-motorcycle-wof-changes-could-hurt-road-safety-overall-package-could-save-billions/TAVPTTWOCBHLFM7W24DB72TQTE/",
+      "summary": "'The Government has taken a more cautious approach to motorcycles,' James Meager said.",
+      "author": "Azaria Howell",
+      "publishedAt": "2026-06-30",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/IHBD2HAGQ5DUFE6RQNIVA4Z34M.jpg?auth=c3cc8fe3fefa2c7a80656439ed50be271069cdd9b4dad2d12e36e6cdbe066b0f&smart=true&width=1280&height=720",
+      "mentions": [
+        "meager-james"
+      ],
+      "parties": [
+        "National"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "f4b47154067c42d9",
+      "source": "NZ Herald",
+      "title": "Just one fifth of families leaving immediate access transitional housing going on to long-term home",
+      "url": "https://www.nzherald.co.nz/nz/politics/just-one-fifth-of-families-leaving-immediate-access-transitional-housing-going-on-to-long-term-home/W4SW4TSQOVGQ7AFZ5I5Z6VKF3Y/",
+      "summary": "It comes amid pressure over MSD staff performance being linked to Government targets.",
+      "author": "Julia Gabel",
+      "publishedAt": "2026-06-30",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/SXYGVDS54NEMJKHTLOKUPKHHYA.jpg?auth=8683a5167f760770673e947de2fc51abeb07b12333092faef4446aed088143af&smart=true&width=1280&height=720",
+      "mentions": [],
+      "parties": [],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    },
+    {
+      "articleId": "12adc0c2b12d4615",
+      "source": "NZ Herald",
+      "title": "NZ First secures win in health and safety reforms, delaying commencement until after election",
+      "url": "https://www.nzherald.co.nz/nz/politics/nz-first-secures-win-in-health-and-safety-reforms-delaying-commencement-until-after-election/AQNMRYXRKZHDFPWMGYGOM4CRME/",
+      "summary": "The coalition has been feuding over the proposed law changes.",
+      "author": "Thomas Coughlan",
+      "publishedAt": "2026-06-30",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/VYGYLGF6ZZDPPD56LJLI4MFRMQ.jpg?auth=7257f9a4696e8f9b40c0fcfe2304e4f78da7d9ddb59b66b395b2fa8b1114fc82&smart=true&width=1280&height=720",
+      "mentions": [],
+      "parties": [
+        "New Zealand First"
+      ],
+      "sourceUrl": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/politics/?outputType=xml&_website=nzh",
+      "fetchedAt": "2026-07-01T20:42:50.169Z"
+    }
+  ]
+}
