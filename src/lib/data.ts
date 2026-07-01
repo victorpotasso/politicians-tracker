@@ -2,6 +2,7 @@ import 'server-only';
 
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { billSubjects } from '@/lib/bill-subjects';
 import { PARLIAMENT_TERMS, type ParliamentTerm } from '@/lib/parliament-data';
 import { canonicalParty, partyColor, partySlug } from '@/lib/party';
 import { formatQuarterFull } from '@/lib/utils';
@@ -979,4 +980,73 @@ export function buildMpTimeline(mpId: string, data: MpTimelineData, limit = 80):
   }
 
   return events.sort((a, b) => b.date.localeCompare(a.date)).slice(0, limit);
+}
+
+// ---------------------------------------------------------------------------
+// Bills stats
+// ---------------------------------------------------------------------------
+
+export interface VoterRank {
+  mpId: string;
+  name: string;
+  party: string | null;
+  count: number;
+}
+
+/** Top MPs by number of votes cast with a given value (aye/nay/absent). */
+export function topVotersByValue(votes: Vote[], value: VoteValue, limit = 5): VoterRank[] {
+  const byMp = new Map<string, VoterRank>();
+  for (const vote of votes) {
+    if (vote.vote !== value || !vote.mpId) continue;
+    const entry =
+      byMp.get(vote.mpId) ??
+      ({ mpId: vote.mpId, name: vote.name ?? vote.mpId, party: vote.party, count: 0 } as VoterRank);
+    entry.count += 1;
+    byMp.set(vote.mpId, entry);
+  }
+  return [...byMp.values()].sort((a, b) => b.count - a.count).slice(0, limit);
+}
+
+export interface ProponentRank {
+  mpId: string | null;
+  name: string;
+  count: number;
+}
+
+/**
+ * Top bill sponsors by number of bills introduced. Sponsor/proponent data is
+ * not currently exposed by the source, so this is typically empty; it will
+ * populate automatically once `proponentName` is collected.
+ */
+export function topBillProponents(bills: Bill[], limit = 5): ProponentRank[] {
+  const byKey = new Map<string, ProponentRank>();
+  for (const bill of bills) {
+    if (!bill.proponentName) continue;
+    const key = bill.proponentMpId ?? bill.proponentName;
+    const entry =
+      byKey.get(key) ??
+      ({ mpId: bill.proponentMpId, name: bill.proponentName, count: 0 } as ProponentRank);
+    entry.count += 1;
+    byKey.set(key, entry);
+  }
+  return [...byKey.values()].sort((a, b) => b.count - a.count).slice(0, limit);
+}
+
+export interface SubjectRank {
+  subject: string;
+  count: number;
+}
+
+/** Most common bill subjects, by number of bills tagged with each. */
+export function topBillSubjects(bills: Bill[], limit = 5): SubjectRank[] {
+  const counts = new Map<string, number>();
+  for (const bill of bills) {
+    for (const subject of billSubjects(bill)) {
+      counts.set(subject, (counts.get(subject) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .map(([subject, count]) => ({ subject, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, limit);
 }
