@@ -4,10 +4,9 @@ import {
   ArrowRight,
   ArrowUpRight,
   Banknote,
-  ExternalLink,
   FileText,
+  History,
   Landmark,
-  Newspaper,
   Vote,
   Wallet,
 } from 'lucide-react';
@@ -17,10 +16,12 @@ import { notFound } from 'next/navigation';
 
 import { SpendByCategoryDonut, SpendTrendChart } from '@/components/money-charts';
 import { MpPhoto } from '@/components/mp-photo';
+import { MpTimeline } from '@/components/mp-timeline';
 import { Reveal } from '@/components/reveal';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
+  buildMpTimeline,
   getBills,
   getExpenses,
   getMp,
@@ -89,12 +90,18 @@ export default async function PoliticianProfilePage({ params }: Params) {
     getBills(),
     getExpenses(),
     getMpEnrichment(mpId),
-    getNewsForMp(mpId),
+    getNewsForMp(mpId, 100),
   ]);
   if (!mp) notFound();
 
   const mpVotes = votesForMp(mpId, votesData.records);
   const voteGroups = groupMpVotesByBill(mpId, votesData.records, billsData.records);
+  const timeline = buildMpTimeline(mpId, {
+    votes: votesData.records,
+    bills: billsData.records,
+    expenses: expensesData.records,
+    news,
+  });
   const spend = summariseMpSpend(mpId, expensesData.records);
   const spendCategories = spend.byCategory.map((c) => ({
     category: c.category[0].toUpperCase() + c.category.slice(1),
@@ -289,39 +296,20 @@ export default async function PoliticianProfilePage({ params }: Params) {
         </Reveal>
       ) : null}
 
-      {news.length > 0 ? (
+      {timeline.length > 0 ? (
         <Reveal delay={0.18} className="mt-6">
           <Card className="bg-card/60 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Newspaper className="text-muted-foreground size-4" aria-hidden />
-                In the news
+                <History className="text-muted-foreground size-4" aria-hidden />
+                Activity timeline
               </CardTitle>
               <CardDescription>
-                Recent RNZ &amp; NZ Herald coverage mentioning {mp.name}
+                Votes, expenses &amp; news for {mp.name}, most recent first
               </CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-col divide-y">
-              {news.map((article) => (
-                <a
-                  key={article.articleId}
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:bg-accent/40 group -mx-2 flex items-center justify-between gap-3 rounded-md px-2 py-3 transition-colors"
-                >
-                  <span className="flex min-w-0 flex-col gap-0.5">
-                    <span className="truncate text-sm font-medium">{article.title}</span>
-                    <span className="text-muted-foreground text-xs">
-                      {article.source} · {formatDayMonthYear(article.publishedAt)}
-                    </span>
-                  </span>
-                  <ExternalLink
-                    className="text-muted-foreground size-3.5 shrink-0 opacity-60 transition-opacity group-hover:opacity-100"
-                    aria-hidden
-                  />
-                </a>
-              ))}
+            <CardContent>
+              <MpTimeline events={timeline} name={mp.name} />
             </CardContent>
           </Card>
         </Reveal>

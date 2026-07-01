@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { PARLIAMENT_TERMS, type ParliamentTerm } from '@/lib/parliament-data';
 import { canonicalParty, partyColor, partySlug } from '@/lib/party';
+import { formatQuarterFull } from '@/lib/utils';
 import type {
   Bill,
   Dataset,
@@ -15,6 +16,7 @@ import type {
   Poll,
   SpendingYear,
   Vote,
+  VoteValue,
 } from '@/types/records';
 
 const DATA_DIR = join(process.cwd(), 'data');
@@ -848,4 +850,133 @@ export function withMentionedMps(articles: NewsArticle[], mps: MP[]): NewsArticl
 export async function getNewsForMp(mpId: string, limit = 6): Promise<NewsArticle[]> {
   const { records } = await getNews();
   return records.filter((a) => a.mentions.includes(mpId)).slice(0, limit);
+}
+
+// ---------------------------------------------------------------------------
+// Activity timeline (votes · expenses · news, merged chronologically)
+// ---------------------------------------------------------------------------
+
+export type TimelineKind = 'vote' | 'expense' | 'news';
+
+/** A single dated event on an MP's activity timeline. */
+export interface TimelineEvent {
+  id: string;
+  kind: TimelineKind;
+  /** ISO `YYYY-MM-DD` used for ordering and display. */
+  date: string;
+  title: string;
+  /** Secondary line (vote position, expense breakdown, source/author). */
+  detail: string | null;
+  /** Internal link (e.g. to a bill), when applicable. */
+  href: string | null;
+  /** External link (news article), when applicable. */
+  url: string | null;
+  /** Vote position, for colouring vote events. */
+  vote: VoteValue | null;
+  /** Source label for news events. */
+  source: string | null;
+  /** Total amount for expense events, in NZD. */
+  amount: number | null;
+}
+
+/** Map a `YYYY-QN` expense period to the ISO date of that quarter's end. */
+function quarterEndIso(period: string): string {
+  const match = period.match(/^(\d{4})-Q([1-4])$/);
+  if (!match) return period;
+  const ends = ['03-31', '06-30', '09-30', '12-31'];
+  return `${match[1]}-${ends[Number(match[2]) - 1]}`;
+}
+
+const CATEGORY_LABELS: Record<string, string> = {
+  travel: 'Travel',
+  accommodation: 'Accommodation',
+  other: 'Other',
+};
+
+export interface MpTimelineData {
+  votes: Vote[];
+  bills: Bill[];
+  expenses: Expense[];
+  news: NewsArticle[];
+}
+
+/**
+ * Merge an MP's votes, quarterly expenses, and news mentions into a single
+ * chronological timeline, newest first. Expenses are aggregated per quarter so a
+ * period appears as one event rather than many category rows.
+ */
+export function buildMpTimeline(mpId: string, data: MpTimelineData, limit = 80): TimelineEvent[] {
+  const events: TimelineEvent[] = [];
+  const billTitleById = new Map(data.bills.map((b) => [b.billId, b.title]));
+
+  for (const vote of data.votes) {
+    if (vote.mpId !== mpId || !vote.date) continue;
+    const title = (vote.billId ? billTitleById.get(vote.billId) : null) ?? vote.issue ?? 'Division';
+    const position =
+      vote.vote === 'aye'
+        ? 'Voted Aye'
+        : vote.vote === 'nay'
+          ? 'Voted No'
+          : vote.vote === 'absent'
+            ? 'Absent'
+            : 'Vote recorded';
+    events.push({
+      id: `vote-${vote.voteId}`,
+      kind: 'vote',
+      date: vote.date,
+      title,
+      detail: vote.stage ? `${position} · ${vote.stage}` : position,
+      href: vote.billId ? `/bills/${vote.billId}` : null,
+      url: null,
+      vote: vote.vote,
+      source: null,
+      amount: null,
+    });
+  }
+
+  const byPeriod = new Map<string, { total: number; byCategory: Map<string, number> }>();
+  for (const expense of data.expenses) {
+    if (expense.mpId !== mpId) continue;
+    const entry = byPeriod.get(expense.period) ?? { total: 0, byCategory: new Map() };
+    const amount = expense.amount ?? 0;
+    entry.total += amount;
+    entry.byCategory.set(expense.category, (entry.byCategory.get(expense.category) ?? 0) + amount);
+    byPeriod.set(expense.period, entry);
+  }
+  for (const [period, { total, byCategory }] of byPeriod) {
+    const breakdown = [...byCategory.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(([category]) => CATEGORY_LABELS[category] ?? category)
+      .join(' · ');
+    events.push({
+      id: `expense-${period}`,
+      kind: 'expense',
+      date: quarterEndIso(period),
+      title: `${formatQuarterFull(period)} expenses`,
+      detail: breakdown || null,
+      href: null,
+      url: null,
+      vote: null,
+      source: null,
+      amount: total,
+    });
+  }
+
+  for (const article of data.news) {
+    if (!article.mentions.includes(mpId) || !article.publishedAt) continue;
+    events.push({
+      id: `news-${article.articleId}`,
+      kind: 'news',
+      date: article.publishedAt,
+      title: article.title,
+      detail: article.author ? `${article.source} · ${article.author}` : article.source,
+      href: null,
+      url: article.url,
+      vote: null,
+      source: article.source,
+      amount: null,
+    });
+  }
+
+  return events.sort((a, b) => b.date.localeCompare(a.date)).slice(0, limit);
 }
