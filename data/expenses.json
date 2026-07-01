@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "domain": "expenses",
+    "count": 0,
+    "collectedAt": "2026-07-01T08:03:24.542Z",
+    "sources": [
+      "https://www.parliament.nz/en/mps-and-electorates/mps-expenses/"
+    ]
+  },
+  "records": []
+}
