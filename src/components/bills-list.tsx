@@ -1,6 +1,6 @@
 'use client';
 
-import { CalendarDays, FileText, Search, Vote } from 'lucide-react';
+import { CalendarDays, FileText, PenLine, Search, Vote } from 'lucide-react';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 
@@ -127,12 +127,24 @@ export function BillsList({ bills }: { bills: BillRow[] }) {
                 {bill.abstract ? (
                   <p className="text-muted-foreground line-clamp-3 text-sm">{bill.abstract}</p>
                 ) : null}
-                {bill.introducedDate ? (
-                  <p className="text-muted-foreground/70 mt-auto flex items-center gap-1.5 pt-1 text-xs">
-                    <CalendarDays className="size-3.5" aria-hidden />
-                    First recorded {formatDayMonthYear(bill.introducedDate)}
-                  </p>
-                ) : null}
+                <div className="mt-auto flex flex-col gap-1 pt-1">
+                  {bill.proponentName ? (
+                    <p className="text-muted-foreground flex items-center gap-1.5 text-xs">
+                      <PenLine className="size-3.5 shrink-0" aria-hidden />
+                      <span className="truncate">
+                        Introduced by{' '}
+                        <span className="text-foreground/80 font-medium">{bill.proponentName}</span>
+                        {bill.party ? ` · ${bill.party}` : ''}
+                      </span>
+                    </p>
+                  ) : null}
+                  {bill.introducedDate ? (
+                    <p className="text-muted-foreground/70 flex items-center gap-1.5 text-xs">
+                      <CalendarDays className="size-3.5" aria-hidden />
+                      First recorded {formatDayMonthYear(bill.introducedDate)}
+                    </p>
+                  ) : null}
+                </div>
               </CardContent>
             </Card>
           </Link>

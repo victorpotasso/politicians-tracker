@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 
 import type { Bill } from '../../src/types/records';
+import { BILL_SPONSORS } from '../lib/bill-overrides';
 import { fetchText } from '../lib/fetch-cache';
 import { clean, slugify, toIsoDate } from '../lib/normalize';
 import type { CollectOptions, Collector, CollectResult } from './types';
@@ -33,14 +34,17 @@ async function run(options: CollectOptions): Promise<CollectResult<Bill>> {
         .filter((d): d is string => Boolean(d))
         .sort();
 
+      const billId = slugify(title);
+      const sponsor = BILL_SPONSORS[billId];
+
       records.push({
-        billId: slugify(title),
+        billId,
         title,
         abstract,
         stage: null,
-        proponentMpId: null,
-        proponentName: null,
-        party: null,
+        proponentMpId: sponsor?.proponentMpId ?? null,
+        proponentName: sponsor?.proponentName ?? null,
+        party: sponsor?.party ?? null,
         introducedDate: dates[0] ?? null,
         documents: [],
         sourceUrl: DIVISIONS_URL,

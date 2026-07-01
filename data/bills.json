@@ -2,7 +2,7 @@
   "meta": {
     "domain": "bills",
     "count": 9,
-    "collectedAt": "2026-07-01T20:04:36.850Z",
+    "collectedAt": "2026-07-01T21:09:50.262Z",
     "sources": [
       "https://voted.nz/divisions"
     ]
@@ -14,25 +14,25 @@
       "abstract": "This omnibus bill amends the law to decriminalise abortion, better align the regulation of abortion services with other health services, and modernise the legal framework for abortion currently set out in the Crimes Act 1961 and the Contraception, Sterilisation, and Abortion Act 1977.",
       "stage": null,
       "proponentMpId": null,
-      "proponentName": null,
-      "party": null,
+      "proponentName": "Andrew Little",
+      "party": "Labour",
       "introducedDate": "2019-08-08",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "end-of-life-choice-bill",
       "title": "End of Life Choice Bill",
       "abstract": "This bill gives people with a terminal illness the option of requesting assisted dying.",
       "stage": null,
-      "proponentMpId": null,
-      "proponentName": null,
-      "party": null,
+      "proponentMpId": "seymour-david",
+      "proponentName": "David Seymour",
+      "party": "ACT",
       "introducedDate": "2017-12-13",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "gambling-gambling-harm-reduction-amendment-bill",
@@ -45,7 +45,7 @@
       "introducedDate": "2012-05-09",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "marriage-definition-of-marriage-amendment-bill",
@@ -53,25 +53,25 @@
       "abstract": "This bill seeks to amend the Marriage Act 1955 to ensure that its provisions are not applied in a discriminatory manner. The bill aims to ensure that all people, regardless of sex, sexual orientation, or gender identity will have the opportunity to marry if they so choose.",
       "stage": null,
       "proponentMpId": null,
-      "proponentName": null,
-      "party": null,
+      "proponentName": "Louisa Wall",
+      "party": "Labour",
       "introducedDate": "2012-08-29",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "misuse-of-drugs-medicinal-cannabis-and-other-matters-amendment-bill",
       "title": "Misuse of Drugs (Medicinal Cannabis and Other Matters) Amendment Bill",
       "abstract": "The purpose of this bill is to make it legal for New Zealanders who are suffering from terminal illness or any debilitating condition to use cannabis or cannabis products with the support of a registered medical practitioner.",
       "stage": null,
-      "proponentMpId": null,
-      "proponentName": null,
-      "party": null,
+      "proponentMpId": "swarbrick-chloe",
+      "proponentName": "Chlöe Swarbrick",
+      "party": "Green",
       "introducedDate": "2018-01-31",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "new-zealand-international-convention-centre-bill",
@@ -84,7 +84,7 @@
       "introducedDate": "2013-07-11",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "sale-and-supply-of-alcohol-renewal-of-licences-amendment-bill-no-2",
@@ -97,7 +97,7 @@
       "introducedDate": "2018-02-21",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "shop-trading-hours-act-repeal-waitaki-easter-trading-amendment-bill",
@@ -110,7 +110,7 @@
       "introducedDate": "2012-06-27",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     },
     {
       "billId": "shop-trading-hours-amendment-bill",
@@ -123,7 +123,7 @@
       "introducedDate": "2015-11-03",
       "documents": [],
       "sourceUrl": "https://voted.nz/divisions",
-      "fetchedAt": "2026-07-01T20:04:36.843Z"
+      "fetchedAt": "2026-07-01T21:09:50.256Z"
     }
   ]
 }

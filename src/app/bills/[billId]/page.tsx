@@ -1,4 +1,4 @@
-import { ArrowLeft, CalendarDays, FileText, Users, Vote } from 'lucide-react';
+import { ArrowLeft, CalendarDays, FileText, PenLine, Users, Vote } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -73,6 +73,23 @@ export default async function BillDetailPage({ params }: Params) {
                 <span className="text-muted-foreground inline-flex items-center gap-1.5 text-xs">
                   <CalendarDays className="size-3.5" aria-hidden />
                   First recorded {formatDate(bill.introducedDate)}
+                </span>
+              ) : null}
+              {bill.proponentName ? (
+                <span className="text-muted-foreground inline-flex items-center gap-1.5 text-xs">
+                  <PenLine className="size-3.5" aria-hidden />
+                  Introduced by{' '}
+                  {bill.proponentMpId ? (
+                    <Link
+                      href={`/politicians/${bill.proponentMpId}`}
+                      className="text-foreground font-medium hover:underline"
+                    >
+                      {bill.proponentName}
+                    </Link>
+                  ) : (
+                    <span className="text-foreground font-medium">{bill.proponentName}</span>
+                  )}
+                  {bill.party ? ` · ${bill.party}` : ''}
                 </span>
               ) : null}
             </div>
