@@ -5,12 +5,12 @@ import { join } from 'node:path';
 
 const CACHE_DIR = join(process.cwd(), '.cache');
 const USER_AGENT =
-  'poc-politicians-tracker/0.1 (public NZ political data research; contact: local)';
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
 
 /** Default cache lifetime: 24 hours. */
 const DEFAULT_TTL_MS = 24 * 60 * 60 * 1000;
 /** Politeness delay between live network requests. */
-const REQUEST_DELAY_MS = 750;
+const REQUEST_DELAY_MS = 400;
 
 let lastRequestAt = 0;
 
@@ -69,4 +69,31 @@ export async function fetchText(url: string, options: FetchOptions = {}): Promis
 export async function fetchJson<T = unknown>(url: string, options?: FetchOptions): Promise<T> {
   const text = await fetchText(url, options);
   return JSON.parse(text) as T;
+}
+
+/**
+ * Download a binary resource to `.cache/` and return its local path. Reuses a
+ * cached copy within the TTL. Used for XLSX/PDF datasets.
+ */
+export async function fetchToCache(url: string, options: FetchOptions = {}): Promise<string> {
+  const { ttlMs = DEFAULT_TTL_MS, force = false } = options;
+  const hash = createHash('sha1').update(url).digest('hex');
+  const path = join(CACHE_DIR, `${hash}.bin`);
+
+  if (!force && ttlMs > 0 && (await isFresh(path, ttlMs))) {
+    return path;
+  }
+
+  const wait = REQUEST_DELAY_MS - (Date.now() - lastRequestAt);
+  if (wait > 0) await sleep(wait);
+  lastRequestAt = Date.now();
+
+  const res = await fetch(url, { headers: { 'user-agent': USER_AGENT } });
+  if (!res.ok) {
+    throw new Error(`Request failed ${res.status} ${res.statusText} for ${url}`);
+  }
+  const buffer = Buffer.from(await res.arrayBuffer());
+  await mkdir(CACHE_DIR, { recursive: true });
+  await writeFile(path, buffer);
+  return path;
 }

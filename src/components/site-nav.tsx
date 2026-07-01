@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'motion/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,41 +9,60 @@ import { cn } from '@/lib/utils';
 const LINKS = [
   { href: '/', label: 'Dashboard' },
   { href: '/politicians', label: 'Politicians' },
+  { href: '/bills', label: 'Bills' },
+  { href: '/parliament', label: 'Parliament' },
+  { href: '/parties', label: 'Parties' },
+  { href: '/about', label: 'About' },
 ];
+
+function isActive(pathname: string, href: string): boolean {
+  return href === '/' ? pathname === '/' : pathname.startsWith(href);
+}
 
 export function SiteNav() {
   const pathname = usePathname();
 
   return (
-    <header className="border-border/50 bg-background/60 sticky top-0 z-20 border-b backdrop-blur-md">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-3 sm:px-10">
-        <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="bg-primary text-primary-foreground grid size-6 place-items-center rounded-md text-xs">
-            NZ
-          </span>
-          Politicians Tracker
-        </Link>
-        <ul className="flex items-center gap-1 text-sm">
-          {LINKS.map((link) => {
-            const active = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={cn(
-                    'rounded-md px-3 py-1.5 transition-colors',
-                    active
-                      ? 'bg-secondary text-secondary-foreground'
-                      : 'text-muted-foreground hover:text-foreground',
-                  )}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+    <header className="sticky top-0 z-30">
+      <div className="border-border/40 bg-background/70 supports-[backdrop-filter]:bg-background/50 border-b backdrop-blur-xl">
+        <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3 sm:px-10">
+          <Link href="/" className="group flex items-center gap-2.5">
+            <span className="relative grid size-7 place-items-center overflow-hidden rounded-lg text-[11px] font-bold text-white">
+              <span className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-violet-500 to-teal-400" />
+              <span className="relative">NZ</span>
+            </span>
+            <span className="text-sm font-semibold tracking-tight">
+              Politicians<span className="text-muted-foreground"> Tracker</span>
+            </span>
+          </Link>
+
+          <ul className="flex items-center gap-0.5 overflow-x-auto text-sm">
+            {LINKS.map((link) => {
+              const active = isActive(pathname, link.href);
+              return (
+                <li key={link.href} className="relative">
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      'relative block rounded-full px-3 py-1.5 whitespace-nowrap transition-colors',
+                      active ? 'text-foreground' : 'text-muted-foreground hover:text-foreground',
+                    )}
+                  >
+                    {active ? (
+                      <motion.span
+                        layoutId="nav-pill"
+                        className="bg-secondary absolute inset-0 -z-10 rounded-full"
+                        transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                      />
+                    ) : null}
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }

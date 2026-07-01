@@ -6,17 +6,73 @@ import type { Dataset, MP } from '../src/types/records';
 
 const MPS_JSON = join(process.cwd(), 'data', 'mps.json');
 const OUT_DIR = join(process.cwd(), 'public', 'politicians');
-const USER_AGENT =
-  'poc-politicians-tracker/0.1 (public NZ political data research; contact: local)';
-const DELAY_MS = 250;
+const UA = 'poc-politicians-tracker/0.1 (public NZ political data research; contact: local)';
+const DELAY_MS = 1100;
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+interface WikiPage {
+  title: string;
+  description?: string;
+  thumbnail?: { source: string };
+}
+
+const NZ = /new zealand|zealand/i;
+const POLITICIAN =
+  /politician|member of parliament|\bmp\b|minister|prime minister|party|list member|electorate|speaker/i;
+
+/** Fetch a validated NZ-politician portrait URL from Wikipedia, if one exists. */
+async function wikipediaPhoto(name: string): Promise<string | null> {
+  const query = encodeURIComponent(`${name} New Zealand politician`);
+  const searchUrl =
+    `https://en.wikipedia.org/w/api.php?action=query&generator=search` +
+    `&gsrsearch=${query}&gsrlimit=1&prop=pageimages|description` +
+    `&piprop=thumbnail&pithumbsize=400&format=json`;
+
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const res = await fetch(searchUrl, { headers: { 'user-agent': UA } });
+      if (res.status === 429) {
+        await sleep(2000 * (attempt + 1));
+        continue;
+      }
+      if (!res.ok) return null;
+      const data = (await res.json()) as { query?: { pages?: Record<string, WikiPage> } };
+      const page = Object.values(data.query?.pages ?? {})[0];
+      if (!page?.thumbnail?.source) return null;
+
+      const text = `${page.title} ${page.description ?? ''}`;
+      const nameMatches = name
+        .split(' ')
+        .some((part) => part.length > 2 && page.title.includes(part));
+      if (nameMatches && NZ.test(text) && POLITICIAN.test(text)) {
+        return page.thumbnail.source;
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
+
+async function download(url: string, dest: string): Promise<boolean> {
+  try {
+    const res = await fetch(url, { headers: { 'user-agent': UA } });
+    if (!res.ok) return false;
+    await writeFile(dest, Buffer.from(await res.arrayBuffer()));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 /**
- * Download MP portrait photos referenced in data/mps.json into
- * public/politicians/<mpId>.jpg. Skips files that already exist unless --force.
+ * Download MP portraits into public/politicians/<mpId>.jpg. Prefers official
+ * Wikipedia/Commons portraits (validated as NZ politicians), falling back to the
+ * voted.nz thumbnail. Skips files that already exist unless --force.
  */
 async function main(): Promise<void> {
   const force = process.argv.includes('--force');
@@ -29,36 +85,37 @@ async function main(): Promise<void> {
   const dataset = JSON.parse(await readFile(MPS_JSON, 'utf8')) as Dataset<MP>;
   await mkdir(OUT_DIR, { recursive: true });
 
-  let downloaded = 0;
+  let wiki = 0;
+  let voted = 0;
   let skipped = 0;
   let failed = 0;
 
   for (const mp of dataset.records) {
-    if (!mp.photoUrl) continue;
     const dest = join(OUT_DIR, `${mp.mpId}.jpg`);
     if (!force && existsSync(dest)) {
       skipped += 1;
       continue;
     }
-    try {
-      const res = await fetch(mp.photoUrl, { headers: { 'user-agent': USER_AGENT } });
-      if (!res.ok) {
-        failed += 1;
-        console.warn(`  ! ${mp.mpId}: ${res.status}`);
-        continue;
-      }
-      const buffer = Buffer.from(await res.arrayBuffer());
-      await writeFile(dest, buffer);
-      downloaded += 1;
+
+    await sleep(DELAY_MS);
+    const wikiUrl = await wikipediaPhoto(mp.name);
+    if (wikiUrl && (await download(wikiUrl, dest))) {
+      wiki += 1;
       await sleep(DELAY_MS);
-    } catch (error) {
-      failed += 1;
-      console.warn(`  ! ${mp.mpId}: ${(error as Error).message}`);
+      continue;
     }
+
+    if (mp.photoUrl && (await download(mp.photoUrl, dest))) {
+      voted += 1;
+      await sleep(DELAY_MS);
+      continue;
+    }
+
+    failed += 1;
   }
 
   console.log(
-    `Photos → ${OUT_DIR.replace(process.cwd(), '.')}: ${downloaded} downloaded, ${skipped} skipped, ${failed} failed.`,
+    `Photos → ${OUT_DIR.replace(process.cwd(), '.')}: ${wiki} wikipedia, ${voted} voted.nz, ${skipped} skipped, ${failed} missing.`,
   );
 }
 

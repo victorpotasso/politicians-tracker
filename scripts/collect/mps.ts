@@ -1,73 +1,84 @@
-import * as cheerio from 'cheerio';
-
 import type { MP } from '../../src/types/records';
-import { fetchText } from '../lib/fetch-cache';
-import { clean, toParty } from '../lib/normalize';
+import { parseCsvObjects } from '../lib/csv';
+import { fetchJson, fetchText } from '../lib/fetch-cache';
+import { clean, slugify, toParty } from '../lib/normalize';
 import type { CollectOptions, Collector, CollectResult } from './types';
 
-const PEOPLE_URL = 'https://voted.nz/people';
+const CKAN_PACKAGE =
+  'https://catalogue.data.govt.nz/api/3/action/package_show?id=members-of-parliament';
+
+interface CkanResource {
+  name: string;
+  url: string;
+  format: string;
+}
+
+interface CkanPackage {
+  result: { resources: CkanResource[] };
+}
+
+/** Build "First Last" from a "Surname, First" contact string. */
+function displayName(contact: string): string {
+  const [surname, ...rest] = contact.split(',');
+  const first = rest.join(',').trim();
+  return clean(`${first} ${surname.trim()}`) ?? contact.trim();
+}
+
+/** Slug that matches voted.nz person/photo slugs: `surname-first`. */
+function toSlug(contact: string): string {
+  const [surname, ...rest] = contact.split(',');
+  return slugify(`${surname} ${rest.join(' ')}`);
+}
 
 /**
- * Collect the roster of MPs from voted.nz, which republishes Office of the Clerk
- * / Parliamentary Service member data under CC-BY 4.0.
+ * Collect the current roster of MPs from the official "Members of Parliament"
+ * dataset on data.govt.nz (Parliamentary Service). Photos and voting records are
+ * keyed by a `surname-first` slug so they line up with voted.nz.
  */
 async function run(options: CollectOptions): Promise<CollectResult<MP>> {
-  const html = await fetchText(PEOPLE_URL, { force: options.force });
-  const $ = cheerio.load(html);
   const fetchedAt = new Date().toISOString();
+  const pkg = await fetchJson<CkanPackage>(CKAN_PACKAGE, { force: options.force });
+
+  const resource = (pkg.result.resources ?? []).find(
+    (r) => /current members/i.test(r.name) && /csv/i.test(r.format),
+  );
+  if (!resource) {
+    throw new Error('Could not find the current members CSV resource.');
+  }
+
+  const csv = await fetchText(resource.url, { force: options.force });
+  const rows = parseCsvObjects(csv);
   const records: MP[] = [];
 
-  $('li.mp-current, li.mp-former').each((_, li) => {
-    const el = $(li);
-    const anchor = el.find('a[href*="/people/"]').first();
-    const href = anchor.attr('href') ?? '';
-    const slugMatch = href.match(/\/people\/([^/]+)\/?$/);
-    const mpId = slugMatch ? slugMatch[1] : null;
+  for (const row of rows) {
+    const contact = row.Contact ?? row.contact ?? '';
+    if (!contact.includes(',')) continue;
 
-    const name = clean(el.find('.w3-xlarge').first().text());
-    if (!mpId || !name) return;
-
-    // Prefer the larger 128px portrait where the source offers a 64px thumbnail.
-    const rawSrc = el.find('img').first().attr('src') ?? '';
-    let photoUrl: string | null = null;
-    if (rawSrc) {
-      const abs = rawSrc.startsWith('http') ? rawSrc : `https://voted.nz${rawSrc}`;
-      photoUrl = abs.replace('/images/people/64/', '/images/people/128/');
-    }
-
-    // The trailing small span holds "<Party>, <Electorate>". An optional leading
-    // small span holds an honorific/title (e.g. "Hon", "Rt Hon") when present.
-    const smalls = el.find('.w3-small');
-    const role = smalls.length > 1 ? clean($(smalls.get(0)).text()) : null;
-    const meta = clean($(smalls.get(smalls.length - 1)).text());
-
-    let party: string | null = null;
-    let electorate: string | null = null;
-    if (meta) {
-      const [rawParty, ...rest] = meta.split(',');
-      party = toParty(rawParty);
-      electorate = clean(rest.join(',')) || null;
-    }
+    const mpId = toSlug(contact);
+    const name = displayName(contact);
+    const jobTitle = clean(row['Job Title']);
+    const electorateField = clean(row.Electorate);
+    const electorate = electorateField ?? (/(list)/i.test(jobTitle ?? '') ? 'List' : null);
 
     records.push({
       mpId,
       name,
-      party,
+      party: toParty(row.Party),
       electorate,
-      role: role && role !== name ? role : null,
+      role: clean(row['Salutation/Title']) || null,
       firstElected: null,
-      profileUrl: href || null,
-      photoUrl,
-      sourceUrl: PEOPLE_URL,
+      profileUrl: `https://voted.nz/people/${mpId}/`,
+      photoUrl: `https://voted.nz/images/people/128/${mpId}.jpg`,
+      sourceUrl: resource.url,
       fetchedAt,
     });
-  });
+  }
 
-  return { records, sources: [PEOPLE_URL] };
+  return { records, sources: [CKAN_PACKAGE, resource.url] };
 }
 
 export const mpsCollector: Collector<MP> = {
   domain: 'mps',
-  describe: 'Current and former MPs (voted.nz, CC-BY 4.0)',
+  describe: 'Current MPs (data.govt.nz, Parliamentary Service)',
   run,
 };
