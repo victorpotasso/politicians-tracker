@@ -10,7 +10,7 @@ interface StatCardProps {
 
 export function StatCard({ label, value, hint }: StatCardProps) {
   return (
-    <Card className="bg-card/70 backdrop-blur-sm">
+    <Card className="interactive-card bg-card/70 backdrop-blur-sm">
       <CardContent className="flex flex-col gap-1">
         <CardDescription>{label}</CardDescription>
         <CardTitle className="text-3xl font-semibold tabular-nums">{value}</CardTitle>

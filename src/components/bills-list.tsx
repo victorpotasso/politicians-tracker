@@ -5,6 +5,7 @@ import { useMemo, useState } from 'react';
 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
+import { formatDayMonthYear } from '@/lib/utils';
 import type { Bill } from '@/types/records';
 
 interface BillRow extends Bill {
@@ -49,6 +50,11 @@ export function BillsList({ bills }: { bills: BillRow[] }) {
                 </div>
                 {bill.abstract ? (
                   <p className="text-muted-foreground line-clamp-3 text-sm">{bill.abstract}</p>
+                ) : null}
+                {bill.introducedDate ? (
+                  <p className="text-muted-foreground/70 mt-auto pt-1 text-xs">
+                    First recorded {formatDayMonthYear(bill.introducedDate)}
+                  </p>
                 ) : null}
               </CardContent>
             </Card>

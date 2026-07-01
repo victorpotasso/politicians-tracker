@@ -13,7 +13,7 @@ import {
 } from 'recharts';
 
 import type { CategoryTotal, PeriodTotal } from '@/lib/data';
-import { formatNZD, formatNZDCompact } from '@/lib/utils';
+import { formatNZD, formatNZDCompact, formatQuarterLong, formatQuarterShort } from '@/lib/utils';
 
 const CATEGORY_COLORS: Record<string, string> = {
   accommodation: 'var(--chart-1)',
@@ -69,6 +69,7 @@ export function SpendTrendChart({ data }: { data: PeriodTotal[] }) {
         </defs>
         <XAxis
           dataKey="period"
+          tickFormatter={formatQuarterShort}
           tickLine={false}
           axisLine={false}
           tick={{ fill: 'var(--muted-foreground)', fontSize: 11 }}
@@ -80,7 +81,11 @@ export function SpendTrendChart({ data }: { data: PeriodTotal[] }) {
           width={48}
           tick={{ fill: 'var(--muted-foreground)', fontSize: 11 }}
         />
-        <Tooltip contentStyle={tooltipStyle} formatter={(value) => formatNZD(Number(value))} />
+        <Tooltip
+          contentStyle={tooltipStyle}
+          labelFormatter={(label) => formatQuarterLong(String(label))}
+          formatter={(value) => [formatNZD(Number(value)), 'Spend']}
+        />
         <Area
           type="monotone"
           dataKey="amount"

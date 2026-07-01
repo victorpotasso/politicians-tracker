@@ -19,7 +19,7 @@ export default async function BillsPage() {
     .sort((a, b) => b.divisions - a.divisions);
 
   return (
-    <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12 sm:px-10">
+    <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
         <header className="flex flex-col gap-2">
           <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">

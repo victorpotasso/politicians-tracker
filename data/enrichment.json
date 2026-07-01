@@ -1,0 +1,1232 @@
+{
+  "meta": {
+    "domain": "mps",
+    "count": 122,
+    "collectedAt": "2026-07-01T10:20:39.922Z",
+    "sources": [
+      "https://en.wikipedia.org/w/api.php"
+    ]
+  },
+  "records": [
+    {
+      "mpId": "abel-steve",
+      "wikipediaTitle": "Steve Abel",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Steve_Abel",
+      "description": "New Zealand political candidate and singer-songwriter",
+      "extract": "Stephen George Bremner Abel is a New Zealand politician, environmental activist and musician who is involved with Greenpeace. Since 2023 he has served as a list member of parliament for the Green Party of Aotearoa New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Steve_Abel_4_%28cropped%29.jpg/960px-Steve_Abel_4_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Steve_Abel",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "andersen-ginny",
+      "wikipediaTitle": "Ginny Andersen",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ginny_Andersen",
+      "description": "New Zealand politician (born 1975)",
+      "extract": "Virginia Ruby Andersen (born 1975) is a New Zealand politician. She has been a Member of Parliament in the House of Representatives for the Labour Party since the 2017 New Zealand general election.\nAndersen held the offices of Minister of Police and Minister of Justice in the final months of the Sixth Labour Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Profile--ginnyandersen-3-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ginny_Andersen",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "anderson-miles",
+      "wikipediaTitle": "Miles Anderson (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Miles_Anderson_(politician)",
+      "description": "National Party politician in New Zealand",
+      "extract": "Miles John Anderson (born 1968 or 1969) is a New Zealand farmer and politician. He was elected as a Member of the New Zealand House of Representatives for Waitaki, representing the National Party, in the 2023 New Zealand general election. From a farming background, he was with Federated Farmers, chaired one of their national bodies, and was on their national board.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/ANDERSON%2C_Miles_-_Waitaki_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miles_Anderson_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "arbuckle-jamie",
+      "wikipediaTitle": "Jamie Arbuckle",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jamie_Arbuckle",
+      "description": "New Zealand politician",
+      "extract": "Jamie Arthur Arbuckle (born 1978 or 1979) is a New Zealand politician. He is currently a Member of Parliament in the New Zealand House of Representatives for the New Zealand First party.\nArbuckle was a Marlborough district councillor following the 2010 local elections.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jamie_Arbuckle_2024.jpg/960px-Jamie_Arbuckle_2024.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jamie_Arbuckle",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "bates-carl",
+      "wikipediaTitle": "Carl Bates",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Carl_Bates",
+      "description": "New Zealand politician",
+      "extract": "Carl Michael Bates (born 13 March 1983) is a New Zealand politician, representing the New Zealand National Party as a Member of Parliament since the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/BATES%2C_Carl_-_Whanganui_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carl_Bates",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "bayly-andrew",
+      "wikipediaTitle": "Andrew Bayly",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Bayly",
+      "description": "New Zealand politician",
+      "extract": "Andrew Henry Bayly  (born 1962) is a New Zealand businessman, adventurer, and politician. He was elected to the New Zealand Parliament at the 2014 general election as the MP for Hunua, representing the New Zealand National Party.  He is currently the MP for Port Waikato.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/BAYLY%2C_Andrew_-_Port_Waikato_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Andrew_Bayly",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "belich-camilla",
+      "wikipediaTitle": "Camilla Belich",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Camilla_Belich",
+      "description": "New Zealand Labour Party politician",
+      "extract": "Camilla Vera Feslier Belich is a New Zealand lawyer, trade unionist and politician. She has been a Member of Parliament, representing the New Zealand Labour Party, since 2020.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Profile--camillabelich-4-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Camilla_Belich",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "bennett-glen",
+      "wikipediaTitle": "Glen Bennett",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Glen_Bennett",
+      "description": "New Zealand Labour Party politician elected in 2020",
+      "extract": "Glen Thomas Bennett (born 1975 or 1976) is a New Zealand politician and a member of the Labour Party. He was elected the Member of the Parliament for New Plymouth at the 2020 New Zealand general election, defeating the National candidate and incumbent Jonathan Young. He lost his seat to David MacLeod in the 2023 general election, but re-entered parliament on the list in March 2024 following the retirement of Grant Robertson.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Profile--glenbennett-2-390-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Glen_Bennett",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "bidois-daniel",
+      "wikipediaTitle": "Dan Bidois",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dan_Bidois",
+      "description": "New Zealand politician",
+      "extract": "Daniel Michael Bidois (born 1983) is a New Zealand politician.\nA member of the National Party, Bidois has been a Member of Parliament in the House of Representatives for Northcote since 2023. He previously represented that electorate from 2018 until 2020.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/BIDOIS%2C_Dan_-_Northcote_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dan_Bidois",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "bishop-chris",
+      "wikipediaTitle": "Chris Bishop",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chris_Bishop",
+      "description": "New Zealand politician",
+      "extract": "Christopher Bishop (born 4 September 1983) is a New Zealand politician for the National Party. He was first elected to the New Zealand House of Representatives in 2014 as a list MP. Bishop won the Hutt South electorate in 2017 but lost the seat in 2020. He returned to Parliament as a National list MP and served as National spokesperson for Housing and Infrastructure and was the Shadow Leader of the House.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/BISHOP%2C_Chris_-_Hutt_South_%28cropped_alt%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chris_Bishop",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "boyack-rachel",
+      "wikipediaTitle": "Rachel Boyack",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rachel_Boyack",
+      "description": "New Zealand politician",
+      "extract": "Rachel Elizabeth Boyack-Mayer is a New Zealand unionist and politician. Since 2020, she has been a Member of Parliament for the Labour Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Profile--rachelboyack-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rachel_Boyack",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "brewer-cameron",
+      "wikipediaTitle": "Cameron Brewer",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cameron_Brewer",
+      "description": "New Zealand politician",
+      "extract": "Cameron Eric Brewer (born 8 March 1973) is a New Zealand politician and former journalist.\nA member of the National Party, Brewer has been a Member of Parliament in the House of Representatives for Upper Harbour since 2023. He was previously the Ōrākei ward representative on Auckland Council from 2010 to 2016.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/BREWER%2C_Cameron_-_Upper_Harbour_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cameron_Brewer",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "brooking-rachel",
+      "wikipediaTitle": "Rachel Brooking",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rachel_Brooking",
+      "description": "New Zealand Labour Party politician",
+      "extract": "Rachel Jane Brooking (born 18 October 1975) is a New Zealand lawyer and politician.\nBrooking was elected to the New Zealand House of Representatives at the 2020 New Zealand general election. She was Minister for Oceans and Fisheries and Minister for Food Safety in the Sixth Labour Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Profile--rachelbrooking-2-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rachel_Brooking",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "brown-simeon",
+      "wikipediaTitle": "Simeon Brown",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Simeon_Brown",
+      "description": "New Zealand politician (born 1991)",
+      "extract": "Simeon Peter Brown (born 8 April 1991) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party. Following the 2023 New Zealand general election, Brown became Minister of Energy, Minister of Local Government,  Minister of Transport, Minister for Auckland, and Deputy leader of the House in the Sixth National Government. In January 2025, he was appointed as Minister of Health and Minister for State Owned Enterprises, while dropping his energy, local government and transport portfolios.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/BROWN%2C_Simeon_-_Pakuranga_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Simeon_Brown",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "brownlee-gerry",
+      "wikipediaTitle": "Gerry Brownlee",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gerry_Brownlee",
+      "description": "New Zealand politician (born 1956)",
+      "extract": "Gerard Anthony Brownlee (born 4 February 1956) is a New Zealand politician who has served as the 32nd speaker of the New Zealand House of Representatives since 2023. He was first elected as a member of the New Zealand House of Representatives for Ilam in 1996, representing the National Party. He became a list MP in 2020.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Speaker_Gerry_Brownlee_2025_%28cropped%29.jpg/960px-Speaker_Gerry_Brownlee_2025_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gerry_Brownlee",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "butterick-mike",
+      "wikipediaTitle": "Mike Butterick",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mike_Butterick",
+      "description": "New Zealand politician",
+      "extract": "Michael David Butterick (born 1971 or 1972) is a New Zealand farmer and politician. He was elected as a Member of the New Zealand House of Representatives for Wairarapa, representing the National Party, in the 2023 New Zealand general election. In April 2026, Butterick became Minister for Land Information and associate Minister of Agriculture.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/BUTTERICK%2C_Mike_-_Wairarapa_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mike_Butterick",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "cameron-mark",
+      "wikipediaTitle": "Mark Cameron (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mark_Cameron_(politician)",
+      "description": "New Zealand politician",
+      "extract": "Mark Stuart Cameron is a New Zealand politician and dairy farmer. He has been a member of Parliament for ACT New Zealand since the 2020 general election.",
+      "imageUrl": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mark_Cameron_(politician)",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "campbell-hamish",
+      "wikipediaTitle": "Hamish Campbell",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hamish_Campbell",
+      "description": "New Zealand politician and medical researcher",
+      "extract": "Hamish George Campbell (born 1979 or 1980) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party. He previously worked as a medical researcher and lecturer, and in his family's orchard business.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/CAMPBELL%2C_Hamish_-_Ilam_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hamish_Campbell",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "carter-kahurangi",
+      "wikipediaTitle": "Kahurangi Carter",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kahurangi_Carter",
+      "description": "New Zealand politician (born 1983 or 1984)",
+      "extract": "Kahurangi \"Kahu\" Carter (born 1983 or 1984) is a New Zealand politician, representing the Green Party of Aotearoa New Zealand as a Member of Parliament since the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Kahu_Carter_%28cropped%29.jpg/960px-Kahu_Carter_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kahurangi_Carter",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "cheung-carlos",
+      "wikipediaTitle": "Carlos Cheung",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Carlos_Cheung",
+      "description": "New Zealand National Party politician",
+      "extract": "Chun Ho Carlos Cheung (Chinese: 張雋浩; Cantonese Yale: Jēung Jeun-houh) is a New Zealand politician. He was elected as a Member of the New Zealand House of Representatives for Mount Roskill, representing the National Party, in the 2023 New Zealand general election. Cheung has worked as a medical researcher and owned two property management companies.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Cheung%2C_Carlos_-_Mt_Roskill_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carlos_Cheung",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "chhour-karen",
+      "wikipediaTitle": "Karen Chhour",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Karen_Chhour",
+      "description": "New Zealand politician",
+      "extract": "Karen Louise Chhour (born 1980 or 1981) is a New Zealand politician. She has been a member of parliament for ACT New Zealand since the 2020 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Karen_Chhour_2023_%28cropped%29.jpg/960px-Karen_Chhour_2023_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Karen_Chhour",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "collins-judith",
+      "wikipediaTitle": "Judith Collins",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Judith_Collins",
+      "description": "New Zealand politician (born 1959)",
+      "extract": "Judith Anne Collins  (born 24 February 1959) is a New Zealand politician who served as the attorney-general and minister of defence from 27 November 2023 to 7 April 2026. She served as the leader of the Opposition and leader of the New Zealand National Party from 14 July 2020 to 25 November 2021. Collins served as the Member of Parliament (MP) for Papakura from 2008 to 2026 and was MP for Clevedon from 2002 to 2008.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/2025_Judith_Collins_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Judith_Collins",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "costello-casey",
+      "wikipediaTitle": "Casey Costello",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Casey_Costello",
+      "description": "New Zealand politician",
+      "extract": "Cassandra Jane \"Casey\" Costello (born 1965 or 1966) is a New Zealand politician, lobbyist and former police officer. She was elected to the New Zealand House of Representatives, representing the New Zealand First party, in the 2023 New Zealand general election. She was appointed Minister of Customs, Minister for Seniors and Associate Minister of Health in the Sixth National Government of New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Casey_Costello_November_2024.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Casey_Costello",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "costley-tim",
+      "wikipediaTitle": "Tim Costley",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tim_Costley",
+      "description": "New Zealand air force officer and politician",
+      "extract": "Timothy John Costley (born 1979/1980) is a New Zealand politician. He was elected as the Member of Parliament in the House of Representatives for Ōtaki, representing the National Party, in the 2023 general election. He was previously a pilot with the Royal New Zealand Air Force (RNZAF).",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/COSTLEY%2C_Tim_-_Otaki_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tim_Costley",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "court-simon",
+      "wikipediaTitle": "Simon Court",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Simon_Court",
+      "description": "New Zealand ACT Party politician",
+      "extract": "Simon Thomas Court is a New Zealand politician. He has been a Member of Parliament for ACT New Zealand since the 2020 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Simon_Court%2C_2025.jpg/960px-Simon_Court%2C_2025.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Simon_Court",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "davidson-marama",
+      "wikipediaTitle": "Marama Davidson",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Marama_Davidson",
+      "description": "New Zealand politician (born 1973)",
+      "extract": "Marama Mere-Ana Davidson (née Paratene; born 29 December 1973) is a New Zealand politician who has served as a co-leader of the Green Party of Aotearoa New Zealand since 2018.\nDavidson entered the New Zealand Parliament in 2015 as a Green Party list MP. She was elected female co-leader in April 2018. She served alongside James Shaw until 2024, and subsequently with Chlöe Swarbrick.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Marama_Davidson_2_%28cropped%29.jpg/960px-Marama_Davidson_2_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Marama_Davidson",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "davidson-reuben",
+      "wikipediaTitle": "Reuben Davidson",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Reuben_Davidson",
+      "description": "New Zealand Labour Party politician",
+      "extract": "Reuben John Davidson is a New Zealand television producer and politician. He was on a Christchurch community board from 2019. In the 2023 general election, he was elected to represent the Christchurch East electorate in Parliament.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Reuben_Davidson.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Reuben_Davidson",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "doocey-matt",
+      "wikipediaTitle": "Matt Doocey",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Matt_Doocey",
+      "description": "New Zealand politician (born 1972)",
+      "extract": "Matthew Maurice Doocey (born 1972) is a New Zealand politician who was elected to the New Zealand Parliament at the 2014 general election as a representative of the New Zealand National Party. He was re-elected in 2017 with a majority increase of over 10,000 which was a significant increase from a majority of 2,500 in 2014. It was reported that this was the largest personal vote increase in the country.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/DOOCEY%2C_Matt_-_Waimakariri_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Matt_Doocey",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "doyle-benjamin",
+      "wikipediaTitle": "Benjamin Doyle",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Benjamin_Doyle",
+      "description": "New Zealand politician",
+      "extract": "Benjamin Cody Doyle (born 1991 or 1992) is a former New Zealand politician, having served as the country's first non-binary member of parliament from October 2024 until October 2025, representing the Green Party as a list MP.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Benjamin_Doyle_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Benjamin_Doyle",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "edmonds-barbara",
+      "wikipediaTitle": "Barbara Edmonds",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Barbara_Edmonds",
+      "description": "New Zealand politician",
+      "extract": "Barbara Rachael Fati Palepa Edmonds (born 1981) is a New Zealand politician. She was elected as the Member of the New Zealand Parliament for Mana, representing the Labour Party, in 2020. She served as the Minister of Internal Affairs, Minister for Pacific Peoples, Minister of Revenue and Minister for Economic Development in the final year of the Sixth Labour Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Profile--barbaraedmonds-2-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Barbara_Edmonds",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "ferris-takuta",
+      "wikipediaTitle": "Tākuta Ferris",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/T%C4%81kuta_Ferris",
+      "description": "Member of parliament in New Zealand",
+      "extract": "Tākuta \"Doc\" Ferris (born 1978) is a New Zealand politician, currently representing Te Tai Tonga in the New Zealand House of Representatives as an independent. He was elected at the 2023 general election as a Te Pāti Māori candidate. Ferris was expelled from the party in November 2025.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/T%C4%81kuta_Ferris.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/T%C4%81kuta_Ferris",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "fleming-greg",
+      "wikipediaTitle": "Greg Fleming (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Greg_Fleming_(politician)",
+      "description": "New Zealand charitable sector consultant and politician",
+      "extract": "Gregory Wray Fleming (born 1970 or 1971) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party. First elected in the 2023 election in the Maungakiekie electorate, he beat the incumbent Priyanca Radhakrishnan. He is a co-founder of the conservative think tank Maxim Institute and is involved in a number of Christian-based charities.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/FLEMING%2C_Greg_-_Maungakiekie_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Greg_Fleming_(politician)",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "foster-andy",
+      "wikipediaTitle": "Andy Foster",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Andy_Foster",
+      "description": "New Zealand politician (born 1961)",
+      "extract": "Andrew John Whitfield Foster  (born 21 December 1961) is a New Zealand politician. He was elected to the New Zealand House of Representatives as a list MP for the New Zealand First party in the 2023 New Zealand general election.\nHe was previously Mayor of Wellington from 2019 to 2022 and a Wellington City Councillor for nine terms from 1992 until 2019.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Official_photo_of_Andy_Foster.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Andy_Foster",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "garcia-paulo",
+      "wikipediaTitle": "Paulo Garcia (New Zealand politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Paulo_Garcia_(New_Zealand_politician)",
+      "description": "New Zealand politician",
+      "extract": "Paulo Reyes Garcia is a New Zealand lawyer and politician. He is a Member of Parliament in the House of Representatives for the New Zealand National Party and the first New Zealand MP of Filipino descent.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/GARCIA%2C_Paulo_-_New_Lynn_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paulo_Garcia_(New_Zealand_politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "genter-julie-anne",
+      "wikipediaTitle": "Julie Anne Genter",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Julie_Anne_Genter",
+      "description": "American-born New Zealand politician",
+      "extract": "Julie Anne Genter  (; born 17 December 1979) is an American-born New Zealand politician who is a member of the House of Representatives representing the Green Party of Aotearoa New Zealand. Genter was elected to each Parliament from 2011 to 2023 on the party lists, before being elected as the Member of Parliament for the Rongotai electorate in the 2023 election. She served as the Minister for Women, Associate Minister for Health and Associate Minister for Transport during the first term of the Sixth Labour Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Julie_Anne_Genter_3_%28cropped%29.jpg/960px-Julie_Anne_Genter_3_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Julie_Anne_Genter",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "goldsmith-paul",
+      "wikipediaTitle": "Paul Goldsmith (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Paul_Goldsmith_(politician)",
+      "description": "New Zealand politician (born 1971)",
+      "extract": "Paul Jonathan Goldsmith (born 1971) is a New Zealand historian and politician. The biographer of several leading right-wing political and business figures, he was first elected a list member of the New Zealand House of Representatives for the National Party at the 2011 election.\nGoldsmith is Minister for Arts, Culture and Heritage, Minister of Justice, Minister for Treaty of Waitangi Negotiations, Minister for Media and Communications, Minister for the Public Service, and Minister for Digitising Government, and Minister for Pacific Peoples in the Sixth National Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/GOLDSMITH%2C_Paul_-_Epsom_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paul_Goldsmith_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "grigg-nicola",
+      "wikipediaTitle": "Nicola Grigg",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicola_Grigg",
+      "description": "New Zealand politician",
+      "extract": "Nicola Anna Grigg  is a New Zealand politician and Member of Parliament in the House of Representatives representing the Selwyn electorate since October 2020, and has served as a Minister of the Crown since 27 November 2023. She is currently the Minister for the Environment, Minister of State for Trade and Investment, Minister for Women, and Associate Minister for ACC in the Sixth National Government. She is a member of the National Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/GRIGG%2C_Nicola_-_Selwyn_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nicola_Grigg",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "halbert-shanan",
+      "wikipediaTitle": "Shanan Halbert",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Shanan_Halbert",
+      "description": "New Zealand politician",
+      "extract": "Shanan Kiritea Halbert (born 24 April 1982) is a New Zealand politician of the Labour Party. From 2020 to 2023, he was the Member of Parliament for Northcote. Having lost the Northcote seat in 2023, he was elected as a list member of parliament after the resignation of Kelvin Davis.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Profile--shananhalbert-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shanan_Halbert",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "hamilton-ryan",
+      "wikipediaTitle": "Ryan Hamilton (New Zealand politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ryan_Hamilton_(New_Zealand_politician)",
+      "description": "New Zealand National Party politician (born 1979 or 1980)",
+      "extract": "Ryan Alexander Hamilton (born 1979 or 1980) is a New Zealand politician. He has been the Member of Parliament for Hamilton East representing the National Party since the 2023 general election. He was a Hamilton city councillor from 2018 until resigning following his election to Parliament.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/HAMILTON%2C_Ryan_-_Hamilton_East_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ryan_Hamilton_(New_Zealand_politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "henare-peeni",
+      "wikipediaTitle": "Peeni Henare",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Peeni_Henare",
+      "description": "New Zealand politician",
+      "extract": "Peeni Ereatara Gladwyn Henare ([ˈpɛːni ˈhɛnaˌɾɛ]) is a New Zealand politician. He was a Labour Party member of parliament from the 2014 general election until 2026. He first held the Tāmaki Makaurau Māori electorate until being defeated by Te Pāti Māori's Takutai Tarsh Kemp in the 2023 general election, and then continued as a list MP until resigning from parliament in March 2026.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Profile--peenihenare-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peeni_Henare",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "hernandez-francisco",
+      "wikipediaTitle": "Francisco Hernandez (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Francisco_Hernandez_(politician)",
+      "description": "New Zealand politician (born 1990 or 1991)",
+      "extract": "Francisco Bagkus Hernandez (born 1990 or 1991) is a New Zealand politician, representing the Green Party of Aotearoa New Zealand as a Member of Parliament since 7 May 2024.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Francisco_Hernandez_2023_%28cropped%29.jpg/960px-Francisco_Hernandez_2023_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Francisco_Hernandez_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "hipkins-chris",
+      "wikipediaTitle": "Chris Hipkins",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chris_Hipkins",
+      "description": "Prime Minister of New Zealand in 2023",
+      "extract": "Christopher John Hipkins (born 5 September 1978) is a New Zealand politician who has served as leader of the New Zealand Labour Party since January 2023 and leader of the Opposition since November 2023. He was the 41st prime minister of New Zealand from January to November 2023, previously serving as the minister for the public service and minister for education from 2017 to 2023, and the minister for health and the COVID-19 response from 2020 to 2022. He has been the member of Parliament (MP) for Remutaka since the 2008 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Chris_Hipkins_NZ_Labour_%282%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chris_Hipkins",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "hoggard-andrew",
+      "wikipediaTitle": "Andrew Hoggard",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Hoggard",
+      "description": "New Zealand politician",
+      "extract": "Andrew John Hoggard (born 1974 or 1975) is a New Zealand dairy farmer and politician.\nHoggard held leadership roles with the farmers' advocacy group Federated Farmers from 2014 to 2023, including as president for the final three years. He stepped down ahead of his election to the New Zealand House of Representatives as an ACT New Zealand list Member of Parliament.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Andrew_Hoggard_drinking_2024_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Andrew_Hoggard",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "jackson-willie",
+      "wikipediaTitle": "Willie Jackson (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Willie_Jackson_(politician)",
+      "description": "New Zealand politician",
+      "extract": "William Wakatere Jackson (born 1961) is a New Zealand politician and former unionist, broadcaster and Urban Māori leader. He was a Member of Parliament for the Alliance from 1999 to 2002 and is currently a Labour Party MP, having been re-elected in 2017.\nJackson was Minister of Employment, Minister for Māori Development, and Minister of Broadcasting and Media in the Sixth Labour Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Willie_Jackson.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Willie_Jackson_(politician)",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "jones-shane",
+      "wikipediaTitle": "Shane Jones",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Shane_Jones",
+      "description": "New Zealand politician",
+      "extract": "Shane Geoffrey Jones (born 3 September 1959) is a New Zealand politician. He is deputy leader of New Zealand First and a Member of Parliament (MP) in the New Zealand House of Representatives.\nJones' political career began in 2005 as a list MP for the Labour Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shane_Jones_2018_5.jpg/960px-Shane_Jones_2018_5.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shane_Jones",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "kapa-kingi-mariameno",
+      "wikipediaTitle": "Mariameno Kapa-Kingi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mariameno_Kapa-Kingi",
+      "description": "New Zealand politician (born 1960 or 1961)",
+      "extract": "Mariameno Kapa-Kingi (born 1960 or 1961) is a New Zealand politician who represents Te Tai Tokerau in the New Zealand House of Representatives.  After several decades in iwi social and health services, she was elected at the 2023 general election representing Te Pāti Māori. \nIn November 2025, Kapa-Kingi was expelled from the party, but was reinstated in March 2026 following a High Court challenge.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Mariameno_Kapa-Kingi_2025.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mariameno_Kapa-Kingi",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "kirkpatrick-dana",
+      "wikipediaTitle": "Dana Kirkpatrick",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dana_Kirkpatrick",
+      "description": "New Zealand politician",
+      "extract": "Dana Margot Kirkpatrick is a New Zealand politician, representing the New Zealand National Party as a Member of Parliament since the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/KIRKPATRICK%2C_Dana_-_East_Coast_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dana_Kirkpatrick",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "kuriger-barbara",
+      "wikipediaTitle": "Barbara Kuriger",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Barbara_Kuriger",
+      "description": "New Zealand politician (born 1961)",
+      "extract": "Barbara Joan Kuriger (born 1961) is a New Zealand politician who has served as Deputy Speaker of the New Zealand House of Representatives since December 2023. A member of the National Party, Kuriger was first elected as the Member of Parliament (MP) for Taranaki-King Country since 2014.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/KURIGER%2C_Barbara_-_Taranaki-King_Country_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Barbara_Kuriger",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "leary-ingrid",
+      "wikipediaTitle": "Ingrid Leary",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ingrid_Leary",
+      "description": "New Zealand politician",
+      "extract": "Ingrid Marieke Leary (born 1967 or 1968) is a New Zealand politician. In 2020 she was elected as a Member of Parliament in the House of Representatives for the Labour Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Profile--ingridleary-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ingrid_Leary",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "lee-melissa",
+      "wikipediaTitle": "Melissa Lee",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Melissa_Lee",
+      "description": "New Zealand politician (born 1966)",
+      "extract": "Melissa Ji-Yun Lee (Korean: 이지연; born 1966) is a New Zealand politician. She was elected to the House of Representatives as a list MP for the National Party in the 2008 election. She served as the 11th Minister for Economic Development and 2nd Minister for Ethnic Communities from November 2023 to January 2025.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/LEE%2C_Melissa_-_Mt_Albert_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Melissa_Lee",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "lu-nancy",
+      "wikipediaTitle": "Nancy Lu",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nancy_Lu",
+      "description": "New Zealand National Party politician",
+      "extract": "Nancy Nan Lu (simplified Chinese: 陆楠; traditional Chinese: 陸楠; pinyin: Lù Nán; born 1987) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Nancy_Lu_-_List_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nancy_Lu",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "luxon-christopher",
+      "wikipediaTitle": "Christopher Luxon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Christopher_Luxon",
+      "description": "Prime Minister of New Zealand since 2023",
+      "extract": "Christopher Mark Luxon (born 19 July 1970) is a New Zealand politician and businessman who has served as the 42nd prime minister of New Zealand since 2023. A member of the National Party, he has been the member of Parliament (MP) for Botany since 2020 and previously served as leader of the Opposition from 2021 to 2023. Prior to entering politics, he was the chief executive officer (CEO) of Air New Zealand from 2013 to 2019.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/LUXON%2C_Christopher_-_Botany_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Christopher_Luxon",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "luxton-cameron",
+      "wikipediaTitle": "Cameron Luxton",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cameron_Luxton",
+      "description": "New Zealand politician (born 1988 or 1989)",
+      "extract": "Cameron Gib Luxton (born 1988 or 1989) is a New Zealand politician. He was elected to the New Zealand House of Representatives in the 2023 general election as an ACT New Zealand list Member of Parliament.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Cameron_Luxton.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cameron_Luxton",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "luxton-jo-anne",
+      "wikipediaTitle": "Jo Luxton",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jo_Luxton",
+      "description": "New Zealand politician",
+      "extract": "Jo-Anne Marie Luxton (born 1973) is a New Zealand politician. She has been a Member of Parliament in the House of Representatives for the Labour Party since the 2017 general election.\nBefore her political career, Luxton was an early childhood educator.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Profile--joluxton-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jo_Luxton",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "lyndon-hohana",
+      "wikipediaTitle": null,
+      "wikipediaUrl": null,
+      "description": null,
+      "extract": null,
+      "imageUrl": null,
+      "sourceUrl": "https://en.wikipedia.org",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "macleod-david",
+      "wikipediaTitle": "David MacLeod",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/David_MacLeod",
+      "description": "New Zealand National Party politician (born 1967 or 1968)",
+      "extract": "David Nigel MacLeod (born 1967 or 1968) is a New Zealand businessman and politician. Since 2023, he is the Member of Parliament in the House of Representatives for New Plymouth, representing the National Party. He previously served as chair of the Taranaki Regional Council from 2007 to 2022.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/MACLEOD%2C_David_-_New_Plymouth_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/David_MacLeod",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "maipi-clarke-hana-rawhiti",
+      "wikipediaTitle": "Hana-Rawhiti Maipi-Clarke",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hana-Rawhiti_Maipi-Clarke",
+      "description": "New Zealand politician (born 2002)",
+      "extract": "Hana-Rawhiti Kareariki Maipi-Clarke (born 2002) is a New Zealand politician, representing Te Pāti Māori as a Member of Parliament since the 2023 New Zealand general election. She is the youngest MP since James Stuart-Wortley.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hana-Rawhiti_Maipi-Clarke_%28cropped_half-shot%29.jpg/960px-Hana-Rawhiti_Maipi-Clarke_%28cropped_half-shot%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hana-Rawhiti_Maipi-Clarke",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "marcroft-jenny",
+      "wikipediaTitle": "Jenny Marcroft",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jenny_Marcroft",
+      "description": "New Zealand politician (born 1963)",
+      "extract": "Jennifer Lyn Marcroft  (born 1963) is a New Zealand politician and Member of Parliament in the House of Representatives for the New Zealand First party.\nShe served from 2017 to 2020, and returned in the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Jenny_Marcroft_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jenny_Marcroft",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "mcanulty-kieran",
+      "wikipediaTitle": "Kieran McAnulty",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kieran_McAnulty",
+      "description": "New Zealand politician",
+      "extract": "Kieran Michael McAnulty is a New Zealand politician. He was first elected to the New Zealand House of Representatives in 2017, representing the New Zealand Labour Party. He was the Member of Parliament (MP) for Wairarapa between 2020 and 2023, and is currently a list MP.\nMcAnulty was the Senior Whip of the Labour Party during part of the term of the Sixth Labour Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Profile--kieranmcanulty-2-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kieran_McAnulty",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mccallum-grant",
+      "wikipediaTitle": "Grant McCallum",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Grant_McCallum",
+      "description": "New Zealand National Party politician",
+      "extract": "Grant Lewis McCallum (born 1964 or 1965) is a New Zealand  politician representing the National Party as a Member of Parliament since the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/MCCALLUM%2C_Grant_-_Northland_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Grant_McCallum",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mcclay-todd",
+      "wikipediaTitle": "Todd McClay",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Todd_McClay",
+      "description": "New Zealand politician (born 1968)",
+      "extract": "Todd Michael McClay (born 22 November 1968) is a New Zealand politician and former ambassador. He is the Member of Parliament for Rotorua. He was previously an ambassador for the Cook Islands and Niue to the European Union.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/2025_Todd_McClay_%28cropped%29.jpg/960px-2025_Todd_McClay_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Todd_McClay",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mcclure-laura",
+      "wikipediaTitle": "Laura McClure",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Laura_McClure",
+      "description": "New Zealand politician (born 1985)",
+      "extract": "Laura Barbara McClure (born 3 August 1985), previously known as Laura Trask, is a New Zealand politician. She was elected to the New Zealand House of Representatives in the 2023 New Zealand general election, representing ACT New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Laura_Trask_2024_%284%29_%28cropped%29.jpg/960px-Laura_Trask_2024_%284%29_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laura_McClure",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mckee-nicole",
+      "wikipediaTitle": "Nicole McKee",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicole_McKee",
+      "description": "New Zealand politician (born 1971/72)",
+      "extract": "Nicole Raima McKee (born 1971 or 1972) is a New Zealand politician. She has been a Member of Parliament for ACT New Zealand since the 2020 general election. She currently serves as the 12th Minister for Courts and Associate Minister of Justice (Firearms).",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nicole_McKee_2025_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nicole_McKee",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mclellan-tracey",
+      "wikipediaTitle": "Tracey McLellan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tracey_McLellan",
+      "description": "New Zealand politician",
+      "extract": "Tracey Lee McLellan (born 20 May 1970) is a New Zealand politician. From 2020 to 2023, she was a Member of Parliament in the House of Representatives for the Labour Party. In 2024, she re-entered parliament after the resignation of fellow Labour List MP Rino Tirikatene.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Profile--traceymclellan-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tracey_McLellan",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "meager-james",
+      "wikipediaTitle": "James Meager",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Meager",
+      "description": "New Zealand politician",
+      "extract": "James Rawiri Meager (born 1986 or 1987) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party in the electorate of Rangitata.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/MEAGER%2C_James_-_Rangitata_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/James_Meager",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "menendez-march-ricardo",
+      "wikipediaTitle": "Ricardo Menéndez March",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ricardo_Men%C3%A9ndez_March",
+      "description": "New Zealand Green Party politician",
+      "extract": "Ricardo Menéndez March (born 1987 or 1988) is a Mexican-born New Zealand activist and politician who, since 2020, is a Member of Parliament for the Green Party of Aotearoa New Zealand in the House of Representatives.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ricardo_Men%C3%A9ndez_March_%28cropped%29.jpg/960px-Ricardo_Men%C3%A9ndez_March_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ricardo_Men%C3%A9ndez_March",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mitchell-mark",
+      "wikipediaTitle": "Mark Mitchell (New Zealand politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mark_Mitchell_(New_Zealand_politician)",
+      "description": "New Zealand politician (born 1968)",
+      "extract": "Mark Patrick Mitchell (born 22 May 1968) is a New Zealand politician, former police officer and security contractor, and a member of the  New Zealand House of Representatives since 2011. He is a member of the centre-right National Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/MITCHELL%2C_Mark_-_Whangaparaoa_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mark_Mitchell_(New_Zealand_politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "mooney-joseph",
+      "wikipediaTitle": "Joseph Mooney (New Zealand politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Joseph_Mooney_(New_Zealand_politician)",
+      "description": "New Zealand politician (born 1979)",
+      "extract": "Joseph Mooney (born 1979) is a New Zealand politician. In 2020 he was elected as a Member of Parliament in the House of Representatives for the National Party in the Southland electorate.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/MOONEY%2C_Joseph_-_Southland_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Joseph_Mooney_(New_Zealand_politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "nakhle-rima",
+      "wikipediaTitle": "Rima Nakhle",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rima_Nakhle",
+      "description": "National Party politician in New Zealand",
+      "extract": "Rima Jillian Nakhle is an Australian-born New Zealand National Party politician and a member of parliament for the Takanini electorate in the House of Representatives.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/NAKHLE%2C_Rima_-_Takanini_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rima_Nakhle",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "ngarewa-packer-debbie",
+      "wikipediaTitle": "Debbie Ngarewa-Packer",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Debbie_Ngarewa-Packer",
+      "description": "New Zealand politician and Māori leader",
+      "extract": "Debbie Anne Ngarewa-Packer is a New Zealand politician, iwi leader and activist. She is a Member of Parliament and co-leader of Te Pāti Māori alongside Rawiri Waititi, and is the chief executive of the Ngāti Ruanui iwi.\nNgarewa-Packer stood for Te Pāti Māori during the 2020 election in the seat of Te Tai Hauāuru.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Debbie_Ngarewa-Packer_August_2025.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Debbie_Ngarewa-Packer",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "nimon-katie",
+      "wikipediaTitle": "Katie Nimon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Katie_Nimon",
+      "description": "New Zealand politician",
+      "extract": "Katrina Margaret Nimon (born 1989 or 1990) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/NIMON%2C_Katie_-_Napier_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Katie_Nimon",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "o-connor-damien",
+      "wikipediaTitle": "Damien O'Connor",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Damien_O%27Connor",
+      "description": "New Zealand politician",
+      "extract": "Damien Peter O'Connor (born 16 January 1958) is a New Zealand Labour Party politician who served as Minister of Agriculture, Minister for Biosecurity, Minister for Trade and Export Growth, Minister for Land Information and Minister for Rural Communities in the Sixth Labour Government. He previously served as a cabinet minister in the Fifth Labour Government. He had been a member of Parliament since 1993 and represented the West Coast-Tasman electorate.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Profile--damienoconnor-5-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Damien_O%27Connor",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "o-connor-greg",
+      "wikipediaTitle": "Greg O'Connor (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Greg_O%27Connor_(politician)",
+      "description": "New Zealand politician",
+      "extract": "Gregory Eamon O'Connor (born 12 May 1958) is a New Zealand Labour Party politician and former police officer.  He is the Second Assistant Speaker of the New Zealand House of Representatives, and has served as the Member of Parliament for Ōhāriu since the 2017 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Profile--gregoconnor-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Greg_O%27Connor_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "parmar-parmjeet",
+      "wikipediaTitle": "Parmjeet Parmar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Parmjeet_Parmar",
+      "description": "New Zealand politician",
+      "extract": "Kushmiita Parmjeet Kaur Parmar (born 1970) is a New Zealand politician. She first entered Parliament as a list Member of the New Zealand House of Representatives in the 2014 general election, representing the National Party. After failing to be re-elected in the 2020 general election, Parmar changed allegiance to ACT New Zealand and was elected for that party in the 2023 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Parmjeet_Parmar.jpg/960px-Parmjeet_Parmar.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Parmjeet_Parmar",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "patterson-mark",
+      "wikipediaTitle": "Mark Patterson (New Zealand politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mark_Patterson_(New_Zealand_politician)",
+      "description": "New Zealand politician",
+      "extract": "Mark William James Patterson  (born 1970) is a New Zealand farmer, lobbyist and politician. He is a Member of Parliament in the House of Representatives for the New Zealand First party.\nSince 2023, he has served as Minister for Rural Communities and Associate Minister for Agriculture in the Sixth National Government of New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mark_Patterson_2019.jpg/960px-Mark_Patterson_2019.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mark_Patterson_(New_Zealand_politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "paul-tamatha",
+      "wikipediaTitle": "Tamatha Paul",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tamatha_Paul",
+      "description": "New Zealand activist and politician (born 1997)",
+      "extract": "Tamatha-Kaye Erin Paul (born 1997) is a New Zealand activist and politician who is a Member of Parliament for Wellington Central. In 2018 she was the first Māori woman to be elected President of the Victoria University of Wellington Students' Association. Running as an independent Paul was elected to the Wellington City Council in 2019.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Tamatha_Paul_NB_4-3_ver_2_%281%29_%28cropped%29.jpg/960px-Tamatha_Paul_NB_4-3_ver_2_%281%29_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tamatha_Paul",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "penk-chris",
+      "wikipediaTitle": "Chris Penk",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chris_Penk",
+      "description": "New Zealand politician (born 1979)",
+      "extract": "Christopher Aidan Penk (born 1979) is a New Zealand politician who has been a Member of Parliament in the House of Representatives for the National Party since 2017. Following the 2023 New Zealand general election, he assumed the building and construction, land and information, veterans, associate defence, and associate immigration portfolios,  and later the small business and manufacturing portfolio in 2025. In 2026, Penk gained the defence and space portfolios, along with the portfolios for the intelligence agencies New Zealand Security Intelligence Service (NZSIS) and the Government Communications Security Bureau (GCSB), and associate emergency management.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/PENK%2C_Chris_-_Kaipara_ki_Mahurangi_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chris_Penk",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "peters-winston",
+      "wikipediaTitle": "Winston Peters",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Winston_Peters",
+      "description": "New Zealand politician (born 1945)",
+      "extract": "Winston Raymond Peters  (born 11 April 1945) is a New Zealand politician. He has led the political party New Zealand First since he founded it in 1993, and since November 2023 has served as the 25th minister of foreign affairs. A long-serving member of Parliament (MP), Peters was re-elected for a fifteenth time at the 2023 general election, having previously been an MP from 1979 to 1981, 1984 to 2008 and 2011 to 2020.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Winston_Peters_2024_US_Deputy_Secretary_visit_%28further_crop%29.jpg/960px-Winston_Peters_2024_US_Deputy_Secretary_visit_%28further_crop%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Winston_Peters",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "pham-lan",
+      "wikipediaTitle": "Lan Pham",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lan_Pham",
+      "description": "New Zealand politician and freshwater ecologist",
+      "extract": "Ngoc-Lan Thi Pham (born 1985 or 1986) is a New Zealand politician and ecologist. She was a regional councillor for Environment Canterbury for six years and was elected to Parliament as a Green in the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Lan_Pham1_%28cropped%29.jpg/960px-Lan_Pham1_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lan_Pham",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "potaka-tama",
+      "wikipediaTitle": "Tama Potaka",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tama_Potaka",
+      "description": "New Zealand politician (born 1976)",
+      "extract": "Tama William Potaka (born 8 January 1976) is a New Zealand politician and Member of Parliament in the House of Representatives representing the Hamilton West electorate. He is a member of the National Party and was chief executive of Ngāi Tai ki Tāmaki before entering Parliament.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/POTAKA%2C_Tama_-_Hamilton_West_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tama_Potaka",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "prime-willow-jean",
+      "wikipediaTitle": "Willow-Jean Prime",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Willow-Jean_Prime",
+      "description": "New Zealand politician",
+      "extract": "Willow-Jean Prime (née Downs; born 1983) is a New Zealand politician. She was first elected a Member of the New Zealand House of Representatives at the 2017 general election as a list representative of the New Zealand Labour Party. She was elected as the Member of Parliament for Northland at the 2020 general election and was re-elected as a list MP in 2023.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Profile--willowjean-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Willow-Jean_Prime",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "pugh-maureen",
+      "wikipediaTitle": "Maureen Pugh",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Maureen_Pugh",
+      "description": "New Zealand politician (born 1958)",
+      "extract": "Maureen Helena Pugh  (born 1958) is a New Zealand politician. She was the mayor of Westland from 2004 to 2013. She first became a Member of Parliament for the National Party in 2016, leaving Parliament in 2017 and returning in 2018.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/PUGH%2C_Maureen_-_West_Coast_-Tasman_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Maureen_Pugh",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "radhakrishnan-priyanca",
+      "wikipediaTitle": "Priyanca Radhakrishnan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Priyanca_Radhakrishnan",
+      "description": "New Zealand politician",
+      "extract": "Priyanca Radhakrishnan  (born 1979) is a New Zealand politician who has been elected to the New Zealand parliament since the 2017 general election as a representative of the New Zealand Labour Party and was Minister for the Community and Voluntary Sector from 2020 to 2023.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Profile--priyancaradhakrishnan-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Priyanca_Radhakrishnan",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "redmayne-suze",
+      "wikipediaTitle": "Suze Redmayne",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Suze_Redmayne",
+      "description": "National Party politician in New Zealand",
+      "extract": "Susan Emma Dossor Redmayne (née Dossor; born 1965 or 1966) is a New Zealand politician and Member of Parliament for Rangitīkei representing the National Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/REDMAYNE%2C_Suze_-_Rangitikei_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Suze_Redmayne",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "reti-shane",
+      "wikipediaTitle": "Shane Reti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Shane_Reti",
+      "description": "New Zealand politician",
+      "extract": "Shane Raymond Reti  (born 5 June 1963) is a New Zealand politician and a member of the New Zealand House of Representatives, and a Cabinet Minister with the roles of Minister for Pacific Peoples, Minister of Science, Innovation, and Technology, Minister of Universities and Minister of Statistics. He was first elected at the 2014 general election as the Member of Parliament (MP) for the Whangārei electorate. He is a member of the New Zealand National Party and served as its deputy leader from 10 November 2020 to 30 November 2021 including a period of five days as interim leader following the ousting of Judith Collins.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/RETI%2C_Shane_-_Whangarei_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shane_Reti",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "rurawhe-adrian",
+      "wikipediaTitle": "Adrian Rurawhe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Adrian_Rurawhe",
+      "description": "New Zealand politician",
+      "extract": "Adrian Paki Rurawhe (born 1961) is a former New Zealand Labour Party politician. He was an MP from 2014 to 2026, and the speaker of the New Zealand House of Representatives from 2022 to 2023.\nRurawhe held the seat for the Te Tai Hauāuru Māori electorate from 2014 to 2023.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Adrian_Rurawhe_August_2022_%28cropped%29.jpg/960px-Adrian_Rurawhe_August_2022_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Adrian_Rurawhe",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "russell-deborah",
+      "wikipediaTitle": "Deborah Russell",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Deborah_Russell",
+      "description": "New Zealand politician (born 1966)",
+      "extract": "Deborah Faye Russell (born 14 January 1966) is a New Zealand academic and politician. She is a Member of Parliament for the Labour Party and served as Minister of Statistics and Minister Responsible for the Earthquake Commission from February to November 2023.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Profile--deborahrussell-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Deborah_Russell",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "rutherford-tom",
+      "wikipediaTitle": "Tom Rutherford",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tom_Rutherford",
+      "description": "National Party politician in New Zealand",
+      "extract": "Tom Rutherford (born 1996 or 1997) is a New Zealand politician and communications executive. A member of the National Party, he has served as the Member of Parliament for the Bay of Plenty since October 2023.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/RUTHERFORD%2C_Tom_-_Bay_of_Plenty_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tom_Rutherford",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "salesa-jenny",
+      "wikipediaTitle": "Jenny Salesa",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jenny_Salesa",
+      "description": "New Zealand politician",
+      "extract": "Jennifer Teresia Salesa (née Latu, born c. 1968) is a New Zealand politician and member of the Labour Party who has served as a Member of Parliament since 2014. She was first elected as MP for Manukau East, and after its abolition in 2020 won the replacement electorate of Panmure-Ōtāhuhu. She served as a Cabinet Minister in the Sixth Labour Government as Minister for Building and Construction, Minister of Customs (from 2019) and Minister for Ethnic Communities from 2017 until 6 November 2020.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Profile--jennysalesa-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jenny_Salesa",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "sepuloni-carmel",
+      "wikipediaTitle": "Carmel Sepuloni",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Carmel_Sepuloni",
+      "description": "New Zealand politician (born 1977)",
+      "extract": "Carmel Jean Sepuloni (born 1977) is a New Zealand politician who served as the 20th deputy prime minister of New Zealand. A member of the Labour Party, she was first elected to Parliament in 2008 for a three-year term as a list Member of Parliament (MP), and was re-elected as MP for Kelston in 2014. In 2023, she was elected as the deputy leader of the Labour Party, succeeding Kelvin Davis.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Profile--carmelsepuloni-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carmel_Sepuloni",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "seymour-david",
+      "wikipediaTitle": "David Seymour",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/David_Seymour",
+      "description": "New Zealand politician (born 1983)",
+      "extract": "David Breen Seymour (born 24 June 1983) is a New Zealand politician who has served as the 21st deputy prime minister of New Zealand since 2025 and as the 1st minister for regulation since 2023. A member of the ACT Party, he has served as its leader and Member of Parliament (MP) for Epsom since 2014.\nSeymour spent his early years in Whangārei and joined the ACT Party while studying at the University of Auckland.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/David_Seymour_2023_%28cropped%29_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/David_Seymour",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "simmonds-penny",
+      "wikipediaTitle": "Penny Simmonds",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Penny_Simmonds",
+      "description": "New Zealand politician (born 1959)",
+      "extract": "Penelope Elsie Simmonds  (born September 1959) is a New Zealand politician, Member of Parliament and a Minister in the House of Representatives for the National Party. She previously served as the chief executive of the Southern Institute of Technology. Following the 2023 New Zealand general election, Simmonds assumed the disability issues, environmental, tertiary education and skills, and associate social development and employment portfolios in the Sixth National Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/SIMMONDS%2C_Penny_-_Invercargill_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Penny_Simmonds",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "simpson-scott",
+      "wikipediaTitle": "Scott Simpson (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Scott_Simpson_(politician)",
+      "description": "New Zealand politician (born 1959)",
+      "extract": "Scott Anthony Simpson (born 4 November 1959) is a New Zealand politician and a member of the New Zealand House of Representatives. He is a member of the National Party.\nSimpson is Minister for ACC and Minister of Commerce and Consumer Affairs in the Sixth National Government, and was previously the Chief Government Whip.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/SIMPSON%2C_Scott_-_Coromandel_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Scott_Simpson_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "smith-stuart",
+      "wikipediaTitle": "Stuart Smith (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Stuart_Smith_(politician)",
+      "description": "New Zealand politician",
+      "extract": "Stuart Tayler Smith (born 1963) is a New Zealand National Party politician. He was first elected as a Member of the New Zealand House of Representatives for the Kaikōura electorate, representing the National Party, in the 2014 general election. As of 2025, he is Senior Whip of the National Party and Chief Government Whip.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/SMITH%2C_Stuart_-_Kaikoura_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stuart_Smith_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "sosene-lemauga-lydia",
+      "wikipediaTitle": "Lemauga Lydia Sosene",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lemauga_Lydia_Sosene",
+      "description": "New Zealand Labour Party politician",
+      "extract": "Lemauga Lydia Sosene (born 14 April 1965) is a New Zealand Labour Party politician. She was a member of the Māngere-Ōtāhuhu local board from the October 2010 local elections until her election to the New Zealand House of Representatives in May 2022. After completing the balance of Louisa Wall's term as a list MP, Sosene was elected as MP for Māngere at the 2023 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Profile--lemaugalydiasosene-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lemauga_Lydia_Sosene",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "stanford-erica",
+      "wikipediaTitle": "Erica Stanford",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Erica_Stanford",
+      "description": "New Zealand National Party politician",
+      "extract": "Erica Louise Stanford (née Poppelbaum; born 1978) is a New Zealand politician and Member of Parliament in the House of Representatives for the National Party. She currently serves as the 49th Minister of Education and the 60th Minister of Immigration in the Sixth National Government of New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/STANFORD%2C_Erica_-_East_Coast_Bays_%28cropped_alt%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Erica_Stanford",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "stephenson-todd",
+      "wikipediaTitle": "Todd Stephenson",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Todd_Stephenson",
+      "description": "New Zealand politician",
+      "extract": "Todd Michael Stephenson is a New Zealand lawyer and politician. He was elected as to the New Zealand House of Representatives as a list MP for ACT New Zealand at the 2023 New Zealand general election.\nHis prior career was in the pharmaceutical industry.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Todd_Stephenson.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Todd_Stephenson",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "swarbrick-chloe",
+      "wikipediaTitle": "Chlöe Swarbrick",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chl%C3%B6e_Swarbrick",
+      "description": "New Zealand politician (born 1994)",
+      "extract": "Chlöe Charlotte Swarbrick  (born 26 June 1994) is a New Zealand politician who has served as a co-leader of the Green Party of Aotearoa New Zealand since 2024.\nFollowing a high-profile, but unsuccessful, run for the 2016 Auckland mayoral election, she became a parliamentary candidate for the Green Party, standing in the 2017 New Zealand general election, and was elected, via party list, as a member of Parliament (MP) at the age of 23. In the 2020 election, Swarbrick was elected as the MP for Auckland Central, becoming the second Green Party MP ever to win an electorate seat, and the first without a tacit endorsement from a major party leader.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Chl%C3%B6e_Swarbrick_headshot.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chl%C3%B6e_Swarbrick",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "tangaere-manuel-cushla",
+      "wikipediaTitle": "Cushla Tangaere-Manuel",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cushla_Tangaere-Manuel",
+      "description": "New Zealand Labour Party politician",
+      "extract": "Cushla Tangaere-Manuel is a New Zealand politician and Member of Parliament in the House of Representatives for the Labour Party. She represents the Ikaroa-Rāwhiti electorate and was first elected at the 2023 general election. Prior to entering parliament, Tangaere-Manuel worked as a broadcaster for TVNZ and Whakaata Māori, and as a sports administrator.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Profile--cushlatangaeremanuel-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cushla_Tangaere-Manuel",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "tinetti-jan",
+      "wikipediaTitle": "Jan Tinetti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jan_Tinetti",
+      "description": "New Zealand politician",
+      "extract": "Janette Rose Tinetti (born 1968) is a New Zealand politician and a Member of Parliament in the House of Representatives for the Labour Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Profile--jantinetti-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jan_Tinetti",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "tuiono-teanau",
+      "wikipediaTitle": "Teanau Tuiono",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Teanau_Tuiono",
+      "description": "New Zealand politician",
+      "extract": "Teanau Tuiono (born 25 December 1972) is a New Zealand politician. In 2020 he became a Member of Parliament in the House of Representatives as a representative of the Green Party of Aotearoa New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Teanau_Tuiono_2023_%28cropped%29.jpg/960px-Teanau_Tuiono_2023_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Teanau_Tuiono",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "twyford-philip",
+      "wikipediaTitle": "Phil Twyford",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Phil_Twyford",
+      "description": "New Zealand politician (born 1963)",
+      "extract": "Philip Stoner Twyford (born 4 May 1963) is a politician from New Zealand and a member of the Labour Party. He has been a Member of Parliament since 2008. He is the Labour Party MP for Te Atatū.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Profile--philtwyford-2-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Phil_Twyford",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "uffindell-sam",
+      "wikipediaTitle": "Sam Uffindell",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sam_Uffindell",
+      "description": "New Zealand politician (born 1983)",
+      "extract": "Samuel Julian Uffindell (born September 1983) is a New Zealand politician and former international banking executive. He has been a Member of Parliament for Tauranga, representing the National Party, since winning a by-election in June 2022.\nUffindell was asked to leave from a high school for participating in a violent attack on a younger student.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/UFFINDELL%2C_Sam_-_Tauranga_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sam_Uffindell",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "upston-louise",
+      "wikipediaTitle": "Louise Upston",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Louise_Upston",
+      "description": "New Zealand politician",
+      "extract": "Louise Claire Upston  (née McGill, born 14 March 1971) is a New Zealand politician. She was elected as a Member of the New Zealand House of Representatives for Taupō, representing the National Party, in the 2008 general election.\nShe was Minister for Women and Minister of Corrections in the Fifth National Government.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/UPSTON%2C_Louise_-_Taupo_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Louise_Upston",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "utikere-tangi",
+      "wikipediaTitle": "Tangi Utikere",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tangi_Utikere",
+      "description": "New Zealand politician",
+      "extract": "Tangi William Edward Utikere (born c. 1980) is a New Zealand politician, and Member of Parliament for Palmerston North since 2020. He was the deputy mayor of Palmerston North from 2016 to 2020, being the first non-Pākehā to serve in that role.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tangi_Utikere.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tangi_Utikere",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "van-de-molen-tim",
+      "wikipediaTitle": "Tim van de Molen",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tim_van_de_Molen",
+      "description": "New Zealand politician (born 1985)",
+      "extract": "Timothy John van de Molen (born 1985) is a New Zealand politician. He is a Member of the House of Representatives for the Waikato electorate and a representative of the National Party.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/VAN_DE_MOLEN%2C_Tim_-_Waikato_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tim_van_de_Molen",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "van-velden-brooke",
+      "wikipediaTitle": "Brooke van Velden",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Brooke_van_Velden",
+      "description": "New Zealand politician (born 1992)",
+      "extract": "Brooke Olivia van Velden (born 15 October 1992) is a New Zealand politician who has served as the deputy leader of ACT New Zealand since June 2020. She has been a member of Parliament (MP) since the 2020 general election, first as a list MP and, since 2023, the MP for Tāmaki. Van Velden currently serves in the National-led government as the 38th minister of internal affairs and 6th minister for workplace relations and safety.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Brooke_van_Velden_at_2024_HASANZ_Conference_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brooke_van_Velden",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "verrall-ayesha",
+      "wikipediaTitle": "Ayesha Verrall",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ayesha_Verrall",
+      "description": "New Zealand politician, physician and infectious-diseases researcher (born 1979)",
+      "extract": "Ayesha Jennifer Verrall ( EYE-shə; born 1979) is a New Zealand politician, infectious-diseases physician and researcher with expertise in tuberculosis and international health. Since 2020, she has been a Member of the New Zealand House of Representatives for the Labour Party.\nVerrall was previously a senior lecturer in pathology and molecular medicine at the University of Otago.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Profile--ayeshaverrall-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ayesha_Verrall",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    },
+    {
+      "mpId": "wade-brown-celia",
+      "wikipediaTitle": "Celia Wade-Brown",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Celia_Wade-Brown",
+      "description": "New Zealand politician",
+      "extract": "Celia Margaret Wade-Brown  (born 12 July 1956) is a New Zealand politician who has been a Green Party list MP since 19 January 2024. She previously served as the 34th mayor of Wellington, the capital city of New Zealand, from 2010 until 2016.\nWade-Brown was the third female mayor of the city, replacing centre-right Kerry Prendergast.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Celia_Wade-Brown_%28cropped%29.jpg/960px-Celia_Wade-Brown_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Celia_Wade-Brown",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "waititi-rawiri",
+      "wikipediaTitle": "Rawiri Waititi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rawiri_Waititi",
+      "description": "New Zealand politician",
+      "extract": "Rawiri Wikuki Waititi (born 17 October 1980 or 1981) is a New Zealand politician and iwi leader. He has been co-leader of Te Pāti Māori since 2020, alongside Debbie Ngarewa-Packer. He has served as the Member of Parliament (MP) for Waiariki since 2020, when his election returned Te Pāti Māori to the New Zealand Parliament following their defeat at the 2017 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Rawiri_Waititi_August_2025.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rawiri_Waititi",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "walters-vanushi",
+      "wikipediaTitle": "Vanushi Walters",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vanushi_Walters",
+      "description": "New Zealand Labour Party politician",
+      "extract": "Vanushi Sitanjali Walters (née Rajanayagam; born August 1981) is a New Zealand lawyer and politician who served as Member of Parliament in the House of Representatives for the Labour Party representing the Upper Harbour electorate from 2020 to 2023. She returned to Parliament as a Labour list MP in May 2025, following the resignation of David Parker.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Profile--vanushiwalters-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vanushi_Walters",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "watts-simon",
+      "wikipediaTitle": "Simon Watts",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Simon_Watts",
+      "description": "New Zealand politician",
+      "extract": "Simon Glen Watts (born 1978/1979) is a New Zealand politician. He has been the Member of the New Zealand House of Representatives for North Shore, representing the National Party, since the 2020 New Zealand general election.\nHe currently serves as Minister of Climate Change and Minister of Revenue in the Sixth National Government of New Zealand.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/WATTS%2C_Simon_-_North_Shore_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Simon_Watts",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "webb-duncan",
+      "wikipediaTitle": "Duncan Webb",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Duncan_Webb",
+      "description": "New Zealand politician",
+      "extract": "Duncan Alexander Webb (born 1967) is a New Zealand politician, lawyer and academic. He was a law professor at the University of Canterbury from 2000 to 2008, then became a partner at law firm Lane Neave. He was elected as a member of the New Zealand House of Representatives for Christchurch Central, representing the Labour Party, in the 2017 general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Duncan_Webb_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Duncan_Webb",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "wedd-catherine",
+      "wikipediaTitle": "Catherine Wedd",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_Wedd",
+      "description": "New Zealand politician",
+      "extract": "Catherine Jane Wedd (née Loft; born 1979 or 1980) is a New Zealand politician and Member of Parliament for the National Party. Wedd currently serves as the chairperson of the Environment Select Committee.  She is also Chair of the New Zealand Population and Development Committee which is a cross-party group focused on championing sexual and reproductive health and rights of women.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Catherine_Wedd_2024_%28cropped%29.jpg/960px-Catherine_Wedd_2024_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Catherine_Wedd",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "weenink-vanessa",
+      "wikipediaTitle": "Vanessa Weenink",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vanessa_Weenink",
+      "description": "New Zealand National Party politician",
+      "extract": "Vanessa Joan Weenink (born 8 November 1978) is a New Zealand politician. She was elected as a Member of the New Zealand House of Representatives for Banks Peninsula, representing the National Party, in the 2023 New Zealand general election. She is a doctor by training.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/WEENINK%2C_Vanessa_-_Banks_Peninsula_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vanessa_Weenink",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "white-helen",
+      "wikipediaTitle": "Helen White (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Helen_White_(politician)",
+      "description": "New Zealand politician",
+      "extract": "Helen Ione White (born 1967 or 1968) is a New Zealand politician. In 2020 she became a Member of Parliament in the House of Representatives for the Labour Party. In 2023, she was chosen by Labour to contest the Mount Albert electorate, previously held by former Prime Minister Jacinda Ardern.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Profile--helenwhite-2-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Helen_White_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "williams-arena",
+      "wikipediaTitle": "Arena Williams",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Arena_Williams",
+      "description": "New Zealand politician",
+      "extract": "Arena Hinekura Sherburd Williams (born 1990) is a New Zealand Labour Party politician. She has been a Member of Parliament in the House of Representatives for the Manurewa electorate since 2020.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Profile--arenawilliams-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arena_Williams",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "willis-nicola",
+      "wikipediaTitle": "Nicola Willis",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicola_Willis",
+      "description": "New Zealand politician",
+      "extract": "Nicola Valentine Willis (born 7 March 1981) is a New Zealand politician who has been deputy leader of the National Party since 2021. She is also the Minister of Finance, the Minister for Social Investment, the Minister for Economic Growth, and was also the Minister for the Public Services in the Sixth National Government.\nWillis describes her childhood as \"privileged\".",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/WILLIS%2C_Nicola_-_Ohariu_%28cropped%29.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nicola_Willis",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "willis-scott",
+      "wikipediaTitle": "Scott Willis (politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Scott_Willis_(politician)",
+      "description": "New Zealand politician",
+      "extract": "Scott Matthew Willis is a New Zealand energy analyst and politician, representing the Green Party of Aotearoa New Zealand as a Member of Parliament since the 2023 New Zealand general election.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Scott_Willis_2_%28cropped%29.jpg/960px-Scott_Willis_2_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Scott_Willis_(politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "wilson-david",
+      "wikipediaTitle": "David Wilson (New Zealand First politician)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/David_Wilson_(New_Zealand_First_politician)",
+      "description": "New Zealand politician",
+      "extract": "David Ashley Wilson is a New Zealand politician. A member of the New Zealand First party, he was elected a Member of the New Zealand House of Representatives (MP) on 30 June 2025.",
+      "imageUrl": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/David_Wilson_(New_Zealand_First_politician)",
+      "fetchedAt": "2026-07-01T10:06:50.476Z"
+    },
+    {
+      "mpId": "woods-megan",
+      "wikipediaTitle": "Megan Woods",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Megan_Woods",
+      "description": "New Zealand politician",
+      "extract": "Megan Cherie Woods (born 4 November 1973) is a New Zealand Labour Party politician who served as a Cabinet Minister in the Sixth Labour Government and has served as Member of Parliament for Wigram since 2011.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Profile--meganwoods-390x2-UNC.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Megan_Woods",
+      "fetchedAt": "2026-07-01T10:20:39.922Z"
+    },
+    {
+      "mpId": "xu-nan-lawrence",
+      "wikipediaTitle": "Lawrence Xu-Nan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lawrence_Xu-Nan",
+      "description": "Egyptologist, law student, and Green Party MP",
+      "extract": "Lawrence Xi Xu-Nan (Chinese: 南西; pinyin: Nán Xī) is a New Zealand politician and Green Party member of the New Zealand House of Representatives.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Lawrence_Xu-Nan_7_%28cropped%29.jpg/960px-Lawrence_Xu-Nan_7_%28cropped%29.jpg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lawrence_Xu-Nan",
+      "fetchedAt": "2026-07-01T10:18:04.965Z"
+    }
+  ]
+}

@@ -29,7 +29,10 @@ export function RankingList({ items, formatValue }: RankingListProps) {
           <span className="truncate text-sm font-medium">{item.label}</span>
         );
         return (
-          <li key={item.label} className="flex items-center gap-3">
+          <li
+            key={item.label}
+            className="hover:bg-muted/40 -mx-2 flex items-center gap-3 rounded-lg px-2 py-1 transition-colors"
+          >
             <span className="text-muted-foreground w-5 shrink-0 text-right text-sm tabular-nums">
               {index + 1}
             </span>
@@ -47,10 +50,11 @@ export function RankingList({ items, formatValue }: RankingListProps) {
               </div>
               <div className="bg-muted h-2 overflow-hidden rounded-full">
                 <div
-                  className="h-full rounded-full"
+                  className="ease-out-expo h-full rounded-full transition-[width] duration-500"
                   style={{
                     width: `${(item.value / max) * 100}%`,
                     backgroundColor: item.accent ?? partyColor(item.label),
+                    boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25)',
                   }}
                 />
               </div>

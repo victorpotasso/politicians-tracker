@@ -6,8 +6,8 @@ import type { PartySummary } from '@/lib/data';
 
 export function PartyCard({ party }: { party: PartySummary }) {
   return (
-    <Link href={`/parties/${party.slug}`} className="group">
-      <Card className="bg-card/60 group-hover:border-primary/40 relative overflow-hidden py-5 backdrop-blur-sm transition-colors">
+    <Link href={`/parties/${party.slug}`} className="group rounded-xl focus-visible:outline-none">
+      <Card className="interactive-card bg-card/60 relative overflow-hidden py-5 backdrop-blur-sm">
         {/* Party colour spine */}
         <span
           className="absolute inset-y-0 left-0 w-1.5"

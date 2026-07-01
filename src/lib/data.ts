@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { PARLIAMENT_TERMS, type ParliamentTerm } from '@/lib/parliament-data';
 import { canonicalParty, partyColor, partySlug } from '@/lib/party';
-import type { Bill, Dataset, Domain, Expense, MP, Vote } from '@/types/records';
+import type { Bill, Dataset, Domain, Expense, MP, MpEnrichment, Poll, Vote } from '@/types/records';
 
 const DATA_DIR = join(process.cwd(), 'data');
 
@@ -25,11 +25,28 @@ export const getBills = () => loadDataset<Bill>('bills');
 export const getVotes = () => loadDataset<Vote>('votes');
 export const getExpenses = () => loadDataset<Expense>('expenses');
 export const getMinisterExpenses = () => loadDataset<Expense>('ministers');
+export const getPolls = () => loadDataset<Poll>('polls');
 
 /** Look up a single MP by id. */
 export async function getMp(mpId: string): Promise<MP | null> {
   const { records } = await getMps();
   return records.find((mp) => mp.mpId === mpId) ?? null;
+}
+
+/** Wikipedia-sourced enrichment records (bio, description, portrait). */
+export async function getEnrichment(): Promise<MpEnrichment[]> {
+  try {
+    const raw = await readFile(join(DATA_DIR, 'enrichment.json'), 'utf8');
+    return (JSON.parse(raw) as Dataset<MpEnrichment>).records;
+  } catch {
+    return [];
+  }
+}
+
+/** Enrichment for a single MP, if available. */
+export async function getMpEnrichment(mpId: string): Promise<MpEnrichment | null> {
+  const records = await getEnrichment();
+  return records.find((e) => e.mpId === mpId) ?? null;
 }
 
 export interface PartyCount {
@@ -257,6 +274,22 @@ export function spendByPeriod(expenses: Expense[]): PeriodTotal[] {
     .sort((a, b) => a.period.localeCompare(b.period));
 }
 
+export interface ExpenseCoverage {
+  first: string | null;
+  last: string | null;
+  quarters: number;
+}
+
+/** Date-range coverage of a set of expense records, by distinct period (oldest → newest). */
+export function expenseCoverage(expenses: Expense[]): ExpenseCoverage {
+  const periods = [...new Set(expenses.map((e) => e.period))].sort((a, b) => a.localeCompare(b));
+  return {
+    first: periods[0] ?? null,
+    last: periods[periods.length - 1] ?? null,
+    quarters: periods.length,
+  };
+}
+
 // ---------------------------------------------------------------------------
 // Parties
 // ---------------------------------------------------------------------------
@@ -399,5 +432,361 @@ export async function getPartyDetail(slug: string): Promise<PartyDetail | null> 
     seatHistory,
     governmentTerms,
     primeMinisters,
+  };
+}
+
+/** The parties charted individually in the composition-over-time series. */
+const COMPOSITION_PARTIES = [
+  'National',
+  'Labour',
+  'Green',
+  'ACT',
+  'New Zealand First',
+  'Te Pāti Māori',
+];
+
+export interface CompositionPoint {
+  year: number;
+  [party: string]: number;
+}
+
+/**
+ * Seats per major party at each election, with minor parties folded into
+ * "Other" — shaped for a stacked area chart of Parliament's make-up over time.
+ */
+export function seatCompositionSeries(): { data: CompositionPoint[]; parties: string[] } {
+  const data = PARLIAMENT_TERMS.map((term) => {
+    const point: CompositionPoint = { year: term.year };
+    for (const party of COMPOSITION_PARTIES) point[party] = 0;
+    let other = 0;
+    for (const p of term.parties) {
+      const canon = canonicalParty(p.party);
+      if (COMPOSITION_PARTIES.includes(canon)) point[canon] += p.seats;
+      else other += p.seats;
+    }
+    point.Other = other;
+    return point;
+  });
+  return { data, parties: [...COMPOSITION_PARTIES, 'Other'] };
+}
+
+export interface SeatTypeSplit {
+  type: string;
+  value: number;
+}
+
+/** Split current MPs into electorate vs list seats. */
+export function electorateListSplit(mps: MP[]): SeatTypeSplit[] {
+  let list = 0;
+  let electorate = 0;
+  for (const mp of mps) {
+    if (!mp.electorate || /^list$/i.test(mp.electorate)) list += 1;
+    else electorate += 1;
+  }
+  return [
+    { type: 'Electorate', value: electorate },
+    { type: 'List', value: list },
+  ];
+}
+
+// ---------------------------------------------------------------------------
+// Polls
+// ---------------------------------------------------------------------------
+
+/**
+ * Current party leaders, tying each polled party to a tracked MP. This is the
+ * relationship that links the polls module to the politicians module.
+ */
+export interface PartyLeader {
+  mpId: string;
+  name: string;
+}
+
+const PARTY_LEADERS: Record<string, PartyLeader> = {
+  National: { mpId: 'luxon-christopher', name: 'Christopher Luxon' },
+  Labour: { mpId: 'hipkins-chris', name: 'Chris Hipkins' },
+  Green: { mpId: 'swarbrick-chloe', name: 'Chlöe Swarbrick' },
+  ACT: { mpId: 'seymour-david', name: 'David Seymour' },
+  'New Zealand First': { mpId: 'peters-winston', name: 'Winston Peters' },
+  'Te Pāti Māori': { mpId: 'waititi-rawiri', name: 'Rawiri Waititi' },
+};
+
+/** The party leader (as a tracked MP) for a canonical party name, if known. */
+export function partyLeader(party: string): PartyLeader | null {
+  return PARTY_LEADERS[canonicalParty(party)] ?? null;
+}
+
+/** Party-vote threshold (%) for list seats under NZ's MMP rules. */
+const PARTY_VOTE_THRESHOLD = 5;
+/** Nominal size of the House used for seat projections. */
+const HOUSE_SEATS = 120;
+
+/** Polls sorted newest-first by end date. */
+function sortedPolls(polls: Poll[]): Poll[] {
+  return [...polls].sort((a, b) => (b.endDate ?? '').localeCompare(a.endDate ?? ''));
+}
+
+/** The single most recent poll, or null when none are available. */
+export function latestPoll(polls: Poll[]): Poll | null {
+  return sortedPolls(polls)[0] ?? null;
+}
+
+export interface PollAverage {
+  party: string;
+  code: string;
+  percentage: number;
+}
+
+/**
+ * A "poll of polls": the mean party-vote support across the most recent `sample`
+ * polls, ranked by support. Parties absent from a poll are simply skipped for
+ * that poll's average.
+ */
+export function pollAverage(polls: Poll[], sample = 6): PollAverage[] {
+  const recent = sortedPolls(polls).slice(0, sample);
+  const totals = new Map<string, { code: string; sum: number; count: number }>();
+  for (const poll of recent) {
+    for (const result of poll.results) {
+      if (result.percentage === null) continue;
+      const entry = totals.get(result.party) ?? { code: result.code, sum: 0, count: 0 };
+      entry.sum += result.percentage;
+      entry.count += 1;
+      totals.set(result.party, entry);
+    }
+  }
+  return [...totals.entries()]
+    .map(([party, { code, sum, count }]) => ({
+      party,
+      code,
+      percentage: Math.round((sum / count) * 10) / 10,
+    }))
+    .sort((a, b) => b.percentage - a.percentage);
+}
+
+/** The major parties charted on the polling trend line. */
+const TREND_PARTIES = ['National', 'Labour', 'Green', 'ACT', 'New Zealand First', 'Te Pāti Māori'];
+
+export interface PollTrendPoint {
+  date: string;
+  [party: string]: string | number | null;
+}
+
+/** A time series of party-vote support per poll, oldest first, for line charts. */
+export function pollTrend(polls: Poll[], parties: string[] = TREND_PARTIES): PollTrendPoint[] {
+  return sortedPolls(polls)
+    .filter((poll) => poll.endDate)
+    .reverse()
+    .map((poll) => {
+      const byParty = new Map(poll.results.map((r) => [r.party, r.percentage]));
+      const point: PollTrendPoint = { date: poll.endDate as string };
+      for (const party of parties) point[party] = byParty.get(party) ?? null;
+      return point;
+    });
+}
+
+export interface SeatProjection {
+  party: string;
+  percentage: number;
+  seats: number;
+}
+
+/**
+ * Project list seats from party-vote percentages using the Sainte-Laguë method
+ * with the 5% threshold, across a 120-seat House. This is an approximation: it
+ * ignores electorate-seat exemptions and overhang, and is labelled as such.
+ */
+export function projectSeats(averages: PollAverage[]): SeatProjection[] {
+  const eligible = averages.filter((a) => a.percentage >= PARTY_VOTE_THRESHOLD);
+  const seats = new Map<string, number>(eligible.map((a) => [a.party, 0]));
+
+  for (let allocated = 0; allocated < HOUSE_SEATS; allocated += 1) {
+    let bestParty: string | null = null;
+    let bestQuotient = -1;
+    for (const a of eligible) {
+      const quotient = a.percentage / (2 * (seats.get(a.party) ?? 0) + 1);
+      if (quotient > bestQuotient) {
+        bestQuotient = quotient;
+        bestParty = a.party;
+      }
+    }
+    if (!bestParty) break;
+    seats.set(bestParty, (seats.get(bestParty) ?? 0) + 1);
+  }
+
+  return eligible
+    .map((a) => ({ party: a.party, percentage: a.percentage, seats: seats.get(a.party) ?? 0 }))
+    .sort((a, b) => b.seats - a.seats);
+}
+
+/** Seats a party currently holds in the most recent Parliament. */
+function currentSeatsForParty(canonName: string): number {
+  const latest = PARLIAMENT_TERMS[PARLIAMENT_TERMS.length - 1];
+  return seatsInTerm(latest, canonName);
+}
+
+export interface PollPartyRow {
+  party: string;
+  code: string;
+  slug: string;
+  color: string;
+  percentage: number;
+  projectedSeats: number;
+  currentSeats: number;
+  leader: PartyLeader | null;
+}
+
+/** Distinct election cycles present in the dataset, newest first. */
+export function pollElections(polls: Poll[]): string[] {
+  return [...new Set(polls.map((p) => p.election))].sort((a, b) => b.localeCompare(a));
+}
+
+/** A trimmed poll shape for the recent-polls table on the client. */
+export interface RecentPoll {
+  pollId: string;
+  pollster: string;
+  endDate: string | null;
+  sampleSize: number | null;
+  results: { party: string; code: string; percentage: number | null }[];
+}
+
+export interface ElectionSummary {
+  election: string;
+  /** True for the upcoming cycle — enables leader and current-seat columns. */
+  isCurrent: boolean;
+  totalPolls: number;
+  pollsters: number;
+  dateRange: { from: string | null; to: string | null };
+  latestPollster: string | null;
+  latestDate: string | null;
+  leadParty: string | null;
+  leadPct: number | null;
+  average: PollPartyRow[];
+  projection: SeatProjection[];
+  projectedTotalSeats: number;
+  trend: PollTrendPoint[];
+  trendParties: string[];
+  recent: RecentPoll[];
+}
+
+/** Build the full polling summary for a single election cycle. */
+function buildElectionSummary(all: Poll[], election: string, isCurrent: boolean): ElectionSummary {
+  const polls = all.filter((p) => p.election === election);
+  const averages = pollAverage(polls);
+  const projection = projectSeats(averages);
+  const seatsByParty = new Map(projection.map((p) => [p.party, p.seats]));
+
+  const average: PollPartyRow[] = averages.map((a) => {
+    const canon = canonicalParty(a.party);
+    return {
+      party: a.party,
+      code: a.code,
+      slug: partySlug(a.party),
+      color: partyColor(a.party),
+      percentage: a.percentage,
+      projectedSeats: seatsByParty.get(a.party) ?? 0,
+      currentSeats: isCurrent ? currentSeatsForParty(canon) : 0,
+      leader: isCurrent ? partyLeader(a.party) : null,
+    };
+  });
+
+  const ordered = sortedPolls(polls);
+  const trendParties = average.slice(0, 6).map((row) => row.party);
+
+  return {
+    election,
+    isCurrent,
+    totalPolls: polls.length,
+    pollsters: new Set(polls.map((p) => p.pollster)).size,
+    dateRange: {
+      from: ordered[ordered.length - 1]?.endDate ?? null,
+      to: ordered[0]?.endDate ?? null,
+    },
+    latestPollster: ordered[0]?.pollster ?? null,
+    latestDate: ordered[0]?.endDate ?? null,
+    leadParty: average[0]?.party ?? null,
+    leadPct: average[0]?.percentage ?? null,
+    average,
+    projection,
+    projectedTotalSeats: projection.reduce((sum, p) => sum + p.seats, 0),
+    trend: pollTrend(polls, trendParties),
+    trendParties,
+    recent: ordered.slice(0, 15).map((p) => ({
+      pollId: p.pollId,
+      pollster: p.pollster,
+      endDate: p.endDate,
+      sampleSize: p.sampleSize,
+      results: p.results,
+    })),
+  };
+}
+
+export interface PollsExplorerData {
+  elections: string[];
+  summaries: ElectionSummary[];
+  totalPolls: number;
+  pollsters: number;
+  /** Support for the major parties across every cycle, for the compare view. */
+  fullTrend: PollTrendPoint[];
+  fullTrendParties: string[];
+}
+
+/** Composed, per-cycle polling data for the polls landing page. */
+export async function getPollsExplorer(): Promise<PollsExplorerData> {
+  const { records: polls } = await getPolls();
+  const elections = pollElections(polls);
+  const summaries = elections.map((election, index) =>
+    buildElectionSummary(polls, election, index === 0),
+  );
+  return {
+    elections,
+    summaries,
+    totalPolls: polls.length,
+    pollsters: new Set(polls.map((p) => p.pollster)).size,
+    fullTrend: pollTrend(polls, TREND_PARTIES),
+    fullTrendParties: TREND_PARTIES,
+  };
+}
+
+export interface PartyPolling {
+  average: number | null;
+  latest: number | null;
+  projectedSeats: number;
+  currentSeats: number;
+  color: string;
+  trend: { date: string; percentage: number }[];
+}
+
+/**
+ * Polling detail for a single party, keyed by canonical name. Powers the
+ * "In the polls" card on each party page — the parties↔polls relationship.
+ * Scoped to the current (upcoming) election cycle so averages aren't mixed
+ * across historical campaigns.
+ */
+export async function getPartyPolling(canonName: string): Promise<PartyPolling | null> {
+  const { records: all } = await getPolls();
+  if (all.length === 0) return null;
+  const current = pollElections(all)[0];
+  const polls = all.filter((p) => p.election === current);
+
+  const averages = pollAverage(polls);
+  const match = averages.find((a) => canonicalParty(a.party) === canonName);
+  const projection = projectSeats(averages);
+  const projected = projection.find((p) => canonicalParty(p.party) === canonName);
+
+  const trend = pollTrend(polls, [canonName])
+    .map((point) => ({ date: point.date, percentage: point[canonName] }))
+    .filter((p): p is { date: string; percentage: number } => typeof p.percentage === 'number');
+
+  if (!match && trend.length === 0) return null;
+
+  const latest = latestPoll(polls)?.results.find((r) => canonicalParty(r.party) === canonName);
+
+  return {
+    average: match?.percentage ?? null,
+    latest: latest?.percentage ?? null,
+    projectedSeats: projected?.seats ?? 0,
+    currentSeats: currentSeatsForParty(canonName),
+    color: partyColor(canonName),
+    trend,
   };
 }

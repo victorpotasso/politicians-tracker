@@ -202,7 +202,7 @@ export default async function AboutPage() {
   return (
     <>
       <ShaderBackground />
-      <main className="w-full flex-1 overflow-hidden">
+      <main id="main-content" className="w-full flex-1 overflow-hidden">
         <section className="mx-auto grid w-full max-w-6xl gap-10 px-6 pb-14 pt-12 sm:px-10 lg:grid-cols-[1fr_0.86fr] lg:items-center lg:pb-20 lg:pt-16">
           <Reveal>
             <div className="max-w-3xl">

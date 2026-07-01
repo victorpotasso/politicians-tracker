@@ -28,6 +28,10 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
+  /* Brand ramp — indigo → violet → teal (matches the nav logo & shader). */
+  --brand: oklch(0.55 0.2 275);
+  --brand-2: oklch(0.58 0.19 300);
+  --brand-3: oklch(0.72 0.13 190);
 }
 
 .dark {
@@ -54,6 +58,10 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
+  /* Brand ramp — brightened for dark surfaces. */
+  --brand: oklch(0.68 0.19 274);
+  --brand-2: oklch(0.7 0.19 300);
+  --brand-3: oklch(0.8 0.13 190);
 }
 
 @theme inline {
@@ -86,6 +94,11 @@
   --color-chart-5: var(--chart-5);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display), var(--font-geist-sans);
+  --color-brand: var(--brand);
+  --color-brand-2: var(--brand-2);
+  --color-brand-3: var(--brand-3);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @layer base {
@@ -135,6 +148,122 @@
 
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Brand utilities: fluid type, gradient text, interactive surfaces
+   --------------------------------------------------------------------------- */
+@layer utilities {
+  /* Fluid hero heading — scales smoothly between mobile and desktop. */
+  .text-fluid-hero {
+    font-size: clamp(2.75rem, 6vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+
+  /* Brand gradient text — indigo → violet → teal. */
+  .text-brand-gradient {
+    background-image: linear-gradient(
+      110deg,
+      var(--brand) 0%,
+      var(--brand-2) 45%,
+      var(--brand-3) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Interactive card surface: lift + brand glow on hover, clear focus ring.
+     Apply to a Card wrapped in a `.group` link. */
+  .interactive-card {
+    transition:
+      transform 0.3s var(--ease-out-expo),
+      border-color 0.3s var(--ease-out-expo),
+      box-shadow 0.3s var(--ease-out-expo);
+    will-change: transform;
+  }
+  .group:hover .interactive-card,
+  .interactive-card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in oklab, var(--brand) 45%, var(--border));
+    box-shadow:
+      0 1px 0 0 color-mix(in oklab, var(--brand) 30%, transparent) inset,
+      0 12px 30px -12px color-mix(in oklab, var(--brand) 45%, transparent);
+  }
+  .group:focus-visible .interactive-card {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interactive-card {
+    transition: none;
+  }
+  .group:hover .interactive-card,
+  .interactive-card:hover {
+    transform: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Chat: Gemini-style shimmer for the "thinking" line + streaming caret
+   --------------------------------------------------------------------------- */
+@keyframes archive-shimmer {
+  0% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -50% 0;
+  }
+}
+.archive-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    color-mix(in oklab, var(--muted-foreground) 85%, transparent) 0%,
+    color-mix(in oklab, var(--muted-foreground) 85%, transparent) 38%,
+    var(--foreground) 46%,
+    #a855f7 50%,
+    #22d3ee 54%,
+    var(--foreground) 58%,
+    color-mix(in oklab, var(--muted-foreground) 85%, transparent) 66%,
+    color-mix(in oklab, var(--muted-foreground) 85%, transparent) 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: archive-shimmer 2.4s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .archive-shimmer {
+    animation: none;
+    color: var(--muted-foreground);
+    -webkit-text-fill-color: var(--muted-foreground);
+  }
+}
+
+@keyframes archive-caret {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scaleY(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+.archive-caret {
+  animation: archive-caret 1s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .archive-caret {
+    animation: none;
   }
 }
 

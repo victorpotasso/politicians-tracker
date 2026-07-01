@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import { CompositionChart, ElectorateListDonut } from '@/components/composition-chart';
 import { SpendByCategoryDonut, SpendTrendChart } from '@/components/money-charts';
 import { MpCard } from '@/components/mp-card';
 import { PartyChart } from '@/components/party-chart';
+import { PollTrendChart } from '@/components/poll-charts';
 import { RankingList } from '@/components/ranking-list';
 import { Reveal } from '@/components/reveal';
 import { ShaderBackground } from '@/components/shaders/shader-background';
@@ -10,35 +12,51 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   countByParty,
+  electorateListSplit,
+  expenseCoverage,
   getBills,
   getExpenses,
   getMps,
+  getPolls,
   getVotes,
+  latestPoll,
+  pollAverage,
+  pollTrend,
   rankBillsByDivisions,
   rankTopSpenders,
+  seatCompositionSeries,
   spendByCategory,
   spendByParty,
   spendByPeriod,
 } from '@/lib/data';
 import { partyColor } from '@/lib/party';
-import { formatNZD, formatNZDCompact } from '@/lib/utils';
+import { formatDayMonthYear, formatNZD, formatNZDCompact, formatPeriodRange } from '@/lib/utils';
 
 export default async function Home() {
-  const [mpsData, billsData, votesData, expensesData] = await Promise.all([
+  const [mpsData, billsData, votesData, expensesData, pollsData] = await Promise.all([
     getMps(),
     getBills(),
     getVotes(),
     getExpenses(),
+    getPolls(),
   ]);
   const mps = mpsData.records;
   const bills = billsData.records;
   const votes = votesData.records;
   const expenses = expensesData.records;
+  const polls = pollsData.records;
   const parties = countByParty(mps);
   const billRanks = rankBillsByDivisions(bills, votes);
 
   const distinctDivisions = new Set(votes.map((v) => v.voteId)).size;
   const totalSpend = expenses.reduce((sum, e) => sum + (e.amount ?? 0), 0);
+
+  const composition = seatCompositionSeries();
+  const seatSplit = electorateListSplit(mps);
+  const trendParties = ['National', 'Labour', 'Green', 'ACT', 'New Zealand First', 'Te Pāti Māori'];
+  const trend = pollTrend(polls, trendParties);
+  const pollAvg = pollAverage(polls, 6);
+  const latest = latestPoll(polls);
 
   const topParties = parties.slice(0, 6).map((p) => ({ label: p.party, value: p.count }));
   const topBills = billRanks.slice(0, 6).map((b) => ({
@@ -65,6 +83,7 @@ export default async function Home() {
     amount: c.amount,
   }));
   const periodSpend = spendByPeriod(expenses);
+  const spendCoverage = expenseCoverage(expenses);
 
   const ministers = [...mps].filter((mp) => mp.role && /minister|speaker|rt hon/i.test(mp.role));
   const featuredMps = (ministers.length >= 6 ? ministers : mps).slice(0, 6);
@@ -78,13 +97,13 @@ export default async function Home() {
   return (
     <>
       <ShaderBackground />
-      <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
+      <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
         <Reveal>
           <header className="flex flex-col gap-3">
             <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
               New Zealand · Public political data
             </span>
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+            <h1 className="text-fluid-hero font-display text-brand-gradient font-bold text-balance">
               Political data dashboard
             </h1>
             <p className="text-muted-foreground max-w-2xl text-balance">
@@ -111,6 +130,53 @@ export default async function Home() {
             />
           </section>
         </Reveal>
+
+        {trend.length > 0 && latest ? (
+          <Reveal delay={0.12}>
+            <section className="mt-8">
+              <div className="mb-4 flex items-end justify-between">
+                <div>
+                  <h2 className="font-display text-2xl font-semibold tracking-tight">
+                    Race to 2026
+                  </h2>
+                  <p className="text-muted-foreground text-sm">
+                    Poll of polls across {polls.length} published surveys
+                  </p>
+                </div>
+                <Link href="/polls" className="text-primary text-sm underline underline-offset-4">
+                  Full polling →
+                </Link>
+              </div>
+              <div className="grid gap-4 lg:grid-cols-3">
+                <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
+                  <CardHeader>
+                    <CardTitle>Party-vote trend</CardTitle>
+                    <CardDescription>Support over time, by party</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <PollTrendChart data={trend} parties={trendParties} />
+                  </CardContent>
+                </Card>
+                <Card className="bg-card/60 backdrop-blur-sm">
+                  <CardHeader>
+                    <CardTitle>Poll of polls</CardTitle>
+                    <CardDescription>Mean of the 6 most recent polls</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <RankingList
+                      items={pollAvg.map((p) => ({
+                        label: p.party,
+                        value: p.percentage,
+                        accent: partyColor(p.party),
+                      }))}
+                      formatValue={(v) => `${v}%`}
+                    />
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+          </Reveal>
+        ) : null}
 
         <Reveal delay={0.16}>
           <section className="mt-8 grid gap-4 lg:grid-cols-3">
@@ -142,12 +208,21 @@ export default async function Home() {
               <div>
                 <h2 className="text-xl font-semibold tracking-tight">Follow the money</h2>
                 <p className="text-muted-foreground text-sm">
-                  MP travel &amp; accommodation, {periodSpend.length} quarters of disclosures
+                  MP travel &amp; accommodation ·{' '}
+                  {formatPeriodRange(spendCoverage.first, spendCoverage.last)} ·{' '}
+                  {spendCoverage.quarters} {spendCoverage.quarters === 1 ? 'quarter' : 'quarters'}
                 </p>
               </div>
-              <span className="text-muted-foreground text-sm tabular-nums">
-                {formatNZD(totalSpend)} total
-              </span>
+              <div className="text-right">
+                <span className="text-muted-foreground text-sm tabular-nums">
+                  {formatNZD(totalSpend)} total
+                </span>
+                {expensesData.meta.collectedAt ? (
+                  <p className="text-muted-foreground/70 text-xs">
+                    As of {formatDayMonthYear(expensesData.meta.collectedAt)}
+                  </p>
+                ) : null}
+              </div>
             </div>
             <div className="grid gap-4 lg:grid-cols-3">
               <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
@@ -206,11 +281,52 @@ export default async function Home() {
           </section>
         </Reveal>
 
+        <Reveal delay={0.24}>
+          <section className="mt-8">
+            <div className="mb-4 flex items-end justify-between">
+              <div>
+                <h2 className="font-display text-2xl font-semibold tracking-tight">
+                  Balance of power
+                </h2>
+                <p className="text-muted-foreground text-sm">
+                  How Parliament's make-up has shifted across the MMP era
+                </p>
+              </div>
+              <Link
+                href="/parliament"
+                className="text-primary text-sm underline underline-offset-4"
+              >
+                Explore Parliament →
+              </Link>
+            </div>
+            <div className="grid gap-4 lg:grid-cols-3">
+              <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
+                <CardHeader>
+                  <CardTitle>Seats over time</CardTitle>
+                  <CardDescription>Party seats won at each election, 1996–2023</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <CompositionChart data={composition.data} parties={composition.parties} />
+                </CardContent>
+              </Card>
+              <Card className="bg-card/60 backdrop-blur-sm">
+                <CardHeader>
+                  <CardTitle>Electorate vs list</CardTitle>
+                  <CardDescription>Current {mps.length}-seat House</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ElectorateListDonut data={seatSplit} />
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        </Reveal>
+
         <Reveal delay={0.28}>
           <section className="mt-10">
             <div className="mb-4 flex items-end justify-between">
               <div>
-                <h2 className="text-xl font-semibold tracking-tight">Politicians</h2>
+                <h2 className="font-display text-xl font-semibold tracking-tight">Politicians</h2>
                 <p className="text-muted-foreground text-sm">A sample of the {mps.length} MPs</p>
               </div>
               <Link

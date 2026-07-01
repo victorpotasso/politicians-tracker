@@ -21,13 +21,13 @@ export default async function PartiesPage() {
   return (
     <>
       <ShaderBackground />
-      <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
+      <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
         <Reveal>
           <header className="flex flex-col gap-3">
             <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
               New Zealand · Political parties
             </span>
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">Parties</h1>
+            <h1 className="font-display text-4xl font-bold tracking-tight sm:text-6xl">Parties</h1>
             <p className="text-muted-foreground max-w-2xl text-balance">
               Every party that has held seats across the MMP era, linked to its members and its
               record in the House. Select a party to see its seat history, governments, and MPs.

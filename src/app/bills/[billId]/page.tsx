@@ -45,7 +45,7 @@ export default async function BillDetailPage({ params }: Params) {
   const totalVotes = divisions.reduce((sum, d) => sum + d.votes.length, 0);
 
   return (
-    <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-12 sm:px-10">
+    <main id="main-content" className="mx-auto w-full max-w-4xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
         <Link href="/bills" className="text-muted-foreground hover:text-foreground text-sm">
           ← All bills

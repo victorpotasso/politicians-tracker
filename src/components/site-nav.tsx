@@ -7,12 +7,14 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const LINKS = [
+  { href: '/about', label: 'About' },
   { href: '/', label: 'Dashboard' },
-  { href: '/politicians', label: 'Politicians' },
   { href: '/bills', label: 'Bills' },
+  { href: '/politicians', label: 'Politicians' },
   { href: '/parliament', label: 'Parliament' },
   { href: '/parties', label: 'Parties' },
-  { href: '/about', label: 'About' },
+  { href: '/polls', label: 'Polls' },
+  { href: '/chat', label: 'Ask AI' },
 ];
 
 function isActive(pathname: string, href: string): boolean {

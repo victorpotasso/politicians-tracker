@@ -113,6 +113,8 @@ const PARTY_ALIASES: Record<string, string> = {
   'new zealand first': 'New Zealand First',
   'te pati maori': 'Te Pāti Māori',
   'te pāti māori': 'Te Pāti Māori',
+  'te paati maori': 'Te Pāti Māori',
+  'te paati m?ori': 'Te Pāti Māori',
   'maori party': 'Te Pāti Māori',
   'māori party': 'Te Pāti Māori',
 };

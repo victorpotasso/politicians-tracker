@@ -4,11 +4,12 @@ import { notFound } from 'next/navigation';
 
 import { MpCard } from '@/components/mp-card';
 import { PartySeatHistory } from '@/components/party-seat-history';
+import { PartyPollTrend } from '@/components/poll-charts';
 import { Reveal } from '@/components/reveal';
 import { StatCard } from '@/components/stat-card';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { getPartyDetail, getPartySummaries } from '@/lib/data';
+import { getPartyDetail, getPartyPolling, getPartySummaries } from '@/lib/data';
 
 interface Params {
   params: Promise<{ partyId: string }>;
@@ -40,9 +41,10 @@ export default async function PartyDetailPage({ params }: Params) {
 
   const { summary, mps, seatHistory, governmentTerms, primeMinisters } = detail;
   const seatedYears = seatHistory.filter((p) => p.seats > 0);
+  const polling = await getPartyPolling(summary.party);
 
   return (
-    <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-12 sm:px-10">
+    <main id="main-content" className="mx-auto w-full max-w-5xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
         <Link href="/parties" className="text-muted-foreground hover:text-foreground text-sm">
           ← All parties
@@ -57,7 +59,9 @@ export default async function PartyDetailPage({ params }: Params) {
               style={{ backgroundColor: summary.color }}
               aria-hidden
             />
-            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{summary.party}</h1>
+            <h1 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">
+              {summary.party}
+            </h1>
             {summary.inGovernmentNow ? (
               <Badge
                 style={{ backgroundColor: summary.color, color: '#fff' }}
@@ -146,6 +150,44 @@ export default async function PartyDetailPage({ params }: Params) {
           </Card>
         </section>
       </Reveal>
+
+      {polling ? (
+        <Reveal delay={0.18}>
+          <section className="mt-4 grid gap-4 lg:grid-cols-3">
+            <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
+              <CardHeader>
+                <CardTitle>In the polls</CardTitle>
+                <CardDescription>
+                  {summary.party}&apos;s party-vote support across published polls for the next
+                  election
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                {polling.trend.length > 0 ? (
+                  <PartyPollTrend data={polling.trend} color={polling.color} />
+                ) : (
+                  <p className="text-muted-foreground py-12 text-center text-sm">
+                    No polling recorded for this party.
+                  </p>
+                )}
+              </CardContent>
+            </Card>
+
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-1">
+              <StatCard
+                label="Poll average"
+                value={polling.average !== null ? `${polling.average}%` : '—'}
+                hint="Recent poll of polls"
+              />
+              <StatCard
+                label="Projected seats"
+                value={polling.projectedSeats || '—'}
+                hint={`vs ${polling.currentSeats || 0} now`}
+              />
+            </div>
+          </section>
+        </Reveal>
+      ) : null}
 
       <Reveal delay={0.2}>
         <section className="mt-10">

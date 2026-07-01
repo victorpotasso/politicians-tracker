@@ -69,7 +69,32 @@ export interface Vote extends Provenance {
   stage: string | null;
 }
 
-export type Domain = 'mps' | 'bills' | 'votes' | 'expenses' | 'ministers';
+/** A single party's headline party-vote result within an opinion poll. */
+export interface PollResult {
+  /** Canonical party name, linking the result to the parties module. */
+  party: string;
+  /** Source abbreviation as published (e.g. `NAT`, `LAB`). */
+  code: string;
+  /** Party-vote support, as a percentage, or null when not reported. */
+  percentage: number | null;
+}
+
+export interface Poll extends Provenance {
+  pollId: string;
+  pollster: string;
+  /** First day of fieldwork (ISO), or null when unknown. */
+  startDate: IsoDate | null;
+  /** Last day of fieldwork (ISO); polls are ordered by this date. */
+  endDate: IsoDate | null;
+  sampleSize: number | null;
+  /** Election cycle the poll speaks to, e.g. `2026`. */
+  election: string;
+  results: PollResult[];
+  /** Reported margin between the two leading parties, or null. */
+  lead: number | null;
+}
+
+export type Domain = 'mps' | 'bills' | 'votes' | 'expenses' | 'ministers' | 'polls';
 
 export interface DatasetMeta {
   domain: Domain;
@@ -81,4 +106,23 @@ export interface DatasetMeta {
 export interface Dataset<T> {
   meta: DatasetMeta;
   records: T[];
+}
+
+/**
+ * Wikipedia-sourced enrichment for an MP: a short biography, description, and a
+ * portrait/link. Keyed to an MP by `mpId`. Optional and non-authoritative —
+ * always secondary to the official roster data.
+ */
+export interface MpEnrichment {
+  mpId: string;
+  wikipediaTitle: string | null;
+  wikipediaUrl: string | null;
+  /** One-line descriptor, e.g. "New Zealand Green Party politician". */
+  description: string | null;
+  /** Intro paragraph(s), plain text. */
+  extract: string | null;
+  /** Portrait image URL (also mirrored locally for MPs missing a photo). */
+  imageUrl: string | null;
+  sourceUrl: string;
+  fetchedAt: string;
 }

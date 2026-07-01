@@ -28,13 +28,15 @@ export default async function ParliamentPage() {
   return (
     <>
       <ShaderBackground />
-      <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
+      <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-6 py-14 sm:px-10">
         <Reveal>
           <header className="flex flex-col gap-3">
             <span className="text-muted-foreground text-xs font-medium tracking-widest uppercase">
               New Zealand · House of Representatives
             </span>
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">Parliament</h1>
+            <h1 className="font-display text-4xl font-bold tracking-tight sm:text-6xl">
+              Parliament
+            </h1>
             <p className="text-muted-foreground max-w-2xl text-balance">
               An interactive seating chart of the House across the MMP era. Drag the timeline or
               pick an election year to watch the balance of power shift from {first.year} to{' '}

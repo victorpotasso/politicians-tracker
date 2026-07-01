@@ -1,6 +1,7 @@
 import type { MP } from '../../src/types/records';
 import { parseCsvObjects } from '../lib/csv';
 import { fetchJson, fetchText } from '../lib/fetch-cache';
+import { MP_OVERRIDES } from '../lib/mp-overrides';
 import { clean, slugify, toParty } from '../lib/normalize';
 import type { CollectOptions, Collector, CollectResult } from './types';
 
@@ -54,8 +55,11 @@ async function run(options: CollectOptions): Promise<CollectResult<MP>> {
     const contact = row.Contact ?? row.contact ?? '';
     if (!contact.includes(',')) continue;
 
-    const mpId = toSlug(contact);
-    const name = displayName(contact);
+    const rawSlug = toSlug(contact);
+    // Correct records whose source name is corrupted (macrons/diacritics).
+    const override = MP_OVERRIDES[rawSlug];
+    const mpId = override?.mpId ?? rawSlug;
+    const name = override?.name ?? displayName(contact);
     const jobTitle = clean(row['Job Title']);
     const electorateField = clean(row.Electorate);
     const electorate = electorateField ?? (/(list)/i.test(jobTitle ?? '') ? 'List' : null);

@@ -11,14 +11,16 @@ import {
   getBills,
   getExpenses,
   getMp,
+  getMpEnrichment,
   getMps,
   getVotes,
   groupMpVotesByBill,
+  partyLeader,
   summariseMpSpend,
   votesForMp,
 } from '@/lib/data';
 import { partyColor, partySlug } from '@/lib/party';
-import { formatNZD } from '@/lib/utils';
+import { formatDayMonthYear, formatNZD, formatNZDCompact, formatPeriodRange } from '@/lib/utils';
 
 interface Params {
   params: Promise<{ mpId: string }>;
@@ -39,11 +41,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   };
 }
 
-function Detail({ label, value }: { label: string; value: string }) {
+function HeroStat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex flex-col gap-0.5">
-      <dt className="text-muted-foreground text-xs tracking-wide uppercase">{label}</dt>
-      <dd className="text-sm font-medium">{value}</dd>
+    <div className="flex flex-col gap-0.5 px-4 py-3 sm:px-6 sm:py-4">
+      <span className="text-muted-foreground text-[10px] tracking-widest uppercase">{label}</span>
+      <span className="font-display text-xl font-semibold tabular-nums sm:text-2xl">{value}</span>
     </div>
   );
 }
@@ -56,11 +58,12 @@ function positionLabel(ayes: number, noes: number): { text: string; tone: string
 
 export default async function PoliticianProfilePage({ params }: Params) {
   const { mpId } = await params;
-  const [mp, votesData, billsData, expensesData] = await Promise.all([
+  const [mp, votesData, billsData, expensesData, enrichment] = await Promise.all([
     getMp(mpId),
     getVotes(),
     getBills(),
     getExpenses(),
+    getMpEnrichment(mpId),
   ]);
   if (!mp) notFound();
 
@@ -71,9 +74,14 @@ export default async function PoliticianProfilePage({ params }: Params) {
     category: c.category[0].toUpperCase() + c.category.slice(1),
     amount: c.amount,
   }));
+  const spendFrom = spend.byPeriod[0]?.period ?? null;
+  const spendTo = spend.byPeriod[spend.byPeriod.length - 1]?.period ?? null;
+  const color = partyColor(mp.party);
+  const leader = mp.party ? partyLeader(mp.party) : null;
+  const isLeader = leader?.mpId === mp.mpId;
 
   return (
-    <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-12 sm:px-10">
+    <main id="main-content" className="mx-auto w-full max-w-4xl flex-1 px-6 py-12 sm:px-10">
       <Reveal>
         <Link href="/politicians" className="text-muted-foreground hover:text-foreground text-sm">
           ← All politicians
@@ -81,37 +89,95 @@ export default async function PoliticianProfilePage({ params }: Params) {
       </Reveal>
 
       <Reveal delay={0.06} className="mt-6">
-        <Card className="bg-card/60 backdrop-blur-sm">
-          <CardContent className="flex flex-col gap-6 sm:flex-row sm:items-start">
-            <MpPhoto mp={mp} size={160} priority className="shrink-0" />
-            <div className="flex flex-1 flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h1 className="text-3xl font-semibold tracking-tight">{mp.name}</h1>
-                  {mp.party ? (
-                    <Link href={`/parties/${partySlug(mp.party)}`}>
-                      <Badge
-                        style={{ backgroundColor: partyColor(mp.party), color: '#fff' }}
-                        className="border-transparent transition-opacity hover:opacity-90"
-                      >
-                        {mp.party}
-                      </Badge>
-                    </Link>
-                  ) : null}
-                </div>
-                {mp.role ? <p className="text-muted-foreground">{mp.role}</p> : null}
-              </div>
-
-              <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-                <Detail label="Electorate" value={mp.electorate ?? '—'} />
-                <Detail label="Votes cast" value={String(mpVotes.length)} />
-                <Detail label="Bills voted" value={String(voteGroups.length)} />
-                <Detail label="Tracked spend" value={spend.total ? formatNZD(spend.total) : '—'} />
-              </dl>
+        <div className="border-border/50 bg-card/40 relative overflow-hidden rounded-3xl border backdrop-blur-sm">
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background: `radial-gradient(130% 120% at 0% 0%, ${color}38, transparent 55%), radial-gradient(120% 120% at 100% 0%, ${color}1f, transparent 50%)`,
+            }}
+            aria-hidden
+          />
+          <div className="relative flex flex-col gap-6 p-6 sm:flex-row sm:items-end sm:gap-8 sm:p-8">
+            <div className="relative shrink-0">
+              <div
+                className="absolute -inset-2 rounded-[1.7rem] opacity-50 blur-xl"
+                style={{ background: color }}
+                aria-hidden
+              />
+              <MpPhoto mp={mp} size={176} priority className="relative rounded-2xl" />
+              {isLeader ? (
+                <span
+                  className="absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-full px-3 py-0.5 text-[10px] font-semibold tracking-widest text-white uppercase shadow-lg"
+                  style={{ backgroundColor: color }}
+                >
+                  Leader
+                </span>
+              ) : null}
             </div>
-          </CardContent>
-        </Card>
+
+            <div className="flex flex-1 flex-col gap-3">
+              <div className="flex flex-wrap items-center gap-2">
+                {mp.party ? (
+                  <Link href={`/parties/${partySlug(mp.party)}`}>
+                    <Badge
+                      style={{ backgroundColor: color, color: '#fff' }}
+                      className="border-transparent transition-opacity hover:opacity-90"
+                    >
+                      {mp.party}
+                    </Badge>
+                  </Link>
+                ) : null}
+                {mp.electorate ? (
+                  <Badge variant="outline">
+                    {/^list$/i.test(mp.electorate) ? 'List MP' : mp.electorate}
+                  </Badge>
+                ) : null}
+                {mp.role ? <Badge variant="secondary">{mp.role}</Badge> : null}
+              </div>
+              <h1 className="font-display text-4xl leading-[0.95] font-bold tracking-tight text-balance sm:text-6xl">
+                {mp.name}
+              </h1>
+              {enrichment?.description ? (
+                <p className="text-muted-foreground max-w-2xl text-base sm:text-lg">
+                  {enrichment.description}
+                </p>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="divide-border/50 border-border/50 relative grid grid-cols-2 divide-x divide-y border-t sm:grid-cols-4 sm:divide-y-0">
+            <HeroStat label="Seat" value={mp.electorate ?? '—'} />
+            <HeroStat label="Votes cast" value={String(mpVotes.length)} />
+            <HeroStat label="Bills voted" value={String(voteGroups.length)} />
+            <HeroStat
+              label="Tracked spend"
+              value={spend.total ? formatNZDCompact(spend.total) : '—'}
+            />
+          </div>
+        </div>
       </Reveal>
+
+      {enrichment?.extract ? (
+        <Reveal delay={0.1} className="mt-6">
+          <Card className="bg-card/60 backdrop-blur-sm">
+            <CardContent className="flex flex-col gap-3">
+              <p className="text-foreground/90 text-sm leading-relaxed sm:text-base">
+                {enrichment.extract}
+              </p>
+              {enrichment.wikipediaUrl ? (
+                <a
+                  href={enrichment.wikipediaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary w-fit text-sm underline underline-offset-4"
+                >
+                  Read more on Wikipedia ↗
+                </a>
+              ) : null}
+            </CardContent>
+          </Card>
+        </Reveal>
+      ) : null}
 
       {spend.total > 0 ? (
         <Reveal delay={0.12} className="mt-6">
@@ -119,7 +185,10 @@ export default async function PoliticianProfilePage({ params }: Params) {
             <Card className="bg-card/60 backdrop-blur-sm lg:col-span-2">
               <CardHeader>
                 <CardTitle>Spending over time</CardTitle>
-                <CardDescription>Disclosed travel &amp; accommodation per quarter</CardDescription>
+                <CardDescription>
+                  Disclosed travel &amp; accommodation per quarter ·{' '}
+                  {formatPeriodRange(spendFrom, spendTo)}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <SpendTrendChart data={spend.byPeriod} />
@@ -128,7 +197,12 @@ export default async function PoliticianProfilePage({ params }: Params) {
             <Card className="bg-card/60 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle>By category</CardTitle>
-                <CardDescription>{formatNZD(spend.total)} total</CardDescription>
+                <CardDescription>
+                  {formatNZD(spend.total)} total
+                  {expensesData.meta.collectedAt
+                    ? ` · as of ${formatDayMonthYear(expensesData.meta.collectedAt)}`
+                    : ''}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <SpendByCategoryDonut data={spendCategories} />
