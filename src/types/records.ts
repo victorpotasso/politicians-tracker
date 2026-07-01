@@ -25,6 +25,7 @@ export interface MP extends Provenance {
   role: string | null;
   firstElected: IsoDate | null;
   profileUrl: string | null;
+  photoUrl: string | null;
 }
 
 export interface BillDocument {

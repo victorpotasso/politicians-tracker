@@ -27,6 +27,14 @@ async function run(options: CollectOptions): Promise<CollectResult<MP>> {
     const name = clean(el.find('.w3-xlarge').first().text());
     if (!mpId || !name) return;
 
+    // Prefer the larger 128px portrait where the source offers a 64px thumbnail.
+    const rawSrc = el.find('img').first().attr('src') ?? '';
+    let photoUrl: string | null = null;
+    if (rawSrc) {
+      const abs = rawSrc.startsWith('http') ? rawSrc : `https://voted.nz${rawSrc}`;
+      photoUrl = abs.replace('/images/people/64/', '/images/people/128/');
+    }
+
     // The trailing small span holds "<Party>, <Electorate>". An optional leading
     // small span holds an honorific/title (e.g. "Hon", "Rt Hon") when present.
     const smalls = el.find('.w3-small');
@@ -49,6 +57,7 @@ async function run(options: CollectOptions): Promise<CollectResult<MP>> {
       role: role && role !== name ? role : null,
       firstElected: null,
       profileUrl: href || null,
+      photoUrl,
       sourceUrl: PEOPLE_URL,
       fetchedAt,
     });

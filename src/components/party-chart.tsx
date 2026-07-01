@@ -3,17 +3,7 @@
 import { Bar, BarChart, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 import type { PartyCount } from '@/lib/data';
-
-const PARTY_COLORS: Record<string, string> = {
-  National: '#00529f',
-  Labour: '#d82c20',
-  Green: '#098137',
-  ACT: '#fdb713',
-  'New Zealand First': '#000000',
-  'Te Pāti Māori': '#b2001a',
-};
-
-const FALLBACK = 'var(--chart-3)';
+import { partyColor } from '@/lib/party';
 
 export function PartyChart({ data }: { data: PartyCount[] }) {
   return (
@@ -40,7 +30,7 @@ export function PartyChart({ data }: { data: PartyCount[] }) {
         />
         <Bar dataKey="count" radius={[4, 4, 4, 4]} barSize={20}>
           {data.map((entry) => (
-            <Cell key={entry.party} fill={PARTY_COLORS[entry.party] ?? FALLBACK} />
+            <Cell key={entry.party} fill={partyColor(entry.party)} />
           ))}
         </Bar>
       </BarChart>
